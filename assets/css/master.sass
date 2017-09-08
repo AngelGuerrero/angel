@@ -1,0 +1,130 @@
+---
+
+---
+
+@font-face
+  font-family: "Montserrat"
+  src: url("../fonts/Montserrat/Montserrat-Thin.ttf") format("truetype")
+
+@font-face
+  font-family: "OpenSans"
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype")
+
+@keyframes animate
+  from
+    // display: block
+    color: aqua
+    text-shadow: 0px 0px 20px green
+  to
+    color: green
+    text-shadow: 0px 0px 10px aqua
+
+
+@keyframes show-fade
+  from
+    opacity: 0.0
+  to
+    opacity: 1
+
+@keyframes show-hide
+  from
+    // background-color: black
+  to
+    background-color: green
+
+*, *::before, *::after
+  box-sizing: border-box
+  font-family: monospace
+
+
+body
+  margin: 0
+  padding: 0
+  background-color: black
+  color: green
+
+#presentation
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100vh
+  color: green
+  font-family: monospace
+  font-size: 15px
+  display: flex
+  justify-content: center
+  align-items: center
+
+#message
+  width: 500px
+  border: 3px dashed aqua
+  text-align: center
+  background-color: black
+  box-shadow: 0px 0px 40px green
+  animation-name: show-fade
+  animation-duration: 10s
+  padding: 20px
+  h1
+    font-family: monospace
+    padding: 0
+    margin: 0
+
+#target
+  background-color: black
+  color: black
+  min-height: 100vh
+  display: flex
+  position: fixed
+  top: 0
+  overflow: hidden
+  width: 100%
+  z-index: -10
+  > .column
+    border: 1px solid
+    display: flex
+    flex-direction: column
+    text-align: center
+    flex-grow: 1
+
+.title
+  padding: 10px
+  > pre
+    overflow: hidden
+    margin: auto
+    background-color: black
+    color: green
+    border: none
+
+
+.menu
+  padding: 10px
+  &::before
+    content: ""
+    width: 5px
+    height: 20px
+    margin-right: 20px
+    float: left
+    animation-name: show-hide
+    animation-duration: 1s
+    animation-iteration-count: infinite
+  li
+    display: inline-block
+    a
+      color: blue
+      padding: 10px
+      &:hover
+        background-color: black
+        color: green
+        border: 1px solid green
+        box-shadow: 5px 5px 1px green
+
+#active
+  color: green
+
+.fall
+  color: green
+  // display: block
+  animation-name: animate
+  // animation-delay: 10s
+  animation-duration: 9s
+  transition: all 1s

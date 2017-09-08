@@ -34,4 +34,4 @@ exclude:
 
 
 # Destination
-destination: ../angel-out/
+# destination: ../angel-out/

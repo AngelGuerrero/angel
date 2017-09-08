@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+
+    <!-- CSS Reset -->
+<link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
+<!-- Milligram CSS minified -->
+<link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/master.css">
+  </head>
+  <body>
+    <div id="presentation" class="hide">
+      <div id="target">
+      </div>
+      <div id="message">
+        <h1>Welcome</h1>
+      </div>
+    </div>
+
+    <header>
+      <div class="title">
+        <pre>
+
+           /\  _  _  _ |  /~_    _  _ _ _  _ _
+          /~~\| |(_|(/_|  \_/|_|(/_| | (/_| (_)
+                  _|
+        </pre>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#" id="active">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Kube js -->
+    <!-- <script src="{{ site.url }}{{ site.baseurl }}/assets/js/kube.min.js" charset="utf-8"></script> -->
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/master.js" charset="utf-8"></script>
+  </body>
+</html>

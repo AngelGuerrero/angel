@@ -10,8 +10,6 @@ GEM
     eventmachine (1.2.3)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
-    haml (4.0.7)
-      tilt
     http_parser.rb (0.6.0)
     jekyll (3.4.3)
       addressable (~> 2.4)
@@ -24,12 +22,12 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-haml (0.1.5)
-      haml (>= 3.0.0)
-      jekyll (>= 3.3.0)
     jekyll-livereload (0.2.2)
       em-websocket (~> 0.5)
       jekyll (~> 3.0)
+    jekyll-pug (0.0.1)
+      jekyll (>= 3.3.0)
+      pug-ruby (>= 1.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -43,25 +41,25 @@ GEM
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
+    pug-ruby (1.0.2)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.24)
-    tilt (2.0.6)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   jekyll (= 3.4.3)
-  jekyll-haml
   jekyll-livereload
+  jekyll-pug
   tzinfo-data
 
 RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.15.0
+   1.15.4

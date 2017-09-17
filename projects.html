@@ -1,0 +1,43 @@
+---
+layout: base
+title: Projectos
+---
+
+<article class="section">
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  {% for project in site.pages %}
+    {% if project.project%}
+
+      <div class="content container__card">
+        <header>
+          <h2>
+            <a class="card__title" href="{{ site.url }}{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+          </h2>
+        </header>
+
+        <div class="card__body">
+          <p>
+            {{ project.description }}
+          </p>
+        </div>
+
+        <footer class="card__footer">
+          <div class="card__lastCommit">Última modificación: {{ project.lastCommit }}</div>
+          {% if project.language %}
+          <div class="card__language">
+            <span>Lenguaje de programación:</span>
+              {% for language in project.language %}
+              <span class="tag is-black">{{ language }}</span>
+              {% endfor %}
+          </div>
+          {% endif %}
+        </footer>
+      </div>
+
+    {% endif %}
+  {% endfor %}
+
+</article>

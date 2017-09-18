@@ -1,0 +1,24 @@
+---
+layout: base
+---
+
+<nav class="breadcrumbs">
+  <ul>
+    <li><a href="{{ site.url }}{{ site.baseurl }}/">Inicio</a></li>
+    <li><a href="{{ site.url }}{{ site.baseurl }}/projects.html">Projectos</a></li>
+    <li><span>{{ page.title }}</span></li>
+  </ul>
+</nav>
+
+<article class="section">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+    {% if page.repository %}
+      <a href="https://github.com/AngelGuerrero/{{ page.repository }}" class="btn btn-primary" target="_blank">Repositorio {{ page.repository | capitalize }}</a>
+    {% endif %}
+  </header>
+    <div class="content">
+      {{ content }}
+    </div>
+  </article>

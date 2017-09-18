@@ -1,0 +1,15 @@
+<nav class="nav__container row gutter auto hide-sm animated slideInDown" v-show="!menu">
+  {% include menu.html %}
+</nav>
+
+<nav class="nav__container show-sm">
+  <i v-bind:class='menuIcon' v-on:click='showMenu'></i>
+</nav>
+
+<!-- Show menu -->
+<transition name="slide">
+  <div class="light-menu row animated slideInLeft" v-if='menu'>
+    {% include menu.html %}
+  </div>
+</transition>
+<!--/Show menu -->

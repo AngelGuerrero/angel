@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}/assets/img/boy.png" />
+    {% if page.title %}
+      <title>{{ page.title }}</title>
+    {% else %}
+      <title>{{ site.title }}</title>
+    {% endif %}
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway:400" rel="stylesheet">
+
+    <!-- Kube -->
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/kube.min.css">
+
+    {% if page.url == '/' %}
+      <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css ">
+    {% endif %}
+
+    <!-- Animate css -->
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/animate.css">
+    <!-- Base stylesheet -->
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/base.css">
+
+  </head>
+  <body>
+    <div class="line"> </div>
+
+
+    {% if page.url == "/" %}
+      <div id="particles-js"> </div>
+        <div class="landing__container animated zoomIn">
+          <header>
+            <h1>{{ site.author }}</h1>
+          </header>
+          <div class="landing__nav">
+            {% include menu.html %}
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+        <script>
+          particlesJS.load('particles-js', '{{ site.url }}{{ site.baseurl }}/assets/css/particles.json', function(){
+            console.log('particles.json loaded...');
+          });
+        </script>
+      {% else %}
+        <div class="wrapper" id="app">
+
+      <!-- Main nav -->
+      {% include nav.html %}
+      <!--/Main nav -->
+
+      <div class="main__container container animated slideInLeft">
+        <!-- Main content -->
+        <section class="main__content">
+          {{ content }}
+        </section>
+        <!--/ Main content -->
+      </div>
+
+      <footer class="main__footer">
+        <div class="container">
+          {{ site.author }}
+        </div>
+      </footer>
+    </div>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/vue.js" charset="utf-8"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/base.js" charset="utf-8"></script>
+    {% endif %}
+
+
+  </body>
+</html>

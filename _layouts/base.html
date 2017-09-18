@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ site.title }}</title>
+    <link rel="icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}/assets/img/boy.png" />
+    {% if page.title %}
+      <title>{{ page.title }}</title>
+    {% else %}
+      <title>{{ site.title }}</title>
+    {% endif %}
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Raleway:400" rel="stylesheet">
 
     <!-- Kube -->
@@ -12,6 +17,9 @@
     {% if page.url == '/' %}
       <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css ">
     {% endif %}
+
+    <!-- Animate css -->
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/animate.css">
     <!-- Base stylesheet -->
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/base.css">
 
@@ -22,7 +30,7 @@
 
     {% if page.url == "/" %}
       <div id="particles-js"> </div>
-        <div class="landing__container" id="app">
+        <div class="landing__container animated zoomIn">
           <header>
             <h1>{{ site.author }}</h1>
           </header>
@@ -44,7 +52,7 @@
       {% include nav.html %}
       <!--/Main nav -->
 
-      <div class="main__container container">
+      <div class="main__container container animated slideInLeft">
         <!-- Main content -->
         <section class="main__content">
           {{ content }}
@@ -58,10 +66,10 @@
         </div>
       </footer>
     </div>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/vue.js" charset="utf-8"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/base.js" charset="utf-8"></script>
     {% endif %}
 
 
-    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/vue.js" charset="utf-8"></script>
-    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/base.js" charset="utf-8"></script>
   </body>
 </html>

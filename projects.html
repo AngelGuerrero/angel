@@ -9,6 +9,7 @@ title: Projectos
   </header>
 
   {% for project in site.pages %}
+
     {% if project.project%}
 
       <div class="content container__card">
@@ -25,19 +26,32 @@ title: Projectos
         </div>
 
         <footer class="card__footer">
-          <div class="card__lastCommit">Última modificación: {{ project.lastCommit }}</div>
+          <div class="card__lastCommit">Última modificación: {{ project.date }}</div>
+
+          <!-- Card language -->
           {% if project.language %}
-          <div class="card__language">
-            <span>Lenguaje de programación:</span>
-              {% for language in project.language %}
-              <span class="tag is-black">{{ language }}</span>
-              {% endfor %}
-          </div>
+            <div class="card__language">
+              <span>Lenguaje de programación:</span>
+
+                {% for language in project.language %}
+                  <span class="tag is-black">{{ language }}</span>
+                {% endfor %}
+
+            </div>
           {% endif %}
+          <!-- /Card language -->
+
+          <!-- Card buttons -->
+          <div class="card__buttons">
+            {% if project.repository %}
+              <a href="https://github.com/AngelGuerrero/{{ project.repository }}" class="btn btn-primary" target="_blank">Repositorio {{ project.repository | capitalize }}</a>
+            {% endif %}
+          </div>
+          <!--/Card buttons -->
         </footer>
       </div>
-
     {% endif %}
+
   {% endfor %}
 
 </article>

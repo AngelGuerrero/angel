@@ -26,7 +26,7 @@ title: Proyectos
         </div>
 
         <footer class="card__footer">
-          <div class="card__lastCommit">Última modificación: {{ project.date }}</div>
+          <div class="card__lastCommit">Última modificación: {{ project.date | date_to_long_string }}</div>
 
           <!-- Card language -->
           {% if project.language %}

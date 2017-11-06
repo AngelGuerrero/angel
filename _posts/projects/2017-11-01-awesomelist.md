@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Awesomelist
-date: 17 de Julio de 2017
+date: "2017-06-07 16:40:10"
 project: true
 description: > #
   Awesomelist, es una simple aplicación para organizar tareas, esta aplicación

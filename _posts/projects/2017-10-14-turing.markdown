@@ -3,6 +3,7 @@ layout: page
 title: Biblioteca Virtual Turing
 date: "2017-10-14 19:58:10 -0500"
 project: true
+categories: proyectos
 description: > #
   "Biblioteca Virtual Turing", es un proyecto escolar escrito en Php para el Back-end y con un SGBD MySQL.
   El objetivo del proyecto es hacer una biblioteca virtual para estudiantes el cual requiere un registro en la base de datos para iniciar sesión, el administrador designado es el encargado de subir los distintos libros disponibles en un formato PDF para que cualquier estudiante pueda descargar.

@@ -3,6 +3,7 @@ layout: page
 title: Awesomelist
 date: "2017-06-07 16:40:10"
 project: true
+categories: proyectos
 description: > #
   Awesomelist, es una simple aplicación para organizar tareas, esta aplicación
   actualmente está en desarrollo, y el objetivo de ésta fue aprender un poco el manejo de Vue.js.

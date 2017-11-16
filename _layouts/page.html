@@ -2,13 +2,7 @@
 layout: base
 ---
 
-<nav class="breadcrumbs">
-  <ul>
-    <li><a href="{{ site.url }}{{ site.baseurl }}/">Inicio</a></li>
-    <li><a href="{{ site.url }}{{ site.baseurl }}/projects.html">Proyectos</a></li>
-    <li><span>{{ page.title }}</span></li>
-  </ul>
-</nav>
+{% include breadcrumb.html %}
 
 <article class="section">
   <header>

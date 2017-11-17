@@ -20,6 +20,9 @@
     <!-- Kube -->
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/kube.min.css">
 
+    <!-- Hightlight CSS styles -->
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/hightlight-styles/vs.css">
+
     {% if page.url == '/' %}
       <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css ">
     {% endif %}
@@ -74,6 +77,10 @@
     </div>
     <script src="{{ site.url }}{{ site.baseurl }}/assets/js/vue.js" charset="utf-8"></script>
     <script src="{{ site.url }}{{ site.baseurl }}/assets/js/base.js" charset="utf-8"></script>
+
+    <!-- Init the hightlight format code -->
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/highlight.pack.js" charset="utf-8"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     {% endif %}
 
 

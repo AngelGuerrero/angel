@@ -14,7 +14,9 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.3)
+    eventmachine (1.2.3-x64-mingw32)
     ffi (1.9.18)
+    ffi (1.9.18-x64-mingw32)
     font-awesome-less (4.7.0)
       less (>= 2.4.0)
     forwardable-extended (2.6.0)
@@ -59,6 +61,8 @@ GEM
     minitest (5.10.3)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
+    nokogiri (1.8.0-x64-mingw32)
+      mini_portile2 (~> 2.2.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -71,9 +75,12 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2017.3)
+      tzinfo (>= 1.0.0)
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   font-awesome-less
@@ -83,7 +90,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.3p222
 
 BUNDLED WITH
    1.16.0.pre.3

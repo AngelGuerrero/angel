@@ -22,6 +22,7 @@ title: Notas
         <p>
           {{ nota.description }}
         </p>
+        <p>{{ nota.date | date_to_long_string }}</p>
         {% endif %}
       </div>
     </div>

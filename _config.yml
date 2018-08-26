@@ -45,9 +45,8 @@ unpublished: false
 # whitelist:
 # plugins:
 
-# Conversion
-markdown:    kramdown
-highlighter: rouge
+
+
 lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
@@ -72,12 +71,10 @@ defaults: []
 liquid:
   error_mode: warn
 
-# Markdown Processors
-rdiscount:
-  extensions: []
+# Conversion
+markdown:    kramdown
 
-redcarpet:
-  extensions: []
+# Markdown Processors
 
 kramdown:
   auto_ids:       true
@@ -87,6 +84,12 @@ kramdown:
   input:          GFM
   hard_wrap:      false
   footnote_nr:    1
+  
+  syntax_highlighter_opts:
+    # css_class: 'hljs'
+    block:
+      line_numbers: true
+
 
 # Installed gems
 gems:

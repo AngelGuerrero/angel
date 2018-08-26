@@ -1,0 +1,16 @@
+<header class="post__header">
+  <div>
+    <h2>{{ page.title }}</h2>
+    {% if page.url == "/" %}
+      <div class="comments__link">
+        <a href="#">0</a>
+      </div>
+    </div>
+  {% endif %}
+  <div class="entry-meta">
+    <span class="sep">Publicado en </span>
+    <a href="#"><time>22 de Dic 2013</time> </a>
+    por
+    <span class="by-author"><a href="#">Autor</a> </span>
+  </div>
+</header>

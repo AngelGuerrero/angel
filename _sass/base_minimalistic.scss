@@ -1,0 +1,111 @@
+%dev {
+  border: 1px solid black;
+}
+
+.container {
+  border: 1px solid;
+  padding: 7px;
+  margin: auto;
+  width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#body {
+  // @extend %dev;
+  // border-color: red;
+}
+
+.wrapper {
+  @extend %dev;
+  max-width: 1000px;
+  min-height: 100 - 3vh;
+  margin: auto auto 30px;
+
+  .wrapper__header {
+    @extend %dev;
+  }
+
+  .wrapper__menu {
+    @extend %dev;
+  }
+
+  // Class for minimalistic_post
+  .wrapper__article {
+    @extend %dev;
+    border-color: red;
+    width: 75%;
+    margin: auto;
+  }
+
+
+}
+
+.wrapper__content {
+  @extend %dev;
+  background-color: lightblue;
+  display: flex;
+
+  .content__section {
+    @extend %dev;
+    background-color: orange;
+    width: 70%;
+
+    .content__post {
+      @extend %dev;
+    }
+  }
+
+  .content__aside {
+    width: 30%;
+    background-color: tomato;
+    color: white;
+  }
+}
+
+.article__content {
+  @extend %dev;
+  border-color: blue;
+
+  blockquote {
+    padding-left: 3px;
+    margin: 0;
+    border-left: 5px solid rgb(149, 192, 250);
+    background: lighten(rgb(149, 192, 250), 15%);
+  }
+  p > .highlighter-rouge {
+    background-color: #dad8d8;
+    padding: 2px;
+    border-radius: 3px;
+  }
+}
+
+.footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+
+  .wrapper__content {
+    flex-direction: column;
+
+    .content__section {
+      width: 100%;
+    }
+    .content__aside {
+      width: 100%;
+    }
+  }
+}

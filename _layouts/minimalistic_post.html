@@ -1,0 +1,51 @@
+---
+layout: minimalistic
+---
+{% comment %}
+  Esta es una plantilla que usa la plantilla minimalistic
+{% endcomment %}
+
+<div class="wrapper__article">
+  <nav class="breadcrumb__wrapper">
+    <ul class="breadcrumb">
+      <li>
+        <a href="#">Inicio</a>
+        <li>{{ page.title }}</li>
+      </li>
+    </ul>
+  </nav>
+
+  {% include minimalistic/info_post.html %}
+  <div class="article__content">
+    {{ content }}
+  </div>
+
+  <!-- Presentation band -->
+  <div class="article__hero">
+    <div class="article__about">
+      <div class="about__thumbnail-image">author img thumbnail</div>
+      <div class="about__presentation">
+        <h4>Sobre Ángel Guerrero</h4>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat molestiae praesentium laboriosam modi, voluptate tempore magnam quia! Dolorum architecto vel maiores, officia culpa, alias corrupti optio veritatis rem sed labore.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="article__comments">
+    <header class="comments__header">
+      <h2 class="comments__title">Comentarios</h2>
+    </header>
+    <!-- Comment component -->
+    <div class="comments__comment">
+      <div class="comment__img-thumbnail">Some image</div>
+      <div class="comment__content">
+        <div class="comment__header">
+          <div class="comment__person-name">Wendy Argente. Fecha: <time>octubre 23 de 2014</time> </div>
+          <div class="comment__text">Comentario: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nam unde temporibus consectetur. Cupiditate molestiae qui.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

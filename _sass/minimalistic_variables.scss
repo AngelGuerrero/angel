@@ -1,0 +1,93 @@
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+        @return #000000; // Lighter backgorund, return dark color
+    }
+    @else {
+        @return #ffffff; // Darker background, return light color
+    }
+}
+
+
+// General properties
+$paragraph-color-text: #DDDBCB;
+$a-color: #127ce4;
+$p-color: #525252;
+%link-hover {
+    box-shadow: 10px 10px 20px #cccccc;
+}
+
+// Main wrapper
+$wrapper-background-color: #ffffff;
+$wrapper-border-radius: 10px;
+// Main header properties
+$main-header-background-color: #ffffff;
+// Main navbar properties
+// $navbar-background-color: #1B9AAA;
+$navbar-background-color: hsla(212, 48%, 50%, 0.788);
+
+// List of posts properties
+$iterate-header--wrapper-background-color: #ffffff;
+$iterate-post-title: #050505;
+$iterate-post-comments-link-background: $a-color;
+$iterate-post-font-size: 11px;
+$iterate-post-meta-color: #525252;
+
+// ----------------------
+// Fonts
+@font-face {
+    font-family: 'Code-Light';
+    src: url("../fonts/codelight/Code-Light.ttf.woff") format("woff"), url("Code-Light.ttf.svg#Code-Light") format("svg"), url("Code-Light.ttf.eot"), url("Code-Light.ttf.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 25px;
+    color: $p-color;
+    background: url("../img/qbkls.png");
+}
+
+%dev {
+    border: 1px solid black;
+}
+
+%header-titles {
+    font-family: 'Code-Light', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 41px;
+}
+
+$element-name: h;
+@for $i from 1 to 7 {
+    #{$element-name}#{$i} {
+        @extend %header-titles;
+        font-size: ((3.5 - ($i / 2))) + rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $a-color;
+    &:link {
+        color: darken($a-color, $amount: 20%);
+    }
+    &:hover {
+        color: darken($a-color, $amount: 40%);
+    }
+}
+
+img {
+    width: 100%;
+}

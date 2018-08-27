@@ -1,88 +1,179 @@
-%dev {
-  border: 1px solid black;
-}
-
+// General classes
 .container {
-  border: 1px solid;
+  // border: 1px solid;
   padding: 7px;
   margin: auto;
   width: 100%;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-#body {
-  // @extend %dev;
-  // border-color: red;
-}
-
+// #body {
+// @extend %dev;
+// border-color: red;
+// }
 .wrapper {
-  @extend %dev;
+  // @extend %dev;
   max-width: 1000px;
-  min-height: 100 - 3vh;
-  margin: auto auto 30px;
-
+  min-height: 100vh;
+  margin: 30px auto 30px;
+  border-radius: $wrapper-border-radius;
+  background-color: $wrapper-background-color;
+  box-shadow: 0px 0px 50px #cccccc;
+  
   .wrapper__header {
-    @extend %dev;
+    // @extend %dev;
+    border-top-left-radius: $wrapper-border-radius;
+    border-top-right-radius: $wrapper-border-radius;
+    padding: 20px;
+    background-color: $main-header-background-color;
   }
-
   .wrapper__menu {
-    @extend %dev;
-  }
-
-  // Class for minimalistic_post
+    // @extend %dev;
+    padding: 0px 10px;
+    min-height: 50px;
+    background-color: $navbar-background-color;
+    display: flex;
+    align-items: stretch;
+    a {
+      // @extend %dev;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: set-text-color($navbar-background-color);
+      &:hover {
+        background-color: $main-header-background-color;
+        color: set-text-color($main-header-background-color);
+      }
+    }
+  } // Container of minimalistic post main content
   .wrapper__article {
     @extend %dev;
     border-color: red;
-    width: 75%;
+    width: 85%;
     margin: auto;
   }
-
-
 }
 
+// The main content wich divides
+// the container where iterates the posts,
+// and the left aside
 .wrapper__content {
-  @extend %dev;
-  background-color: lightblue;
+  // @extend %dev;
   display: flex;
-
   .content__section {
-    @extend %dev;
-    background-color: orange;
+    // @extend %dev;
+    padding: 10px;
     width: 70%;
+  }
+  .content__aside {
+    // @extend %dev;
+    width: 30%;
+    padding: 10px;
+  }
+}
 
-    .content__post {
-      @extend %dev;
+.aside__section {
+  // @extend %dev;
+  margin-bottom: 20px;
+}
+
+.aside__about {
+  font-size: 13px;
+}
+
+.links__list {
+  // @extend %dev;
+  margin: 0;
+  font-weight: 900;
+}
+
+// Styles where belongs iterate posts
+.content__post {
+  // @extend %dev;
+  background-color: white;
+  margin: 10px 0px 50px;
+  &:not(:first-of-type) {
+    border-top: 1px solid #dad8d8;
+  }
+  .post__content {
+    // @extend %dev;
+    .post__header {
+      // @extend %dev;
+      .post__header--wrapper {
+        // @extend %dev;
+        background-color: $iterate-header--wrapper-background-color;
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          // @extend %dev;
+          color: $iterate-post-title;
+        }
+        .comments__link {
+          // @extend %dev;
+          padding: 10px;
+          color: set-text-color($iterate-post-comments-link-background);
+          display: flex;
+          a {
+            // @extend %dev;
+            border-radius: 50%;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:hover {
+              background-color: $iterate-post-comments-link-background;
+              color: set-text-color($iterate-post-comments-link-background);
+              @extend %link-hover;
+            }
+          }
+        }
+      }
+      .entry__meta {
+        // @extend %dev;
+        font-size: $iterate-post-font-size;
+        color: $iterate-post-meta-color;
+        margin: 10px 0px;
+      }
     }
   }
-
-  .content__aside {
-    width: 30%;
-    background-color: tomato;
-    color: white;
+  .post__description {
+    // @extend %dev;
+    margin: 10px 0;
+  }
+  .post__image {
+    // @extend %dev;
+  }
+  .post__buttons {
+    // @extend %dev;
+    padding: 10px 0px;
+    a {
+      padding: 10px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      &:hover {
+        background-color: $a-color;
+        color: set-text-color($a-color);
+        @extend %link-hover;
+      }
+    }
   }
 }
 
 .article__content {
   @extend %dev;
   border-color: blue;
-
   blockquote {
     padding-left: 3px;
     margin: 0;
     border-left: 5px solid rgb(149, 192, 250);
     background: lighten(rgb(149, 192, 250), 15%);
   }
-  p > .highlighter-rouge {
+  p>.highlighter-rouge {
     background-color: #dad8d8;
     padding: 2px;
     border-radius: 3px;
@@ -94,18 +185,22 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  body {
-    background-color: black;
+  .wrapper {
+    margin: 0;
+
+    .wrapper__content {
+      flex-direction: column;
+      .content__section {
+        width: 100%;
+      }
+      .content__aside {
+        width: 100%;
+      }
+    }
+    .wrapper__article {
+      width: 95%;
+    }
   }
 
-  .wrapper__content {
-    flex-direction: column;
 
-    .content__section {
-      width: 100%;
-    }
-    .content__aside {
-      width: 100%;
-    }
-  }
 }

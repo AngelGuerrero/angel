@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    // font-family: Helvetica, Arial, sans-serif;
+    font-family: $montserrat;
+    font-size: 14px;
+    line-height: 25px;
+    color: $p-color;
+    background: url("../../../../assets/img/qbkls.png");
+}
+
+// TODO: Cambiar lo siguiente por una función
+$element-name: h;
+
+@for $i from 1 to 7 {
+    #{$element-name}#{$i} {
+        @extend %header-titles;
+        font-size: ((3.5 - ($i / 2))) + rem;
+
+        @if($i < 3) {
+            font-weight: 300;
+        }
+        @else {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $a-color;
+
+    &:hover {
+        color: darken($a-color, $amount: 40%);
+    }
+}
+
+img {
+    width: 100%;
+}

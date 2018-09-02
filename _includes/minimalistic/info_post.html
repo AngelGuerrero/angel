@@ -1,15 +1,9 @@
 <header class="post__header">
   <div class="post__header--wrapper">
-    <!-- Note: Remover ésto, no es necesario...  -->
-    {% if page.title %}
     <h2>
-      <a href="#">{{ page.title }}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h2>
-    {% else %}
-    <h2>
-      <a href="#">Título del post</a>
-    </h2>
-    {% endif %} {% if page.url == "/" %}
+    {% if post.url == "/" %}
     <div class="comments__link">
       <a href="#">10</a>
     </div>
@@ -18,11 +12,11 @@
   <div class="entry__meta">
     <span class="sep">Publicado en </span>
     <a href="#">
-      <time>22 de Dic 2013</time>
+      <time>{{ post.date | date: "%a, %b %d, %Y"}}</time>
     </a>
     por
     <span class="by-author">
-      <a href="#">Autor</a>
+      <a href="#">{{ post.author }}</a>
     </span>
   </div>
 </header>

@@ -1,0 +1,4 @@
+<a href="{{ site.url }}{{ site.baseurl }}/">Home</a>
+{% for item in site.pages %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+{% endfor %}

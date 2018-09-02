@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/gruvbox_light.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/themes/minimalistic/minimalistic_build.css">
+</head>
+
+<body>
+  <div class="wrapper" id="app">
+    <!-- <div id="particles-js"></div> -->
+    <header class="wrapper__header">
+      <h1 class="header__site-title">Ángel Guerrero <span class="title__name">Blog </span></h1>
+      <div class="header__cite">
+        <i>
+          <blockquote class="cite" :title="quote.title" v-html="quote.content" :cite="quote.link"></blockquote>
+        </i>
+        <div class="cite__author"><strong v-html="quote.title"></strong></div>
+      </div>
+    </header>
+    <nav class="wrapper__menu container">
+      {% include minimalistic/menu.html %}
+    </nav>
+    {{ content }}
+    <footer class="footer container">Ángel Guerrero - {% raw %} {{ date }} {% endraw %} </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'assets/css/particles.json', function () {
+      // console.log('callback - particles.js config loaded');
+    });
+  </script> -->
+</body>
+
+</html>

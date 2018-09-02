@@ -1,68 +1,46 @@
---- 
-layout: minimalistic 
 ---
-
-
+layout: "minimalistic/layout_base"
+---
 <div class="wrapper__content">
-  <!-- Lista de posts -->
+  <!-- Posts list -->
   <section class="content__section">
     {% include minimalistic/iterate_posts.html %}
   </section>
+
+  <!-- Right aside -->
   <aside class="content__aside">
-    <div class="aside__section">
-      <h3>Publicaciones recientes</h3>
-      <ul class="links__list">
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-      </ul>
-    </div>
 
-    <div class="aside__section">
-      <h3>Categorías</h3>
-      <ul class="links__list">
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-        <li>
-          <a href="#">Enlace</a>
-        </li>
-      </ul>
-    </div>
-
+    <!-- About me -->
     <div class="aside__section aside__about">
-      <h3>Sobre mí</h3>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      {% for author in site.data.authors %}
+      <p>{{ author.bio }}</p>
+      {% endfor %}
     </div>
+
+    <!-- Last posts -->
+    <div class="aside__section">
+      <h3>Últimas publicaciones</h3>
+      <ul class="links__list">
+        {% for post in sorted limit:5 %}
+        {% if post.published %}
+        <li> <a href="{{ post.url }}">{{ post.title }}</a> </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Project list -->
+    <div class="aside__section">
+      <h3>Proyectos</h3>
+      <ul class="links__list">
+        {% for project in site.projects limit:5 %}
+        <li>
+          <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+
   </aside>
 </div>

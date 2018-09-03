@@ -65,8 +65,11 @@ liquid:
 # Conversion
 markdown:    kramdown
 
-# Markdown Processors
+# sass
+sass:
+  style: compressed
 
+# Markdown Processors
 kramdown:
   auto_ids:       true
   entity_output:  as_char

@@ -3,8 +3,10 @@ title: Contacto
 ---
 
 <h1>{{ page.title }}</h1>
-<p>Por el momento puedes contactarme por los siguientes medios:</p>
 <ul>
-  <li>Correo electrónico: <a href="mailto:lasantiagoguerrero@gmail.com?subject=Propuesta de trabajo&body={{ site.acuerdo }}" >lasantiagoguerrero@gmail.com</a></li>
-  <li>Teléfono: (+52) 4426-01-87-12 <span class="resalted">Estoy en whatsapp</span></li>
+  {% for author in site.data.authors %}
+    <li>Correo electrónico: <a href="mailto:lasantiagoguerrero@gmail.com?subject=Propuesta de trabajo&body={{ site.acuerdo }}">{{ author.email }}</a></li>
+    <li>Twitter: <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></li>
+    <li>GitHub: <a href="{{ author.github }}">{{ author.github }}</a></li>
+  {% endfor %}
 </ul>

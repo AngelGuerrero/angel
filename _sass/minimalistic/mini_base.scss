@@ -120,15 +120,17 @@
 
 .aside__section {
   // @extend %dev;
+  background-color: lighten($color: #cccccc, $amount: 17%);
   margin-bottom: 100px;
+  padding: 10px;
 }
 
 .aside__about {
   font-size: 13px;
-  background-color: lighten($color: #cccccc, $amount: 15%);
-  padding: 10px;
   border-radius: 5px;
   font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px 10px #8a8989;
 }
 
 .links__list {

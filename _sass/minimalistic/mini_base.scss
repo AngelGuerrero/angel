@@ -1,0 +1,332 @@
+//
+// General classes
+.container {
+  // border: 1px solid;
+  padding: 7px;
+  margin: auto;
+  width: 100%;
+}
+
+.cite {
+  padding: 10px;
+  margin: 0;
+
+  &__author {
+    padding-left: 10px;
+  }
+}
+#particles-js {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  position: fixed;
+  z-index: -1;
+}
+.wrapper {
+  // @extend %dev;
+  max-width: 940px;
+  min-height: 100vh;
+  margin: 30px auto;
+  border-radius: $wrapper-border-radius;
+  background-color: $wrapper-background-color;
+  box-shadow: 0px 0px 50px #cccccc;
+}
+
+
+.wrapper__header {
+  // @extend %dev;
+  padding: 10px 40px;
+  border-top-left-radius: $wrapper-border-radius;
+  border-top-right-radius: $wrapper-border-radius;
+  background-color: $main-header-background-color;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .title__name {
+    // @extend %dev;
+    padding: 0px 10px;
+    font-family: $dancing-script;
+    color: $title-name-color;
+  }
+
+  .header__site-title {
+    // @extend %dev;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+  }
+
+  .header__cite {
+    // @extend %dev;
+    max-width: 300px;
+    font-size: 12px;
+    // display: none;
+  }
+}
+
+.wrapper__menu {
+  // @extend %dev;
+  padding: 0px 40px;
+  min-height: 40px;
+  background-color: $navbar-background-color;
+  display: flex;
+  align-items: stretch;
+
+  a {
+    // @extend %dev;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: set-text-color($navbar-background-color);
+
+    &:hover {
+      background-color: $navbar-background-hover;
+      color: set-text-color($navbar-background-hover);
+    }
+  }
+}
+
+// Container of minimalistic post main content
+.wrapper__article {
+  // @extend %dev;
+  width: 85%;
+  margin: auto;
+}
+
+//------------------------------------------------
+// Main wrapper content
+//------------------------------------------------
+.wrapper__content {
+  // @extend %dev;
+  padding: 30px 40px;
+  display: flex;
+
+  .content__section {
+    // @extend %dev;
+    padding: 10px;
+    width: 70%;
+  }
+
+  .content__aside {
+    // @extend %dev;
+    width: 30%;
+    padding: 10px;
+  }
+}
+
+.aside__section {
+  // @extend %dev;
+  background-color: lighten($color: #cccccc, $amount: 17%);
+  margin-bottom: 100px;
+  padding: 10px;
+}
+
+.aside__about {
+  font-size: 13px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px 10px #8a8989;
+}
+
+.links__list {
+  // @extend %dev;
+  margin: 0;
+  font-weight: 900;
+}
+
+//------------------------------------------------
+// Styles where it iterates the posts
+//------------------------------------------------
+.content__post {
+  // @extend %dev;
+  background-color: white;
+  margin: 10px 0px 50px;
+
+  &:not(:first-of-type) {
+    border-top: 1px solid #dad8d8;
+  }
+
+  .post__content {
+
+    // @extend %dev;
+    .post__header {
+
+      // @extend %dev;
+      .post__header--wrapper {
+        // @extend %dev;
+        background-color: $iterate-header--wrapper-background-color;
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+          // @extend %dev;
+          color: $iterate-post-title;
+        }
+
+        .comments__link {
+          // @extend %dev;
+          padding: 10px;
+          color: set-text-color($iterate-post-comments-link-background);
+          display: flex;
+
+          a {
+            // @extend %dev;
+            border-radius: 50%;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &:hover {
+              background-color: $iterate-post-comments-link-background;
+              color: set-text-color($iterate-post-comments-link-background);
+              @extend %link-hover;
+            }
+          }
+        }
+      }
+
+      .entry__meta {
+        // @extend %dev;
+        font-size: $iterate-post-font-size;
+        color: $iterate-post-meta-color;
+        margin: 10px 0px;
+      }
+    }
+  }
+
+  .post__description {
+    // @extend %dev;
+    margin: 10px 0;
+  }
+
+  .post__image {
+    // @extend %dev;
+  }
+
+  .post__buttons {
+    // @extend %dev;
+    padding: 10px 0px;
+
+    a {
+      padding: 10px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+
+      &:hover {
+        @extend %link-hover;
+        background-color: $a-color;
+        color: set-text-color($a-color);
+      }
+    }
+  }
+}
+
+//------------------------------------------------
+// Wrapper article for layout_post
+// 
+// This container wrapper the content of principal
+// information.
+//------------------------------------------------
+.wrapper__article {
+}
+
+.breadcrumb__wrapper {
+  overflow: hidden;
+
+  .breadcrumb {
+    padding: 0;
+    margin: 20px 0px;
+    display: flex;
+
+    .breadcrumb__item {
+      list-style-type: none;
+      padding: 10px;
+    }
+  }
+}
+
+.article__content {
+  // @extend %dev;
+  min-height: 100vh;
+
+  blockquote {
+    padding: 2px 10px;
+    margin: 0;
+    border-left: 5px solid $blockquote-border-color;
+    background: $blockquote-background-color;
+  }
+}
+
+//------------------------------------------------
+// Presentation section
+//------------------------------------------------
+.band {
+  // @extend %dev;
+  padding: 10px;
+  margin: 20px 0px;
+  background-color: $navbar-background-color;
+  color: set-text-color($navbar-background-color);
+  box-shadow: 10px 10px 10px #dad8d8;
+}
+
+.band__about {
+  display: flex;
+  align-items: center;
+  .band__thumbnail-image {
+    min-width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+  .band__presentation {
+    min-width: 70%;
+    padding: 10px;
+  }
+}
+
+//------------------------------------------------
+// Comments section
+//------------------------------------------------
+.comments {
+  // @extend %dev;
+  padding: 10px;
+  display: none;
+}
+.comments__comment {
+  // @extend %dev;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 10px #dad8d8;
+
+  background-color: white;
+  border-radius: 5px;
+  .comment__img-thumbnail {
+    max-width: 10%;
+    padding: 0px 10px;
+    img {
+      width: 100%;
+    }
+  }
+  .comment__content {
+    // @extend %dev;
+    width: 90%;
+    padding: 10px;
+  }
+}
+
+.footer {
+  text-align: center;
+}

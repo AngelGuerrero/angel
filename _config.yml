@@ -4,53 +4,52 @@
 
 # User data
 title: Personal website
-email: _angelguerrero_@outlook.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: _AngelGuerrero_
-github_username:  https://github.com/AngelGuerrero/
-author: Ángel Guerrero
+description: > 
 
-acuerdo: Me gustaría ponerme en contacto contigo, ya que tu método de trabajo no representa un problema para mí, en breve describo el problema o proyecto que necesito solucionar.
 
-# Where things are
-source:       .
-destination:  ./_site
-plugins_dir:  _plugins
-layouts_dir:  _layouts
-data_dir:     _data
-includes_dir: _includes
+# Collections
 collections:
   posts:
-    output:   true
+    output: true
+    permalink: :collection/:title
+  projects:
+    output: true
+    permalink: :collection/:title
+  pages:
+    output: true
+    parmalink: :collection/:title
 
-# Handling Reading
-safe:                 false
-include:              [".htaccess"]
-exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files:           [".git", ".svn"]
-encoding:             "utf-8"
-markdown_ext:         "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter: false
-
-# Filtering Content
-show_drafts: null
-limit_posts: 0
-future:      false
-unpublished: false
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      types: pages
+    values:
+      layout: "minimalistic/layout_page"
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: "minimalistic/layout_post"
+      category: Projects
+      author: Ángel Guerrero
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: "minimalistic/layout_post"
+      category: Posts
+      image: "abstract-code.jpg"
+      published: false
+      author: Ángel Guerrero
 
 # Plugins
 # whitelist:
 # plugins:
-
-# Conversion
-markdown:    kramdown
-highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-incremental: false
+  # - jemoji
 
 # Serving
 detach:  false
@@ -60,25 +59,17 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/angel" # the subpath of your site, e.g. /blog
 show_dir_listing: false
 
-# Outputting
-permalink:     date
-paginate_path: /page:num
-timezone:      null
-
-quiet:    false
-verbose:  false
-defaults: []
-
 liquid:
   error_mode: warn
 
+# Conversion
+markdown:    kramdown
+
+# sass
+sass:
+  style: compressed
+
 # Markdown Processors
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
-
 kramdown:
   auto_ids:       true
   entity_output:  as_char
@@ -87,7 +78,21 @@ kramdown:
   input:          GFM
   hard_wrap:      false
   footnote_nr:    1
+  
+  syntax_highlighter_opts:
+    table_class: 'rouge-table'
+    # css_class: 'hljs'
+    block:
+      line_numbers: true
 
-# Installed gems
-gems:
-  - jemoji
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

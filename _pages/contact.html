@@ -1,0 +1,12 @@
+---
+title: Contacto
+---
+
+<h1>{{ page.title }}</h1>
+<ul>
+  {% for author in site.data.authors %}
+    <li>Correo electrónico: <a href="mailto:lasantiagoguerrero@gmail.com?subject=Propuesta de trabajo&body={{ site.acuerdo }}">{{ author.email }}</a></li>
+    <li>Twitter: <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a></li>
+    <li>GitHub: <a href="{{ author.github }}">{{ author.github }}</a></li>
+  {% endfor %}
+</ul>

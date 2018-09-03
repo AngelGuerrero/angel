@@ -1,0 +1,22 @@
+<header class="post__header">
+  <div class="post__header--wrapper">
+    <h2>
+        <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+    </h2>
+    {% if page.url == "/" %}
+    <div class="comments__link">
+      <a href="#">10</a>
+    </div>
+    {% endif %}
+  </div>
+  <div class="entry__meta">
+    <span class="sep">Publicado el </span>
+    <a href="#">
+      <time>{{ page.date | date: "%a, %b %d, %Y"}}</time>
+    </a>
+    por
+    <span class="by-author">
+      <a href="#">{{ page.author }}</a>
+    </span>
+  </div>
+</header>

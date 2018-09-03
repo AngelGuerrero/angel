@@ -1,0 +1,75 @@
+---
+# This template extends from minimalistic/layout_base
+layout: "minimalistic/layout_base"
+---
+<div class="wrapper__article">
+  <nav class="breadcrumb__wrapper">
+    <ul class="breadcrumb">
+      <li class="breadcrumb__item"><a href="{{ site.baseurl }}/">Home</a></li>
+      <li class="breadcrumb__item">/</li>
+      <li class="breadcrumb__item">{{ page.category }}</li>
+      <li class="breadcrumb__item">/</li>
+      <li class="breadcrumb__item"> {{ page.title }}</li>
+    </ul>
+  </nav>
+
+  {% include minimalistic/info_post.html %}
+
+  <div class="article__content">
+    {{ content }}
+  </div>
+
+  <!-- Presentation band -->
+  <div class="band">
+    <div class="band__about">
+      <div class="band__thumbnail-image">
+        <img src="{{ site.baseurl }}/assets/img/me.jpg" alt="">
+      </div>
+      <div class="band__presentation">
+        <h4>{{ page.author }}</h4>
+        {% for author in site.data.authors %}
+          {% if author.name == page.author %}
+            <p>{{ author.bio }}</p>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="comments">
+    <header class="comments__header">
+      <h2 class="comments__title">Comentarios</h2>
+    </header>
+    <!-- Comment component -->
+    <div class="comments__comment">
+      <div class="comment__img-thumbnail">
+        <img src="{{ site.baseurl }}/assets/img/me.jpg" alt="">
+      </div>
+      <div class="comment__content">
+        <div class="comment__header">
+          <div class="comment__person-name">
+            <h4>Wendy Argente</h4>
+            <p>Fecha: <time>octubre 23 de 2014</time></p>
+          </div>
+          <div class="comment__text">Comentario: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nam
+            unde temporibus consectetur. Cupiditate molestiae qui.</div>
+        </div>
+      </div>
+    </div>
+    <div class="comments__comment">
+      <div class="comment__img-thumbnail">
+        <img src="{{ site.baseurl }}/assets/img/me.jpg" alt="">
+      </div>
+      <div class="comment__content">
+        <div class="comment__header">
+          <div class="comment__person-name">
+            <h4>Wendy Argente</h4>
+            <p>Fecha: <time>octubre 23 de 2014</time></p>
+          </div>
+          <div class="comment__text">Comentario: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nam
+            unde temporibus consectetur. Cupiditate molestiae qui.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

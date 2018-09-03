@@ -1,0 +1,40 @@
+{% assign sorted = (site.posts | sort: 'date') | reverse %}
+{% for post in sorted %}
+  {% if post.published %}
+  <article class="content__post">
+    <div class="post__content">
+      <header class="post__header">
+        <div class="post__header--wrapper">
+          <h2>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </h2>
+          {% if post.url == "/" %}
+          <div class="comments__link">
+            <a href="#">10</a>
+          </div>
+          {% endif %}
+        </div>
+        <div class="entry__meta">
+          <span class="sep">Publicado en </span>
+          <a href="#">
+            <time>{{ post.date | date: "%a, %b %d, %Y"}}</time>
+          </a>
+          por
+          <span class="by-author">
+            <a href="#">{{ post.author }}</a>
+          </span>
+        </div>
+      </header>
+      <div class="post__description">
+        {{ post.description }}
+      </div>
+    </div>
+    <div class="post__image">
+      <img src="{{ site.url }}{{ site.baseurl }}{{ post.image }}" alt="Coding">
+    </div>
+    <div class="post__buttons">
+      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">Continuar leyendo</a>
+    </div>
+  </article>
+  {% endif %}
+{% endfor %}

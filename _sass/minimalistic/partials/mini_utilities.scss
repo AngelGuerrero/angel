@@ -1,0 +1,38 @@
+//------------------------------------------------
+// Utilities where creates "dynamic" classes
+//------------------------------------------------
+
+//
+// Create a class .items-{var}
+// where var can be row or column
+//
+$states: row column;
+@each $stat in $states {
+    .items-#{$stat} {
+        display: flex;
+
+        @if $stat=='column' {
+            flex-direction: column;
+        }
+    }
+}
+
+//------------------------------------------------
+// "Virtual" elements
+//------------------------------------------------
+%dev {
+    border: 1px solid black;
+}
+
+%header-titles {
+    font-family: 'Code-Light', Arial, Helvetica, sans-serif;
+    // font-weight: 600;
+    line-height: 41px;
+}
+
+// Small code, no block
+code.highlighter-rouge {
+    background-color: #e0dddd;
+    padding: 5px;
+    border-radius: 3px;
+}

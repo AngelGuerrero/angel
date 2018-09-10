@@ -3,9 +3,11 @@
 #
 
 # User data
-title: Personal website
+title: Ángel Blog
 description: > 
 
+# Variables
+img_dir: /assets/img
 
 # Collections
 collections:
@@ -42,9 +44,9 @@ defaults:
     values:
       layout: "minimalistic/layout_post"
       category: Posts
-      image: "abstract-code.jpg"
+      image: "/assets/img/defaults/abstract-code.jpg"
       published: false
-      author: Ángel Guerrero
+      author: "Ángel Guerrero"
 
 # Plugins
 # whitelist:
@@ -62,28 +64,18 @@ show_dir_listing: false
 liquid:
   error_mode: warn
 
-# Conversion
-markdown:    kramdown
-
 # sass
 sass:
   style: compressed
 
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+
 # Markdown Processors
 kramdown:
-  auto_ids:       true
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
   input:          GFM
-  hard_wrap:      false
-  footnote_nr:    1
-  
-  syntax_highlighter_opts:
-    table_class: 'rouge-table'
-    # css_class: 'hljs'
-    block:
-      line_numbers: true
+  syntax_highlighter: rouge
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

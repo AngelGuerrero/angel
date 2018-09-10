@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <div class="wrapper" id="app">
-    <header class="wrapper__header">
+  <div class="wrapper">
+    <header class="wrapper__header" id="app">
       <h1 class="header__site-title">Ángel Guerrero <span class="title__name">Blog </span></h1>
       <div class="header__cite">
         <i>
@@ -21,10 +21,13 @@
       </div>
     </header>
     <nav class="wrapper__menu container">
-      {% include minimalistic/menu.html %}
+      <a href="{{ site.url }}{{ site.baseurl }}/" target="_self">Home</a>
+      {% for item in site.pages %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}" target="_self">{{ item.title }}</a>
+      {% endfor %}
     </nav>
     {{ content }}
-    <footer class="footer container">Ángel Guerrero - {% raw %} {{ date }} {% endraw %} </footer>
+    <footer class="footer container">Ángel Guerrero - {{ site.time | date: '%Y' }} </footer>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

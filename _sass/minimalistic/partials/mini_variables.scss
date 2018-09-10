@@ -8,54 +8,61 @@ $p-color: #525252;
     box-shadow: 10px 10px 20px #cccccc;
 }
 
+
 //
 // Main wrapper
+//
 $wrapper-background-color: #ffffff;
 $wrapper-border-radius: 10px;
 
 
 //
 // Main header properties
+//
 $main-header-background-color: #ffffff;
 // $title-name-color: rgba(233, 109, 109, 0.842);
 $title-name-color: $a-color;
 
+
 //
 // Main navbar properties
+//
 // $navbar-background-color: #1B9AAA;
 // $navbar-background-color: hsla(212, 48%, 50%, 0.788);
 // $navbar-background-color: hsla(212, 21%, 49%, 0.788);
 $navbar-background-color: darken($a-color, 20%);
 $navbar-background-hover: lighten($navbar-background-color, 20%);
 
+
 //
 // List of posts properties
+//
 $iterate-header--wrapper-background-color: #ffffff;
 $iterate-post-title: #050505;
 $iterate-post-comments-link-background: $a-color;
 $iterate-post-font-size: 11px;
 $iterate-post-meta-color: #525252;
 
+
 //
 // Blockquotes properties
+//
 $blockquote-background-color: lighten(rgb(149, 192, 250), 15%);
 $blockquote-border-color: rgb(149, 192, 250);
-//------------------------------------------------
-// "Virtual" elements
-//------------------------------------------------
-%dev {
-    border: 1px solid black;
-}
 
-%header-titles {
-    font-family: 'Code-Light', Arial, Helvetica, sans-serif;
-    // font-weight: 600;
-    line-height: 41px;
-}
 
 //------------------------------------------------
 // Fonts
 //------------------------------------------------
+
+//
+// External fonts
+//
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+//
+// Local fonts
+//
 @font-face {
     font-family: 'Code-Light';
     src: url("../../../../assets/fonts/codelight/Code-Light.ttf.woff") format("woff"), url("Code-Light.ttf.svg#Code-Light") format("svg"), url("Code-Light.ttf.eot"), url("Code-Light.ttf.eot?#iefix") format("embedded-opentype");

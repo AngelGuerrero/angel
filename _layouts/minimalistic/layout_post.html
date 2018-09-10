@@ -13,63 +13,88 @@ layout: "minimalistic/layout_base"
     </ul>
   </nav>
 
-  {% include minimalistic/info_post.html %}
+  <header class="post__header">
+    <div class="post__header--wrapper">
+      <h2>
+        <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+      </h2>
+      {% if page.url == "/" %}
+      <div class="comments__link">
+        <a href="#">10</a>
+      </div>
+      {% endif %}
+    </div>
+    <div class="entry__meta">
+      <span class="sep">Publicado el </span>
+      <a href="#">
+        <time>{{ page.date | date: "%a, %b %d, %Y"}}</time>
+      </a>
+      por
+      <span class="by-author">
+        <a href="#">{{ page.author }}</a>
+      </span>
+    </div>
+  </header>
 
   <div class="article__content">
+    {{ page.description }}
     {{ content }}
   </div>
+</div>
 
   <!-- Presentation band -->
   <div class="band">
     <div class="band__about">
       <div class="band__thumbnail-image">
-        <img src="{{ site.baseurl }}/assets/img/me.jpg" alt="">
+        <img src="{{ site.baseurl }}{{ site.data.authors[0].image }}" alt="">
       </div>
       <div class="band__presentation">
-        <h4>{{ page.author }}</h4>
-        {% for author in site.data.authors %}
-          {% if author.name == page.author %}
-            <p>{{ author.bio }}</p>
-          {% endif %}
-        {% endfor %}
+        <h4>Autor: {{ page.author }}</h4>
+        {% for author in site.data.authors %} {% if author.name == page.author %}
+        <p>{{ author.bio }}</p>
+        {% endif %} {% endfor %}
       </div>
     </div>
   </div>
 
-  <div class="comments">
-    <header class="comments__header">
-      <h2 class="comments__title">Comentarios</h2>
-    </header>
-    <!-- Comment component -->
-    <div class="comments__comment">
-      <div class="comment__img-thumbnail">
-        <img src="{{ site.baseurl }}/assets/img/me.jpg" alt="">
-      </div>
-      <div class="comment__content">
-        <div class="comment__header">
-          <div class="comment__person-name">
-            <h4>Wendy Argente</h4>
-            <p>Fecha: <time>octubre 23 de 2014</time></p>
+<!-- Comments section 
+<div class="wrapper__article">
+    
+      <div class="comments">
+        <header class="comments__header">
+          <h2 class="comments__title">Comentarios</h2>
+        </header>
+        <!-- Comment component --
+        <div class="comments__comment">
+          <div class="comment__img-thumbnail">
+            <img src="" alt="">
           </div>
-          <div class="comment__text">Comentario: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nam
-            unde temporibus consectetur. Cupiditate molestiae qui.</div>
+          <div class="comment__content">
+            <div class="comment__header">
+              <div class="comment__person-name">
+                <h4>Wendy Argente</h4>
+                <p>Fecha: <time>octubre 23 de 2014</time></p>
+              </div>
+              <div class="comment__text">Comentario: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nam
+                unde temporibus consectetur. Cupiditate molestiae qui.</div>
+            </div>
+          </div>
+        </div>
+        <div class="comments__comment">
+          <div class="comment__img-thumbnail">
+            <img src="" alt="">
+          </div>
+          <div class="comment__content">
+            <div class="comment__header">
+              <div class="comment__person-name">
+                <h4>Wendy Argente</h4>
+                <p>Fecha: <time>octubre 23 de 2014</time></p>
+              </div>
+              <div class="comment__text">Comentario: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nam
+                unde temporibus consectetur. Cupiditate molestiae qui.</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="comments__comment">
-      <div class="comment__img-thumbnail">
-        <img src="{{ site.baseurl }}/assets/img/me.jpg" alt="">
-      </div>
-      <div class="comment__content">
-        <div class="comment__header">
-          <div class="comment__person-name">
-            <h4>Wendy Argente</h4>
-            <p>Fecha: <time>octubre 23 de 2014</time></p>
-          </div>
-          <div class="comment__text">Comentario: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nam
-            unde temporibus consectetur. Cupiditate molestiae qui.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  -->

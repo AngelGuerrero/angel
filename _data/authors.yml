@@ -1,8 +1,9 @@
-- name: Ángel Guerrero
-  image:
+- name: "Ángel Guerrero"
+  image: /assets/img/defaults/me.jpg
   twitter: _AngelGuerrero_
   github:  https://github.com/AngelGuerrero/
   email: _angelguerrero_@outlook.com
   bio: > 
+    Soy estudiante de Ingeniería de Desarrollo de Software, me gusta la música y el fútbol, entre mis pasatiempos están conocer nuevos lenguajes, aprender nuevos idiomas y pasar tiempo con mi familia.
   small_bio: >
     I'm software developer, i love the challenges and the programming languages <3

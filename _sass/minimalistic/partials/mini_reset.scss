@@ -13,7 +13,7 @@ body {
     font-size: 14px;
     line-height: 25px;
     color: $p-color;
-    background: url("../../../../assets/img/qbkls.png");
+    background: url("../../../../assets/img/defaults/qbkls.png");
 }
 
 // TODO: Cambiar lo siguiente por una función
@@ -21,6 +21,7 @@ $element-name: h;
 
 @for $i from 1 to 7 {
     #{$element-name}#{$i} {
+        font-family: 'Poiret One', cursive;
         @extend %header-titles;
         font-size: ((3.5 - ($i / 2))) + rem;
 
@@ -45,4 +46,9 @@ a {
 
 img {
     width: 100%;
+}
+
+.gist .blob-wrapper.data {
+    max-height: 650px;
+    overflow: auto;
 }

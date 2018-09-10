@@ -1,4 +1,5 @@
 {% assign sorted = (site.posts | sort: 'date') | reverse %}
+
 {% for post in sorted %}
   {% if post.published %}
   <article class="content__post">
@@ -8,11 +9,9 @@
           <h2>
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
           </h2>
-          {% if post.url == "/" %}
           <div class="comments__link">
             <a href="#">10</a>
           </div>
-          {% endif %}
         </div>
         <div class="entry__meta">
           <span class="sep">Publicado en </span>

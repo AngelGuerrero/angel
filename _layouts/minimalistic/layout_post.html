@@ -2,7 +2,7 @@
 # This template extends from minimalistic/layout_base
 layout: "minimalistic/layout_base"
 ---
-<div class="wrapper__article">
+<div class="wrapper__article" id="app_post">
   <nav class="breadcrumb__wrapper">
     <ul class="breadcrumb">
       <li class="breadcrumb__item"><a href="{{ site.baseurl }}/">Home</a></li>
@@ -12,12 +12,12 @@ layout: "minimalistic/layout_base"
       <li class="breadcrumb__item"> {{ page.title }}</li>
     </ul>
   </nav>
-
+  
   <header class="post__header">
     <div class="post__header--wrapper">
-      <h2>
+      <h1>
         <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
-      </h2>
+      </h1>
       {% if page.url == "/" %}
       <div class="comments__link">
         <a href="#">10</a>
@@ -34,8 +34,11 @@ layout: "minimalistic/layout_base"
         <a href="#">{{ page.author }}</a>
       </span>
     </div>
+    {% if page.repo %}
+      <div class="entry__meta">Ver el repositorio <a href="{{ page.repo }}" target="_blank">{{ page.title }}</a></div>
+    {% endif %}
   </header>
-
+  
   <div class="article__content">
     {{ page.description }}
     {{ content }}

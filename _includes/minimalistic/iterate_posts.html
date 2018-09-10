@@ -1,4 +1,4 @@
-{% assign sorted = (site.posts | sort: 'date') | reverse %}
+{% assign sorted = (site.posts | sort: 'date') %}
 
 {% for post in sorted %}
   {% if post.published %}
@@ -33,6 +33,9 @@
     </div>
     <div class="post__buttons">
       <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">Continuar leyendo</a>
+      {% if post.repo %}
+        <a href="{{ post.repo }}" target="_blank">Ver repositorio</a>
+      {% endif %}
     </div>
   </article>
   {% endif %}

@@ -6,7 +6,10 @@ published: true
 description: Recientemente comencé a utilizar Vue.js, y quería saber cómo integrar Vue con cualquier sistema backend, pero para ello he tenido qué realizar varios ejercicios para comprender el funcionamiento de los componentes que lo integran.
 
 image: /assets/img/vue/home-vue-router-example.png
+
 curr_img_path: /assets/img/vue
+
+repo: https://github.com/AngelGuerrero/vue-router-example
 ---
 
 En este ejercicio comparto cómo comenzar a utilizar la librería de [Vue-Router](https://router.vuejs.org/).

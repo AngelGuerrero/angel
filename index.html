@@ -1,3 +1,46 @@
 ---
-layout: base
+layout: "minimalistic/layout_base"
 ---
+<div class="wrapper__content">
+  <!-- Posts list -->
+  <section class="content__section">
+    {% include minimalistic/iterate_posts.html %}
+  </section>
+
+  <!-- Right aside -->
+  <aside class="content__aside">
+
+    <!-- About me -->
+    <div class="aside__section aside__about">
+      {% for author in site.data.authors %}
+      <p>{{ author.small_bio }}</p>
+      {% endfor %}
+    </div>
+
+    <!-- Last posts -->
+    <div class="aside__section">
+      <h3>Últimas publicaciones</h3>
+      <ul class="links__list">
+        {% for post in sorted limit:5 %}
+        {% if post.published %}
+        <li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Project list -->
+    <div class="aside__section">
+      <h3>Proyectos</h3>
+      <ul class="links__list">
+        {% for project in site.projects limit:5 %}
+        <li>
+          <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+
+  </aside>
+</div>

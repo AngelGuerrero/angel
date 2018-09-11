@@ -2,10 +2,14 @@
 title: Sobre el sitio
 ---
 
-# Información
+<img src="/assets/img/defaults/jekyll-vue.png" style="max-width:250px" alt="jekyll-vue">
+
+# Información 
+
 He creado este sitio con las siguientes tecnologías.
 
 - [Jekyll](https://jekyllrb.com/)
+- [Vue](https://vuejs.org/)
 - [Sass](https://sass-lang.com/)
 
 # Estatus

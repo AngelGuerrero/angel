@@ -58,7 +58,7 @@ detach:  false
 port:    4000
 host:    127.0.0.1
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 show_dir_listing: false
 
 liquid:

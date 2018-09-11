@@ -4,9 +4,9 @@ title: Aprendiendo MEVN
 description: MEVN es un stack de tecnologías (MongoDB, Express.js, Vue.js, Node.js) por sus siglas en inglés, últimamente no sólo se requiere a un desarrollador que sepa sólo el backend o sólo el frontend, requieren un fullstack que conozca de principio a fin la integración de estas tecnologías.
 published: true
 
-image: /assets/img/mevn/fullstack-javascript.png
+image: assets/img/mevn/fullstack-javascript.png
 
-image_dir: /assets/img/mevn
+image_dir: assets/img/mevn
 
 repo: https://github.com/AngelGuerrero/learning-mevn
 ---
@@ -20,8 +20,6 @@ He comenzado con un pequeño curso de introducción con [Node.js](https"://nodej
 
 ## ¿Qué es Node Package Manager (npm)
 Npm es el manejador de paquetes de Node.js, npm registra una colección de paquetes públicos de open-source para Node.js, front-end web apps, mobile apps, robots, routers y demás.
-
----
 
 ## Creación de la aplicación
 Para iniciar un proyecto es necesario crear una carpeta y dentro de ella ejecutar el siguiente comando:

@@ -21,3 +21,5 @@ Este sitio se encuentra actualmente en progreso.
 - [ ] Implementación de un WYSIWYG.
 - [ ] Obtener la información de los archivos README para reutilizar, de un respositorio en específico.
 - [ ] Montar el sitio a un CMS.
+
+{% include changelog.md %}

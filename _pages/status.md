@@ -2,7 +2,7 @@
 title: Sobre el sitio
 ---
 
-<img src="/assets/img/defaults/jekyll-vue.png" style="max-width:250px" alt="jekyll-vue">
+<img src="{{ site.baseurl }}/assets/img/defaults/jekyll-vue.png" style="max-width:250px" alt="jekyll-vue">
 
 # Información 
 

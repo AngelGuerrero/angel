@@ -7,7 +7,7 @@ description: Recientemente comencé a utilizar Vue.js, y quería saber cómo int
 
 image: assets/img/vue/home-vue-router-example.png
 
-curr_img_path: /assets/img/vue
+curr_img_path: assets/img/vue
 
 repo: https://github.com/AngelGuerrero/vue-router-example
 ---
@@ -19,7 +19,7 @@ El primer paso es crear el proyecto, yo lo he creado con la ayuda de CLI de Vue 
 
 **Comando:** `vue init webpack vue-router-example`
 
-![vue-cli]({{ site.img_dir }}/vue/vue-cli.png)
+![vue-cli]({{ site.baseurl }}{{ site.img_dir }}/vue/vue-cli.png)
 
 Cuando ya se tiene el proyecto se puede ejecutar el siguiente comando para verificar que funciona correctamente, Vue levanta un servidor el cual es Hot Reload, es decir, monitorea los cambios que se realizan en el código para aplicar los nuevos cambios.
 

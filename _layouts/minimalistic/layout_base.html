@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>{{ site.title }}</title>
-  <link rel="shortcut icon" href="/assets/img/defaults/boy.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/themes/minimalistic/minimalistic_build.css">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/defaults/boy.png" type="image/png">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/themes/minimalistic/minimalistic_build.css">
 </head>
 
 <body>
@@ -21,9 +21,9 @@
     </header>
 
     <nav class="wrapper__menu container">
-      <a href="/" target="_self">Home</a>
+      <a href="{{ site.baseurl }}/" target="_self">Home</a>
       {% for item in site.pages %}
-        <a href="{{ item.url }}" target="_self">{{ item.title }}</a>
+        <a href="{{ site.baseurl }}{{ item.url }}" target="_self">{{ item.title }}</a>
       {% endfor %}
     </nav>
     

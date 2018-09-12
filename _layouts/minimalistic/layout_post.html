@@ -3,15 +3,8 @@
 layout: "minimalistic/layout_base"
 ---
 <div class="wrapper__article">
-  <nav class="breadcrumb__wrapper">
-    <ul class="breadcrumb">
-      <li class="breadcrumb__item"><a href="/">Home</a></li>
-      <li class="breadcrumb__item">/</li>
-      <li class="breadcrumb__item">{{ page.category }}</li>
-      <li class="breadcrumb__item">/</li>
-      <li class="breadcrumb__item"> {{ page.title }}</li>
-    </ul>
-  </nav>
+
+  {% include minimalistic/breadcrumb.html  %}
   
   <header class="post__header">
     <div class="post__header--wrapper">
@@ -49,7 +42,7 @@ layout: "minimalistic/layout_base"
   <div class="band">
     <div class="band__about">
       <div class="band__thumbnail-image">
-        <img src="{{ site.data.authors[0].image }}" alt="">
+        <img src="{{ site.baseurl }}{{ site.data.authors[0].image }}" alt="">
       </div>
       <div class="band__presentation">
         <h4>Autor: {{ page.author }}</h4>

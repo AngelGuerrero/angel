@@ -1,16 +1,12 @@
 ---
 title: Ejemplo usando Vue-Router
-
 published: true
-
-description: Recientemente comencé a utilizar Vue.js, y quería saber cómo integrar Vue con cualquier sistema backend, pero para ello he tenido qué realizar varios ejercicios para comprender el funcionamiento de los componentes que lo integran.
-
 image: assets/img/vue/home-vue-router-example.png
-
-curr_img_path: assets/img/vue
-
+curr_img_path: /vue
 repo: https://github.com/AngelGuerrero/vue-router-example
 ---
+
+Recientemente comencé a utilizar Vue.js, y quería saber cómo integrar Vue con cualquier sistema backend, pero para ello he tenido qué realizar varios ejercicios para comprender el funcionamiento de los componentes que lo integran.
 
 En este ejercicio comparto cómo comenzar a utilizar la librería de [Vue-Router](https://router.vuejs.org/).
 
@@ -19,7 +15,9 @@ El primer paso es crear el proyecto, yo lo he creado con la ayuda de CLI de Vue 
 
 **Comando:** `vue init webpack vue-router-example`
 
-![vue-cli]({{ site.baseurl }}{{ site.img_dir }}/vue/vue-cli.png)
+<a href="{{ site.baseurl }}{{ site.img_dir }}/{{ page.curr_img_path }}/vue-cli.png">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ site.img_dir}}/{{ page.curr_img_path }}/vue-cli.png" alt="vue-cli" srcset="">
+</a>
 
 Cuando ya se tiene el proyecto se puede ejecutar el siguiente comando para verificar que funciona correctamente, Vue levanta un servidor el cual es Hot Reload, es decir, monitorea los cambios que se realizan en el código para aplicar los nuevos cambios.
 

@@ -5,48 +5,55 @@ layout: "minimalistic/layout_base"
   
   <!-- Posts list -->
   <section class="content__section">
-    {% for post in site.posts reversed %}
-      {% if post.published %}
-      <article class="content__post">
 
-        <div class="post__content">
+    {% for collection in site.collections %}
 
-          <header class="post__header">
+    {% assign name = collection.label %}
 
-            <div class="post__header--wrapper">
-              <h2> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h2>
-              <div class="comments__link"> <a href="#">10</a> </div>
+    {% if site.iterable_collections contains name %}
+      {% for post in site[name] %}
+        <article class="content__post">
+
+          <div class="post__content">
+
+            <header class="post__header">
+
+              <div class="post__header--wrapper">
+                <h2> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h2>
+                <div class="comments__link"> <a href="#">10</a> </div>
+              </div>
+
+              <div class="entry__meta">
+                <span class="sep">Publicado en </span>
+                <a href="#"> <time>{{ post.date | date: "%a, %b %d, %Y"}}</time> </a>
+                por
+                <span class="by-author"> <a href="#">{{ post.author }}</a> </span>
+              </div>
+
+            </header>
+
+            <div class="post__description">
+              {{ post.excerpt }}
             </div>
-            
-            <div class="entry__meta">
-              <span class="sep">Publicado en </span>
-              <a href="#"> <time>{{ post.date | date: "%a, %b %d, %Y"}}</time> </a>
-              por
-              <span class="by-author"> <a href="#">{{ post.author }}</a> </span>
-            </div>
-            
-          </header>
 
-          <div class="post__description">
-            {{ post.description }}
           </div>
 
-        </div>
-        
-        <div class="post__image">
-          <img class="img__responsive" src="{{ post.image }}" alt="Coding">
-        </div>
-        
-        <div class="post__buttons">
-          <a href="{{ site.baseurl }}{{ post.url }}">Continuar leyendo</a>
-          {% if post.repo %}
-          <a href="{{ post.repo }}" target="_blank">Ver repositorio</a>
-          {% endif %}
-        </div>
+          <div class="post__image">
+            <img class="img__responsive" src="{{ post.image }}" alt="Coding">
+          </div>
 
-      </article>
-      {% endif %}
+          <div class="post__buttons">
+            <a href="{{ site.baseurl }}{{ post.url }}">Continuar leyendo</a>
+            {% if post.repo %}
+            <a href="{{ post.repo }}" target="_blank">Ver repositorio</a>
+            {% endif %}
+          </div>
+
+        </article>
+      {% endfor %}
+    {% endif %}
     {% endfor %}
+
   </section>
 
   <!-- Right aside -->
@@ -59,26 +66,38 @@ layout: "minimalistic/layout_base"
       {% endfor %}
     </div>
 
-    <!-- Last posts -->
+    <!-- Projects list -->
     <div class="aside__section">
-      <h3>Últimas publicaciones</h3>
+      <h3>Proyectos</h3>
       <ul class="links__list">
-        {% for post in site.posts reversed limit:5 %}
-          {% if post.published %}
-            <li> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </li>
+        {% for page in site.projects %}
+          {% if page.published %}
+            <li> <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> </li>
           {% endif %}
         {% endfor %}
       </ul>
     </div>
 
-    <!-- Project list -->
+    <!-- Last posts -->
     <div class="aside__section">
-      <h3>Proyectos</h3>
+      <h3>Últimas publicaciones</h3>
       <ul class="links__list">
-        {% for project in site.projects limit:5 %}
-        <li>
-          <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
-        </li>
+        {% for page in site.posts reversed limit:5 %}
+          {% if page.published %}
+            <li> <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Exercises list -->
+    <div class="aside__section">
+      <h3>Últimos ejercicios</h3>
+      <ul class="links__list">
+        {% for page in site.exercises %}
+          {% if page.published %}
+            <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>

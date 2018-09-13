@@ -28,6 +28,9 @@ collections:
   pages:
     output: true
     parmalink: :collection/:title
+  exercises:
+    output: true
+    permalink: :collection/:title
 
 # Defaults
 defaults:
@@ -40,21 +43,38 @@ defaults:
   -
     scope:
       path: ""
-      type: projects
-    values:
-      layout: "minimalistic/layout_post"
-      category: Projects
-      author: Ángel Guerrero
-  -
-    scope:
-      path: ""
       type: posts
     values:
       layout: "minimalistic/layout_post"
-      category: Posts
-      image: "/assets/img/defaults/abstract-code.jpg"
+      category: Publicaciones
+      image: "assets/img/defaults/abstract-code.jpg"
       published: false
       author: "Ángel Guerrero"
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: "minimalistic/layout_post"
+      category: Proyectos
+      image: "assets/img/defaults/abstract-code.jpg"
+      published: false
+      author: "Ángel Guerrero"
+  -
+    scope:
+      path: ""
+      type: exercises
+    values:
+      layout: "minimalistic/layout_post"
+      category: Ejercicios
+      image: "assets/img/defaults/abstract-code.jpg"
+      published: false
+      author: "Ángel Guerrero"
+
+# Iterable collections
+# Register que collections
+# where you want iterate
+iterable_collections: ["posts", "projects", "exercises"]
 
 # Plugins
 plugins:

@@ -1,15 +1,12 @@
 ---
 title: Aprendiendo MEVN
-
-description: MEVN es un stack de tecnologías (MongoDB, Express.js, Vue.js, Node.js) por sus siglas en inglés, últimamente no sólo se requiere a un desarrollador que sepa sólo el backend o sólo el frontend, requieren un fullstack que conozca de principio a fin la integración de estas tecnologías.
 published: true
-
 image: assets/img/mevn/fullstack-javascript.png
-
 image_dir: /assets/img/mevn
-
 repo: https://github.com/AngelGuerrero/learning-mevn
 ---
+
+MEVN es un stack de tecnologías (MongoDB, Express.js, Vue.js, Node.js) por sus siglas en inglés, últimamente no sólo se requiere a un desarrollador que sepa sólo el backend o sólo el frontend, requieren un fullstack que conozca de principio a fin la integración de estas tecnologías.
 
 Es por ello que me di la tarea de comenzar mi aprendizaje con estas tecnologías, el aprendizaje de esto es un camino largo, no se consigue en un día, toma dedicación y esfuerzo, es por ello que durante el transcurso de este tiempo he realizado pequeños ejercicios para saber cómo se integran las mencionadas tecnologías MEVN.
 

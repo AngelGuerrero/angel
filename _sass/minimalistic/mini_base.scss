@@ -221,21 +221,7 @@
     // @extend %dev;
     margin: 10px 0;
     text-align: justify;
-    white-space: normal;
-    word-wrap: break-word;
     text-overflow: ellipsis;
-    overflow: hidden;
-    height: 5.6em;
-    line-height: 1.8em;
-    display: flex;
-
-    &::after {
-      content: '...';
-      padding-bottom: 3px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-    }
   }
 
   .post__image {

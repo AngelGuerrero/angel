@@ -2,57 +2,6 @@
 # Jekyll configuration
 #
 
-# User data
-title: Ángel Blog
-description: > 
-
-# Variables
-img_dir: /assets/img
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: :collection/:title
-  projects:
-    output: true
-    permalink: :collection/:title
-  pages:
-    output: true
-    parmalink: :collection/:title
-
-# Defaults
-defaults:
-  -
-    scope:
-      path: ""
-      types: pages
-    values:
-      layout: "minimalistic/layout_page"
-  -
-    scope:
-      path: ""
-      type: projects
-    values:
-      layout: "minimalistic/layout_post"
-      category: Projects
-      author: Ángel Guerrero
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: "minimalistic/layout_post"
-      category: Posts
-      image: "/assets/img/defaults/abstract-code.jpg"
-      published: false
-      author: "Ángel Guerrero"
-
-# Plugins
-# whitelist:
-# plugins:
-  # - jemoji
-
 # Serving
 detach:  false
 port:    4000
@@ -63,35 +12,3 @@ show_dir_listing: false
 
 liquid:
   error_mode: warn
-
-# sass
-sass:
-  style: compressed
-
-# Conversion
-markdown:    kramdown
-highlighter: rouge
-
-# Markdown Processors
-kramdown:
-  input:          GFM
-  syntax_highlighter: rouge
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - package.lock.json
-  - package.json
-  - webpack.config.js
-  - src
-  - .editorconfig
-  - .eslintignore
-  - .eslintrc.js

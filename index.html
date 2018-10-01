@@ -2,7 +2,7 @@
 layout: "minimalistic/layout_base"
 ---
 <div class="wrapper__content">
-  
+
   <!-- Posts list -->
   <section class="content__section">
 
@@ -82,7 +82,7 @@ layout: "minimalistic/layout_base"
     <div class="aside__section">
       <h3>Últimas publicaciones</h3>
       <ul class="links__list">
-        {% for page in site.posts reversed limit:5 %}
+        {% for page in site.posts reversed limit:10 %}
           {% if page.published %}
             <li> <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> </li>
           {% endif %}
@@ -94,7 +94,7 @@ layout: "minimalistic/layout_base"
     <div class="aside__section">
       <h3>Últimos ejercicios</h3>
       <ul class="links__list">
-        {% for page in site.exercises %}
+        {% for page in site.exercises reversed limit:10 %}
           {% if page.published %}
             <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
           {% endif %}

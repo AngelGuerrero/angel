@@ -11,7 +11,7 @@ body {
     // font-family: Helvetica, Arial, sans-serif;
     font-family: $montserrat;
     font-size: 14px;
-    line-height: 25px;
+    line-height: 30px;
     color: $p-color;
     background: url("../../../../assets/img/defaults/qbkls.png");
 }
@@ -44,7 +44,10 @@ a {
     }
 }
 
-.gist .blob-wrapper.data {
+.gist {
+  margin: 15px 0px;
+  .blob-wrapper.data {
     max-height: 650px;
     overflow: auto;
+  }
 }

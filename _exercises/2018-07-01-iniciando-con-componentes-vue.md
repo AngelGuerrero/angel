@@ -2,7 +2,7 @@
 title: "Iniciando con componentes en Vue"
 image: assets/img/vue/components.png
 published: true
-date: "2018-10-10 04:00:00 -0500"
+date: "2018-07-01 04:00:00 -0500"
 ---
 
 Últimamente me he inclinado más por la programación de lado del `fron-end`, y es que he visto algo de `Vue.js` pero muy poco, no me había dedicado a estudiarlo detalladamente, y ahora que lo veo, de verdad que cumple con la elegancia y la simpleza. 

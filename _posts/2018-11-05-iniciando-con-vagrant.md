@@ -1,8 +1,9 @@
 ---
 title: Iniciando con vagrant
-published: false
-curr_img_path: /vagrant 
-image_dir: /assets/img/vagrant
+published: true
+curr_img_path: /vagrant
+image: assets/img/vagrant/vagrant.png
+img_dir: /assets/img/vagrant
 ---
 
 Al tomar proyectos donde se necesitan herramientas y versiones específicas para esos desarrollos a veces se vuelve pesado, hace poco trabajé con Ruby 2.0.1 y la versión Rails 4, y tuve muchos dolores de cabeza por las versiones y las dependencias para las gemas que utilizaba el proyecto, ya que era un proyecto que no se le había dado mantenimiento durante unos dos años aproximadamente, pero ahora está vagrant.
@@ -206,7 +207,7 @@ Cuando se abre VirtualBox se puede ver cómo se ha importado el box y se ha inic
   <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/importando_box_2.JPG" alt="Importando box" >
 </a>
 
-Para conectarnos a la máquina virtual simplemente es necesario ejecutar el siguiente comando: 
+Para conectarnos a la máquina virtual simplemente es necesario ejecutar el siguiente comando:
 
 Comando: `vagrant ssh`
 
@@ -267,3 +268,7 @@ Finalmente probar entrando al navegador y se podrá ver que Laravel está instal
 <a href="{{ site.baseurl }}{{ page.img_dir }}/laravel_up.JPG">
   <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/laravel_up.JPG" alt="Laravel corriendo" >
 </a>
+
+## Conclusión
+
+En conclusión este tipo de ambientes para el desarrollo son muy útiles cuando se necesita trabajar con alguna versión en específico y que actualemente no tenga soporte, por ejemplo versiones antiguas de Ruby o Python, aunque el proceso para formar una máquina virtual con todas las herramientas necesarias es algo pesado y tedioso, pero con esto se simplifica un poco más, pero aún tiene sus limitaciones.

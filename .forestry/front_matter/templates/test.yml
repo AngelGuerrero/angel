@@ -7,3 +7,5 @@ fields:
   label: Mi label
   name: mi_label
   description: Esta es una descripción del label
+pages:
+- _posts/testing.md

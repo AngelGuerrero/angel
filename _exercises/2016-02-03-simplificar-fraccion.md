@@ -9,7 +9,7 @@ Hace tiempo mientras me encontraba buscando ejercicios de programación, un comp
 El reto es el siguiente: 
 
 {% highlight text %}
- Con el proposito de evitarse el tedioso trabajo de corregir
+Con el proposito de evitarse el tedioso trabajo de corregir
 los ejercicios sobre simplificación de quebrados a su expresión
 mas sencilla, la profesora Elena Gonzáles transformó su calculadora
 en una máquina de simplificar quebrados. 
@@ -23,10 +23,11 @@ la expresión simplificada 10/9 del quebrado inicial,
 otro ejemplo sería el 666 y el 999 obtendría 2/3.
 
 Haz un programa que realice el mismo trabajo que la maquina de simplificar
-quebrados de Elena
+quebrados de Elena. Con recursividad en cualquier lenguaje.
 
-Con recursividad en cualquier lenguaje
 {% endhighlight %}
+
+### Resultado
 
 El ejercicio lo realicé en `Python` y obtuve el siguiente resultado: 
 

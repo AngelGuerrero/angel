@@ -33,7 +33,7 @@ layout: "minimalistic/layout_base"
             </header>
 
             <div class="post__description">
-              {{ post.excerpt }}
+              {{ post.content | truncatewords:50 | strip_html }}
             </div>
 
           </div>

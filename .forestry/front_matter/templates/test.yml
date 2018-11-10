@@ -1,0 +1,9 @@
+---
+label: test
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Mi label
+  name: mi_label
+  description: Esta es una descripción del label

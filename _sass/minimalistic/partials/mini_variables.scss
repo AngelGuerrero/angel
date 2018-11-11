@@ -29,8 +29,8 @@ $title-name-color: $a-color;
 //
 // $navbar-background-color: #1B9AAA;
 // $navbar-background-color: hsla(212, 48%, 50%, 0.788);
-// $navbar-background-color: hsla(212, 21%, 49%, 0.788);
-$navbar-background-color: darken($a-color, 20%);
+$navbar-background-color: hsla(212, 21%, 49%, 0.788);
+//$navbar-background-color: darken($a-color, 20%);
 $navbar-background-hover: lighten($navbar-background-color, 20%);
 
 

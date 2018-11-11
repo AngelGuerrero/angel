@@ -58,29 +58,24 @@ layout: "minimalistic/layout_base"
 
   <!-- Right aside -->
   <aside class="content__aside">
-
-    <!-- About me -->
-    <div class="aside__section aside__about">
-      {% for author in site.data.authors %}
-      <p>{{ author.small_bio }}</p>
-      {% endfor %}
-    </div>
-
+    
     <!-- Projects list -->
-    <div class="aside__section">
-      <h3>Proyectos</h3>
-      <ul class="links__list">
-        {% for page in site.projects %}
+    {% if site.projects.length > 0 %}
+      <div class="aside__section">
+        <h4 class="aside__title">Proyectos</h4>
+        <ul class="links__list">
+          {% for page in site.projects %}
           {% if page.published %}
-            <li> <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> </li>
+          <li> <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> </li>
           {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
 
     <!-- Last posts -->
     <div class="aside__section">
-      <h3>Últimas publicaciones</h3>
+      <h4 class="aside__title">Últimas publicaciones</h4>
       <ul class="links__list">
         {% for page in site.posts reversed limit:10 %}
           {% if page.published %}
@@ -92,7 +87,7 @@ layout: "minimalistic/layout_base"
 
     <!-- Exercises list -->
     <div class="aside__section">
-      <h3>Últimos ejercicios</h3>
+      <h4 class="aside__title">Últimos ejercicios</h4>
       <ul class="links__list">
         {% for page in site.exercises reversed limit:10 %}
           {% if page.published %}

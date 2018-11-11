@@ -71,9 +71,7 @@ defaults:
       published: false
       author: "Ángel Guerrero"
 
-# Iterable collections
-# Register que collections
-# where you want iterate
+# Iterable collections where you want
 iterable_collections: ["posts", "projects", "exercises"]
 
 # Plugins

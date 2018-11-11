@@ -90,6 +90,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
     color: set-text-color($navbar-background-color);
 
     &:hover {
@@ -133,9 +135,15 @@
 
 .aside__section {
   // @extend %dev;
-  background-color: lighten($color: #cccccc, $amount: 17%);
-  margin-bottom: 100px;
-  padding: 10px;
+  // background-color: lighten($color: #cccccc, $amount: 17%);
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.aside__title {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #8a8989;
 }
 
 .aside__about {
@@ -147,6 +155,7 @@
 }
 
 .links__list {
+  font-size: 0.8rem;
   // @extend %dev;
   margin: 0;
   font-weight: 900;
@@ -224,9 +233,9 @@
     text-overflow: ellipsis;
   }
 
-  .post__image {
+  //.post__image {
     // @extend %dev;
-  }
+  //}
 
   .post__buttons {
     // @extend %dev;

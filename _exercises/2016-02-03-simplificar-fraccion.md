@@ -8,7 +8,7 @@ Hace tiempo mientras me encontraba buscando ejercicios de programación, un comp
 
 El reto es el siguiente: 
 
-{% highlight text %}
+```text
 Con el proposito de evitarse el tedioso trabajo de corregir
 los ejercicios sobre simplificación de quebrados a su expresión
 mas sencilla, la profesora Elena Gonzáles transformó su calculadora
@@ -24,8 +24,7 @@ otro ejemplo sería el 666 y el 999 obtendría 2/3.
 
 Haz un programa que realice el mismo trabajo que la maquina de simplificar
 quebrados de Elena. Con recursividad en cualquier lenguaje.
-
-{% endhighlight %}
+```
 
 ### Resultado
 

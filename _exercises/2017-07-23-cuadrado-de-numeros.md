@@ -6,7 +6,7 @@ image: assets/img/defaults/codes-computer.jpg
 
 Otro reto de programación que me pareció interesante fue el siguiente.
 
-{% highlight text %}
+```text
    RETO DE PROGRAMACIÓN
 
   Flota de camiones. El propietario de la compañia de transportes "La tortuga"
@@ -19,7 +19,7 @@ Otro reto de programación que me pareció interesante fue el siguiente.
   ¿Cuántos camiones formaban la flota de la compañía?
   
   ¿Cuáles eran sus números?
-{% endhighlight %}
+```
 
 El programa lo realicé en `C++` y el resultado fue el siguiente, cabe mencionar que el programa lo realicé usando recursividad.
 

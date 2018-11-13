@@ -1,5 +1,5 @@
 ---
-title: Conversión de expresión infija a postfija
+title: Conversion de expresion infija a postfija
 date: 2018-11-13 18:40
 published: false
 

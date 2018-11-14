@@ -77,11 +77,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jekyll (~> 3.8.3)
   jemoji
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.5.0p0
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.17.1

@@ -2,6 +2,7 @@
 title: "Relaciones de uno a uno y de uno a muchos usando Eloquent"
 published: true
 images: /assets/img/excercises/laravel-orm-relationships
+repo: https://www.github.com/AngelGuerrero/laravel-eloquent-examples
 ---
 
 Recientemente he comenzado a realizar prácticas con Laravel, pues tengo varios proyectos en mente que quiero implementar especialmente con Php, al contrario de lo que muchos desarrolladores comentan sobre "lo malo de Php", las nuevas versiones en especial la versión 7 de Php y junto con la popularidad de Laravel, ha hecho que Php "vuelva a ser popular".

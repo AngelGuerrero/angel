@@ -1,0 +1,29 @@
+---
+label: list_content
+hide_body: false
+is_partial: false
+fields:
+- type: include
+- type: text
+  label: Title
+  name: title
+  description: Nombre de lo que se va a listar
+  config:
+    required: true
+- type: datetime
+  name: publish_date
+  label: publish_date
+  description: Fecha de publicación
+  config:
+    required: true
+    date_format: DD/MM/YYYY
+- type: text
+  name: layout
+  label: Layout
+  description: Plantilla a la cual se va a llamar
+  config:
+    required: true
+- type: text
+  name: description
+  label: Description
+  description: Descripción de la sección

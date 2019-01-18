@@ -1,0 +1,24 @@
+---
+label: Description_listing_posts
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: Cómo se llamará a las secciones de listado
+  config:
+    required: true
+- type: text
+  name: layout
+  label: layout
+  description: Plantilla que se tomará
+  config:
+    required: true
+- type: text
+  name: sub_heading
+  label: Sub cabecera
+  description: Si tendrá una descripción como sub-cabecera
+  config:
+    required: true
+- type: datetime

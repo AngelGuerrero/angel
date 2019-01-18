@@ -10,8 +10,8 @@ fields:
   config:
     required: true
 - type: datetime
-  name: date
-  label: Date
+  name: publish_date
+  label: Publish date
   description: Fecha en que se publicó
   config:
     required: true

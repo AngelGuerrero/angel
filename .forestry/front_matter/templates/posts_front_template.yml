@@ -1,5 +1,5 @@
 ---
-label: Posts_front_template
+label: post_front_template
 hide_body: false
 is_partial: false
 fields:

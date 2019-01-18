@@ -1,0 +1,29 @@
+---
+label: Posts_front_template
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+  description: Título del post
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Date
+  description: Fecha en que se publicó
+  config:
+    required: true
+- type: file
+  name: image
+  label: Image
+  description: Imagen a mostrar en la portada del post
+- type: text
+  name: repository
+  label: Repository
+  description: Enlace del repositorio (opcional)
+- type: tag_list
+  name: tags
+  label: Tags
+  description: Etiquetas relacionadas

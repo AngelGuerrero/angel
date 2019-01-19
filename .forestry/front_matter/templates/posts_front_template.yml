@@ -10,8 +10,8 @@ fields:
   config:
     required: true
 - type: textarea
-  name: extract
-  label: Extracto
+  name: excerpt
+  label: Excerpt
   description: Breve descripción del contenido
 - type: datetime
   name: publish_date

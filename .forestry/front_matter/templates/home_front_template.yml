@@ -19,3 +19,5 @@ fields:
   name: description
   label: Description
   description: Breve descripción de la página de inicio
+pages:
+- index.md

@@ -4,9 +4,9 @@ hide_body: false
 is_partial: false
 fields:
 - type: include
-  label: Datos del proyecto
+  label: Data project
   template: posts_front_template
-  name: project_data
+  name: data_project
 - type: number
   name: progress
   label: Progreso

@@ -4,6 +4,14 @@ hide_body: false
 is_partial: false
 fields:
 - type: include
-  label: Project data
+  label: Datos del proyecto
   template: posts_front_template
   name: project_data
+- type: number
+  name: progress
+  label: Progreso
+  description: Progreso del proyecto
+  config:
+    min: '0'
+    max: '100'
+    required: true

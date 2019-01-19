@@ -4,6 +4,12 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
+  name: layout
+  label: Layout
+  description: Plantilla de la que hereda
+  config:
+    required: true
+- type: text
   name: title
   label: Title
   description: Título de la página
@@ -12,4 +18,4 @@ fields:
 - type: textarea
   name: description
   label: Description
-  description: Breve descripción de la página
+  description: Breve descripción de la página de inicio

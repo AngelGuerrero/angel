@@ -27,3 +27,7 @@ fields:
   name: tags
   label: Tags
   description: Etiquetas relacionadas
+- type: textarea
+  name: extract
+  label: Extracto
+  description: Breve descripción del contenido

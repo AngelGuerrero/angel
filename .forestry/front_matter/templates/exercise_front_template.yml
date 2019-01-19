@@ -1,0 +1,11 @@
+---
+label: exercise_front_template
+hide_body: false
+is_partial: false
+fields:
+- type: include
+  label: Data exercise
+  name: data_exercise
+  description: Datos necesarios para crear un nuevo documento de ejercicios
+  template: posts_front_template
+- type: tag_list

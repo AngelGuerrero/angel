@@ -2,6 +2,15 @@
 layout: default
 ---
 
+{%- comment -%}
+  Esta plantilla es usada por posts.md para listar
+  todos los documentos dentro de la colección _posts
+{%- endcomment -%}
+
+<p>{{ page.description }}</p>
+
 <h1>Lista de posts</h1>
 
-{{ content }}
+{%- for post in site.posts -%}
+  <h1>{{ post.title }}</h1>
+{%- endfor -%}

@@ -9,13 +9,7 @@
   <title>{{ page.title }} - {{ site.title }}</title>
 </head>
 <body>
-
-  <div id="app">
-    <aside-left></aside-left>
-    <span v-pre>
-      {{ content }}
-    </span>
-  </div>
+  {{ content }}
 
   {%- include scripts.html -%}
 </body>

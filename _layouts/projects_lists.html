@@ -4,13 +4,19 @@ layout: default
 
 {%- comment -%}
   Esta plantilla es usada por projects.md para listar
-  todos los documentos dentro de la colección _projects
+  todos los documentos dentro de la colección _projects.
+
+  Las variables para 'page', vienen del archivo projects.md.
 {%- endcomment -%}
 
-<p>{{ page.description }}</p>
-
-<h1>Lista de proyectos</h1>
+<h1>{{ page.title }}</h1>
 
 {%- for post in site.projects -%}
-<h1>{{ post.title }}</h1>
+  <h2>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+  </h2>
+
+  <p>
+    {{ post.excerpt }}
+  </p>
 {%- endfor -%}

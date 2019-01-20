@@ -3,9 +3,18 @@ label: post_front_template
 hide_body: false
 is_partial: false
 fields:
-- type: text
+- type: select
   name: layout
-  label: Layout
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - minimalistic/layout_post
+    - posts_lists
+    - " projects_lists"
+  label: layout
+  default: minimalistic/layout_post
 - type: text
   label: Title
   name: title

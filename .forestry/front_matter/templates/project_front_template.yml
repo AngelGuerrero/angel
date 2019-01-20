@@ -15,3 +15,5 @@ fields:
     min: '0'
     max: '100'
     required: true
+pages:
+- _projects/este-es-un-proyecto-de-prueba.md

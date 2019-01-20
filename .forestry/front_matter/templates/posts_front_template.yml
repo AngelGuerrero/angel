@@ -12,6 +12,11 @@ fields:
   description: Título del post
   config:
     required: true
+- type: text
+  name: category
+  label: Category
+  config:
+    required: true
 - type: datetime
   name: publish_date
   label: Publish date

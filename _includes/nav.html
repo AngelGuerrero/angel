@@ -1,0 +1,14 @@
+{%- comment -%}
+  Archivo usado para mostrar la navegación
+  usando el plugin jekyll-menus
+{%- endcomment -%}
+
+{% assign url = page.url | remove:'index.html' %}
+
+<a href="{{ "/" | absolute_url }}"> Home </a>
+<br>
+
+{%- for link in site.menus.navigation -%}
+  <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
+  <br>
+{%- endfor -%}

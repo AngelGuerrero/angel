@@ -2,103 +2,14 @@
 layout: default
 ---
 
+{%- comment -%}
+  Esta página es usada como página principal,
+  landing page 'home'.
 
-<div class="wrapper__content">
+  Es usada por el archivo 'index.md', que es el punto de entrada
+  pero el archivo 'index.md' no tiene contenido, únicamente variables.
+{%- endcomment -%}
 
-  <!-- Posts list -->
-  <section class="content__section">
+<h1>Home</h1>
 
-    {% for collection in site.collections %}
-
-    {% assign name = collection.label %}
-
-    {% if site.iterable_collections contains name %}
-    {% for post in site[name] %}
-    <article class="content__post">
-
-      <div class="post__content">
-
-        <header class="post__header">
-
-          <div class="post__header--wrapper">
-            <h2> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> </h2>
-            <div class="comments__link"> <a href="#">10</a> </div>
-          </div>
-
-          <div class="entry__meta">
-            <span class="sep">Publicado en </span>
-            <a href="#"> <time>{{ post.date | date: "%a, %b %d, %Y"}}</time> </a>
-            por
-            <span class="by-author"> <a href="#">{{ post.author }}</a> </span>
-          </div>
-
-        </header>
-
-        <div class="post__description">
-          {{ post.content | truncatewords:50 | strip_html }}
-        </div>
-
-      </div>
-
-      <div class="post__image">
-        <img class="img__responsive" src="{{ post.image }}" alt="Coding">
-      </div>
-
-      <div class="post__buttons">
-        <a href="{{ site.baseurl }}{{ post.url }}">Continuar leyendo</a>
-        {% if post.repo %}
-        <a href="{{ post.repo }}" target="_blank">Ver repositorio</a>
-        {% endif %}
-      </div>
-
-    </article>
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
-
-  </section>
-
-  <!-- Right aside -->
-  <aside class="content__aside">
-
-    <!-- Projects list -->
-    {% if site.projects.length > 0 %}
-    <div class="aside__section">
-      <h4 class="aside__title">Proyectos</h4>
-      <ul class="links__list">
-        {% for page in site.projects %}
-        {% if page.published %}
-        <li> <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-
-    <!-- Last posts -->
-    <div class="aside__section">
-      <h4 class="aside__title">Últimas publicaciones</h4>
-      <ul class="links__list">
-        {% for page in site.posts reversed limit:10 %}
-        {% if page.published %}
-        <li> <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a> </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-
-    <!-- Exercises list -->
-    <div class="aside__section">
-      <h4 class="aside__title">Últimos ejercicios</h4>
-      <ul class="links__list">
-        {% for page in site.exercises reversed limit:10 %}
-        {% if page.published %}
-        <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-
-  </aside>
-
-</div>
+{%- include nav.html -%}

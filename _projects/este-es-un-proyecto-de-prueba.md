@@ -8,7 +8,7 @@ tags:
 - Wendy.js
 progress: 10
 date: 2019-01-20 18:44:48 +0000
-layout: projects_lists
+layout: layout_post
 category: Proyectos
 undefined: ''
 

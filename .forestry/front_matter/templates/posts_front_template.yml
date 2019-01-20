@@ -10,11 +10,10 @@ fields:
       type: simple
     required: true
     options:
-    - posts_lists
-    - projects_lists
     - minimalistic/post_layout
+    - layout_post
   label: layout
-  default: minimalistic/layout_post
+  default: posts_lists
 - type: text
   label: Title
   name: title

@@ -10,9 +10,9 @@ fields:
       type: simple
     required: true
     options:
-    - minimalistic/layout_post
     - posts_lists
     - projects_lists
+    - minimalistic/post_layout
   label: layout
   default: minimalistic/layout_post
 - type: text

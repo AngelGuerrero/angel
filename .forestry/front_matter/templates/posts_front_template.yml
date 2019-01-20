@@ -12,7 +12,7 @@ fields:
     options:
     - minimalistic/layout_post
     - posts_lists
-    - " projects_lists"
+    - projects_lists
   label: layout
   default: minimalistic/layout_post
 - type: text

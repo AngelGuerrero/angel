@@ -8,6 +8,9 @@ tags:
 - Wendy.js
 progress: 10
 date: 2019-01-20 18:44:48 +0000
+layout: minimalistic/layout_post
+category: Proyects
+undefined: ''
 
 ---
 ## Para comenzar a redactar este post

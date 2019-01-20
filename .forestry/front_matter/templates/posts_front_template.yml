@@ -4,6 +4,9 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
+  name: layout
+  label: Layout
+- type: text
   label: Title
   name: title
   description: Título del post
@@ -27,3 +30,4 @@ fields:
   name: tags
   label: Tags
   description: Etiquetas relacionadas
+- type: text

@@ -52,3 +52,5 @@ fields:
   label: Tags
   description: Etiquetas relacionadas
 - type: text
+pages:
+- _posts/2018-11-05-iniciando-con-vagrant.md

@@ -1,0 +1,53 @@
+//------------------------------------------------
+// Navbar style
+//------------------------------------------------
+.navbar {
+  width: 40px;
+  background-color: $navbar-back-color;
+  color: $navbar-front-color;
+  padding: 10px;
+  box-shadow: 5px 5px 25px #bebebe;
+}
+
+.navbar__profile {
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+}
+.profile__image {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar__menu {
+  .menu__item {
+    padding: 5px 10px;
+    text-decoration: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color: $menu-item-color;
+    transition: all 1s;
+    &:hover {
+      background-color: $menu-item-back-hover;
+      color: #ffffff;
+    }
+  }
+}
+
+@media screen and (min-width: 648px) {
+  .navbar {
+    width: 60px;
+  }
+  .navbar__profile {
+    width: 50px;
+    height: 50px;
+  }
+  .navbar__menu {
+    .menu__item {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

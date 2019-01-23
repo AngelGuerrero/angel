@@ -1,0 +1,56 @@
+//------------------------------------------------
+// Main container classes
+//------------------------------------------------
+.main-content {
+  background-color: $main-content-back-color;
+  height: 100%;
+  overflow: auto;
+}
+
+.main-header {
+  padding: 10px;
+  min-height: 200px;
+}
+
+.header__branding {
+  color: $super-title-color;
+}
+
+//------------------------------------------------
+// Main-yield NO POST
+//------------------------------------------------
+.main-yield {
+  min-height: 100vh;
+}
+
+//------------------------------------------------
+// Main yield, this is where
+// post content is loaded
+//------------------------------------------------
+.main-yield__post {
+  min-height: 100vh;
+  background-color: white;
+
+  p,
+  .highlighter-rouge {
+    overflow-y: auto;
+  }
+}
+
+@media screen and (min-width: 648px) {
+  .main-yield__post {
+    p, .highlighter-rouge {
+      overflow: hidden;
+    }
+  }
+}
+
+//------------------------------------------------
+// Main footer
+//------------------------------------------------
+.main-footer {
+  padding: 5px;
+  text-align: center;
+  color: $navbar-front-color;
+  background-color: $navbar-back-color;
+}

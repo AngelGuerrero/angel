@@ -1,0 +1,22 @@
+//------------------------------------------------
+// Breadcrumb styles
+//------------------------------------------------
+
+.breadcrumb__wrapper {
+  .breadcrumb {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 648px) {
+  .breadcrumb__wrapper {
+    .breadcrumb {
+      flex-direction: row;
+    }
+  }
+}

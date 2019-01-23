@@ -1,0 +1,60 @@
+---
+label: post_front_template
+hide_body: false
+is_partial: false
+fields:
+- type: select
+  name: layout
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - minimalistic/post_layout
+    - layout_post
+  label: layout
+  default: minimalistic/post_layout
+- type: text
+  label: Title
+  name: title
+  description: Título del post
+  config:
+    required: true
+- type: select
+  name: category
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - pages
+    - projects
+    - posts
+    - exercises
+  label: category
+  default: pages
+- type: datetime
+  name: publish_date
+  label: Publish date
+  description: Fecha en que se publicó
+  config:
+    required: true
+- type: file
+  name: image
+  label: Image
+  description: Imagen a mostrar en la portada del post
+- type: text
+  name: repository
+  label: Repository
+  description: Enlace del repositorio (opcional)
+- type: tag_list
+  name: tags
+  label: Tags
+  description: Etiquetas relacionadas
+- type: text
+- type: text
+  name: image_dir
+  label: Image Directory
+pages:
+- _posts/2018-11-05-iniciando-con-vagrant.md
+- _posts/2018-08-15-aprendiendo-mevn.md

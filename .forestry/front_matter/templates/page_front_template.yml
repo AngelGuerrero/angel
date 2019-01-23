@@ -1,0 +1,27 @@
+---
+label: page_front_template
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: Título de la página
+  config:
+    required: true
+- type: datetime
+  name: published_date
+  label: Published date
+  description: Fecha de publicación
+  config:
+    date_format: DD/MM/YYYY
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  description: Breve descripción de la página
+- type: text
+  name: type
+  label: Type
+  config:
+    required: true

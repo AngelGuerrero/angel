@@ -1,0 +1,10 @@
+<nav class="breadcrumb__wrapper container">
+    <ul class="breadcrumb">
+        <li class="breadcrumb__item"><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
+        <li class="breadcrumb__item">/</li>
+<li class="breadcrumb__item"><a href="{{ site.url }}{{ site.baseurl }}/{{ page.category }}">{{ page.category |
+    capitalize }}</a></li>
+        <li class="breadcrumb__item">/</li>
+        <li class="breadcrumb__item"> {{ page.title }}</li>
+    </ul>
+</nav>

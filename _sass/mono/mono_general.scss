@@ -1,0 +1,94 @@
+//------------------------------------------------
+// Fonts
+//------------------------------------------------
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans');
+
+$mono-font: 'Major Mono Display', monospace;
+$open-sans: 'Open Sans', sans-serif;
+
+//------------------------------------------------
+// General classes
+//------------------------------------------------
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $open-sans;
+  font-size: 1rem;
+}
+
+#app {
+  height: 100vh;
+  overflow: hidden;
+}
+
+pre {
+  overflow: auto;
+}
+
+// Small code, no block
+code.highlighter-rouge {
+  background-color: #e0dddd;
+  padding: 5px;
+  border-radius: 3px;
+  overflow: auto;
+}
+
+blockquote {
+  margin-left: 3px;
+  border-left: 5px solid lightblue;
+  background-color: #e3f8ff;
+  width: 100%;
+  padding: 5px;
+}
+
+.container {
+  padding: 15px;
+  margin: 5px 0px;
+  width: auto;
+}
+
+img {
+  width: 100%;
+}
+
+
+//------------------------------------------------
+// Custom headers
+//------------------------------------------------
+$element-name: h;
+
+@for $i from 1 to 7 {
+  #{$element-name}#{$i} {
+    font-family: $mono-font;
+    // color: #167faf;
+    // color: #004e6d;
+    color: $titles-color;
+    font-size: ((2.5 - ($i / 2))) + em;
+
+    @if($i < 3) {
+      font-weight: 300;
+    }
+
+    @else {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+//------------------------------------------------
+// Medias
+//------------------------------------------------
+@media screen and (min-width: 648px) {
+  .container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+  }
+}

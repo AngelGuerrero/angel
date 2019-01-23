@@ -57,3 +57,4 @@ fields:
   description: Images directory for this post
 pages:
 - _posts/2018-08-15-aprendiendo-mevn.md
+- _posts/iniciando-con-vagrant.md

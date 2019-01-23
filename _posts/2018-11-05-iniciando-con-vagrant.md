@@ -1,7 +1,7 @@
 ---
 title: Iniciando con vagrant
 curr_img_path: "/vagrant"
-image: "/assets/img/vagrant/vagrant.png"
+image: "assets/img/vagrant/vagrant.png"
 img_dir: "/assets/img/vagrant"
 layout: layout_post
 category: posts

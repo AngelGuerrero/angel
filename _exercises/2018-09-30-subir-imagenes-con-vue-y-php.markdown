@@ -1,11 +1,17 @@
 ---
-title: "Subir imágenes con Vue y Php"
+title: Subir imágenes con Vue y Php
 image: assets/img/defaults/keyboard.jpg
-published: true
 repo: https://github.com/AngelGuerrero/upload-images-php
-date: "2018-09-30 22:42:58 -0500"
----
+date: 2018-09-30 22:42:58 -0500
+layout: layout_post
+category: exercises
+repository: https://github.com/AngelGuerrero/upload-images-php
+tags:
+- PHP
+- Vue.js
+- CRUD
 
+---
 Hace poco tiempo me pidieron ayuda con un ejercicio en Php para subir imágenes al servidor, y con gusto ayudé, sólo ayudé a modificar el código en Php, pero después quise hacer mi propia versión implementando [Vue.js](https://vuejs.org/) para que tuviera más "dinamismo", no fue la gran cosa, pero me gustaría mostrar este ejercicio ya que siempre encuentro algo nuevo qué aprender con cada práctica.
 
 ## Estructura de archivos

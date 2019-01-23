@@ -20,3 +20,8 @@ fields:
   name: description
   label: Description
   description: Breve descripción de la página
+- type: text
+  name: type
+  label: Type
+  config:
+    required: true

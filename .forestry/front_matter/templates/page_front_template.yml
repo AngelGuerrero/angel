@@ -24,4 +24,4 @@ fields:
   config:
     required: true
 pages:
-- ejercicios.md
+- exercises.md

@@ -1,6 +1,7 @@
 ---
 title: "Relaciones de uno a uno y de uno a muchos usando Eloquent"
 published: true
+image: assets/img/defaults/abstract-code.jpg
 images: /assets/img/excercises/laravel-orm-relationships
 repo: https://www.github.com/AngelGuerrero/laravel-eloquent-examples
 ---

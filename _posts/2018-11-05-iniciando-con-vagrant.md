@@ -1,15 +1,15 @@
 ---
-title: Iniciando con vagrant
-curr_img_path: "/vagrant"
-image: "assets/img/vagrant/vagrant.png"
-img_dir: "/assets/img/vagrant"
 layout: layout_post
 category: posts
-publish_date: 2018-11-05 06:00:00 +0000
+title: Iniciando con Vagrant
+date: 2018-11-05 06:00:00 +0000
+image: "/uploads/vagrant.png"
+repository: ''
 tags:
 - vagrant
-repository: ''
-undefined: ''
+- virtual-machines
+- DevOps
+images_directory: "/assets/img/vagrant"
 
 ---
 Al tomar proyectos donde se necesitan herramientas y versiones específicas para esos desarrollos a veces se vuelve pesado, hace poco trabajé con Ruby 2.0.1 y la versión Rails 4, y tuve muchos dolores de cabeza por las versiones y las dependencias para las gemas que utilizaba el proyecto, ya que era un proyecto que no se le había dado mantenimiento durante unos dos años aproximadamente, pero ahora está vagrant.
@@ -44,8 +44,8 @@ Para agregar la caja de homestead es necesario ejecutar el sigiente comando ya q
 
 Comando: `vagrant box add laravel/homestead`
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/agrega_box_laravel.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/agrega_box_laravel.JPG" alt="Agrega el box de laravel" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/agrega_box_laravel.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/agrega_box_laravel.JPG" alt="Agrega el box de laravel" >
 </a>
 
 
@@ -55,8 +55,8 @@ Comando: `vagrant box add laravel/homestead`
 
 Comando: `vagrant box list`
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/listar_boxes.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/listar_boxes.JPG" alt="Lista los boxes que se han descargado" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/listar_boxes.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/listar_boxes.JPG" alt="Lista los boxes que se han descargado" >
 </a>
 
 ### Instalar Laravel Homestead en el directorio principal de Windows
@@ -67,8 +67,8 @@ Comando para clonar el repositorio:
 
 `git clone https://github.com/laravel/homestead.git ~/Homestead`
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/clonacion_homestead.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/clonacion_homestead.JPG" alt="Clonando  homestead en el directorio principal de windows" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/clonacion_homestead.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/clonacion_homestead.JPG" alt="Clonando  homestead en el directorio principal de windows" >
 </a>
 
 
@@ -78,8 +78,8 @@ Ya clonado el repositorio, entramos en la carpeta y cambiamos a la rama de la ve
 
 Cambiando a la versión indicada usando el comando: `git checkout v7.18.0`
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/cambiando_rama.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/cambiando_rama.JPG" alt="Cambiando a la versión indidcada de homestead" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/cambiando_rama.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/cambiando_rama.JPG" alt="Cambiando a la versión indidcada de homestead" >
 </a>
 
 Ahora es necesario ejecutar el siguiente comando dentro de la carpeta de homestead para que cree el archivo de configuración:  `Homestead.yml`.
@@ -88,22 +88,22 @@ Comando a ejecutar: `bash init.sh`
 
 Y simplemente se obtiene un mensaje como el siguiente:
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/bash_init.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/bash_init.JPG" alt="Iniciando homestead" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/bash_init.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/bash_init.JPG" alt="Iniciando homestead" >
 </a>
 
 ### Configuración de homestead
 
 Ya que se ha creado el archivo de configuración de homestead, se puede abrir dentro de la carpeta de homestead y editar el archivo, según las preferencias y necesidades del proyecto.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/configuracion_homestead.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/configuracion_homestead.JPG" alt="Configuración de homestead" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/configuracion_homestead.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/configuracion_homestead.JPG" alt="Configuración de homestead" >
 </a>
 
 Para windows de preferencia se puede agregar la dirección y un dominio editando el archivo `hosts`.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/modificando_hosts.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/modificando_hosts.JPG" alt="Modificando hosts" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/modificando_hosts.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/modificando_hosts.JPG" alt="Modificando hosts" >
 </a>
 
 ## Iniciar la máquina virtual
@@ -114,22 +114,22 @@ Comando: `vagrant up`
 
 Esto iniciará nuestro proveedor que elegimos el inicio, en mi caso VirtualBox, e iniciará con la importación de la máquina virtual y sus configuraciones.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/iniciando_vb.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/iniciando_vb.JPG" alt="Iniciando VirtualBox" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/iniciando_vb.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/iniciando_vb.JPG" alt="Iniciando VirtualBox" >
 </a>
 
 Si se abre el VirtualBox se podrá ver ahora cómo la máquina virtual está corriendo.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/vagrant_corriendo.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/vagrant_corriendo.JPG" alt="Vagrant corriendo" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/vagrant_corriendo.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/vagrant_corriendo.JPG" alt="Vagrant corriendo" >
 </a>
 
 ### Conectando al navegador
 
 Ahora es posible entrar al navegador desde windows para probar que el sitio está arriba exitosamente.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/navegador_noinput.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/navegador_noinput.JPG" alt="Navegador sin entrada" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/navegador_noinput.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/navegador_noinput.JPG" alt="Navegador sin entrada" >
 </a>
 
 Se puede ver en la imagen que muestra un mensaje, "no input file specified", y eso es porque ya está la configuración de la máquina virtual, pero aún no se ha creado nungún proyecto.
@@ -188,16 +188,16 @@ En mi caso hice una carpeta de nombre: `firstapp` y ejecuté el siguiente comand
 
 Comando: `composer require laravel/homestead --dev`
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/independiente_resultado.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/independiente_resultado.JPG" alt="Resultado de crear un box por aplicación" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/independiente_resultado.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/independiente_resultado.JPG" alt="Resultado de crear un box por aplicación" >
 </a>
 
 Ahora es necesario generar el archivo `Vagrantfile`, ejecutando el comando para windows en mi caso.
 
 Comando: `vendor\\bin\\homestead make`
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/generando_vagrantfile.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/generando_vagrantfile.JPG" alt="Generanto el archivo vagrantfile" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/generando_vagrantfile.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/generando_vagrantfile.JPG" alt="Generanto el archivo vagrantfile" >
 </a>
 
 
@@ -205,14 +205,14 @@ Ahora podemos iniciar la máquina para después conectarnos mediante `SSH`.
 
 Comando: `vagrant up`
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/importando_box.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/importando_box.JPG" alt="Importando box" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/importando_box.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/importando_box.JPG" alt="Importando box" >
 </a>
 
 Cuando se abre VirtualBox se puede ver cómo se ha importado el box y se ha iniciado la ejecución de la máquina virtual.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/importando_box_2.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/importando_box_2.JPG" alt="Importando box" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/importando_box_2.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/importando_box_2.JPG" alt="Importando box" >
 </a>
 
 Para conectarnos a la máquina virtual simplemente es necesario ejecutar el siguiente comando:
@@ -221,8 +221,8 @@ Comando: `vagrant ssh`
 
 Vagrant hace _magia_ y se conecta automáticamente con las llaves que tenemos previamente generadas en nuestro sistema anfitrión.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/conexion_ssh.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/conexion_ssh.JPG" alt="Conexión mediante ssh" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/conexion_ssh.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/conexion_ssh.JPG" alt="Conexión mediante ssh" >
 </a>
 
 
@@ -230,8 +230,8 @@ Ahora sí es es posible instalar Laravel ejecutando el siguiente comando dentro 
 
 Comando: `laravel new firstapp`
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/instalando_laravel.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/instalando_laravel.JPG" alt="Instalación de Laravel" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/instalando_laravel.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/instalando_laravel.JPG" alt="Instalación de Laravel" >
 </a>
 
 Al momento de probar en este punto entrando al navegador, veo que me aparece un mensaje de `No input file specified`, y es que hasta este punto para la creación de un ambiente por proyecto, no he editado ni configurado el archivo `Homestead.yml`, por lo cual me debería de quedar de la siguiente manera como lo tengo en mi máquina virtual.
@@ -273,8 +273,8 @@ Iniciar la máquina: `vagrant up --provision`
 
 Finalmente probar entrando al navegador y se podrá ver que Laravel está instalado y corriendo.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}/laravel_up.JPG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/laravel_up.JPG" alt="Laravel corriendo" >
+<a href="{{ site.baseurl }}{{ page.images_directory }}/laravel_up.JPG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory}}/laravel_up.JPG" alt="Laravel corriendo" >
 </a>
 
 ## Conclusión

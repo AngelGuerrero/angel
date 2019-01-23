@@ -33,12 +33,6 @@
 
 .box-body {
   color: #5e5e5e;
-  display: flex;
-  flex-direction: column;
-}
-
-.box__left {
-  margin-right: 10px;
 }
 
 .box__buttons {
@@ -68,7 +62,17 @@
     }
   }
   .box-body {
+    display: flex;
     flex-direction: row;
+    .box__text {
+      width: 50%;
+    }
+    .box__image {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 

@@ -4,17 +4,15 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
+  name: layout
+  label: Layout
+  config:
+    required: true
+- type: text
   name: title
   label: Title
   description: Título de la página
   config:
-    required: true
-- type: datetime
-  name: published_date
-  label: Published date
-  description: Fecha de publicación
-  config:
-    date_format: DD/MM/YYYY
     required: true
 - type: textarea
   name: description
@@ -25,3 +23,5 @@ fields:
   label: Type
   config:
     required: true
+pages:
+- exercises.md

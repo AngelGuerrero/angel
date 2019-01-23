@@ -1,11 +1,9 @@
 ---
-title: Aprendiendo MEVN
-image: assets/img/mevn/fullstack-javascript.png
-image_dir: "/assets/img/mevn"
-repo: https://github.com/AngelGuerrero/learning-mevn
 layout: layout_post
 category: posts
-publish_date: 2018-08-15 05:00:00 +0000
+title: Aprendiendo MEVN
+date: 2018-08-15 05:00:00 +0000
+image: "/uploads/fullstack-javascript.png"
 repository: https://github.com/AngelGuerrero/learning-mevn
 tags:
 - MongoDB
@@ -14,7 +12,7 @@ tags:
 - Vue.js
 - JavaScript
 - Backend
-undefined: ''
+images_directory: "/assets/img/mevn"
 
 ---
 MEVN es un stack de tecnologías (MongoDB, Express.js, Vue.js, Node.js) por sus siglas en inglés, últimamente no sólo se requiere a un desarrollador que sepa sólo el backend o sólo el frontend, requieren un fullstack que conozca de principio a fin la integración de estas tecnologías.
@@ -118,7 +116,7 @@ server.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 Al ejecutar el código se obtendrá los siguiente: 
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/express_start.png" alt="Servidor corriendod"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/express_start.png" alt="Servidor corriendod"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/express_start.png" alt="Servidor corriendod"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/express_start.png" alt="Servidor corriendod"></a>
 
 ---
 
@@ -143,11 +141,11 @@ server.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 Donde server llama a la función get a la cual se le pasan dos parámetros, el primero es la ruta a la cual se querrá acceder y el otro parámetro es un callback que recibe un _request_ y un _response_.
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/hello_world.PNG" alt="Hola_mundod"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/hello_world.PNG" alt="Hola_mundod"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/hello_world.PNG" alt="Hola_mundod"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/hello_world.PNG" alt="Hola_mundod"></a>
 
 Mas sin embargo es importante notar que en el navegador siempre está esperando una respuesta, esto es porque desde Node no le hemos dado una respuesta que pueda manejar.
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/unresolve_response.PNG" alt="unresolve_responsed"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/unresolve_response.PNG" alt="unresolve_responsed"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/unresolve_response.PNG" alt="unresolve_responsed"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/unresolve_response.PNG" alt="unresolve_responsed"></a>
 
 Para ello es necesario modificar el código de la siguiente manera: 
 
@@ -168,7 +166,7 @@ server.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 
 Y se podrá ver el contenido en el navegador correctamente.
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/hello_world_express.PNG" alt="hello_world_expressd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/hello_world_express.PNG" alt="hello_world_expressd"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/hello_world_express.PNG" alt="hello_world_expressd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/hello_world_express.PNG" alt="hello_world_expressd"></a>
 
 ---
 
@@ -261,11 +259,11 @@ Se puede notar que primero se importan los datos de cada archivo Json, se crea u
 
 Respuesta de `api/v1/students`
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/students_json.PNG" alt="students_jsond"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/students_json.PNG" alt="students_jsond"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/students_json.PNG" alt="students_jsond"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/students_json.PNG" alt="students_jsond"></a>
 
 Respuesta de `api/v1/careers`
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/careers_json.PNG" alt="careers_jsond"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/careers_json.PNG" alt="careers_jsond"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/careers_json.PNG" alt="careers_jsond"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/careers_json.PNG" alt="careers_jsond"></a>
 
 
 ---
@@ -288,11 +286,11 @@ server.get(buildUrl('v1', 'student/:id'), (req, res) => {
 
 Ya que se tiene una función para _crear una URL_ simplemente se modifica para obtener la ruta deseada, cuando se entra al navegador con la siguiente ruta:
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/parameter_browser_log.PNG" alt="parameter_browser_logd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/parameter_browser_log.PNG" alt="parameter_browser_logd"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/parameter_browser_log.PNG" alt="parameter_browser_logd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/parameter_browser_log.PNG" alt="parameter_browser_logd"></a>
 
 Y no se muestra nada porque aún no se ha enviado nada al navegador, mas sin embargo en la consola de la terminal se puede apreciar lo siguiente, que es el mensaje que se estableció.
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/parameter_terminal_log.PNG" alt="parameter_terminal_logd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/parameter_terminal_log.PNG" alt="parameter_terminal_logd"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/parameter_terminal_log.PNG" alt="parameter_terminal_logd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/parameter_terminal_log.PNG" alt="parameter_terminal_logd"></a>
 
 Y se puede apreciar que se puede ver el parámetro `1` que se le había enviado desde la ruta.
 
@@ -322,10 +320,10 @@ server.get(buildUrl('v1', 'student/:id'), (req, res) => {
 Se puede observar que de acurdo a un parámetro enviado se busca en la colección de datos que se tiene de `students` para verificar si el estudiante con tal id existe, si es así, responde con los datos del estudiante encontrado, si no, sólo muestra un mensaje en consola.
 
 Si se entra a buscar los datos del estudiante 1, se obtendrá una respuesta como la siguiente.
-<a href="{{ site.baseurl }}{{ page.image_dir }}/student_one_json.PNG" alt="student_one_jsond"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/student_one_json.PNG" alt="student_one_jsond"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/student_one_json.PNG" alt="student_one_jsond"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/student_one_json.PNG" alt="student_one_jsond"></a>
 
 Mas sin embargo si se busca un elemento que no existe se obtiene el siguiente mensaje.
-<a href="{{ site.baseurl }}{{ page.image_dir }}/student_four_json.PNG" alt="student_four_jsond"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/student_four_json.PNG" alt="student_four_jsond"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/student_four_json.PNG" alt="student_four_jsond"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/student_four_json.PNG" alt="student_four_jsond"></a>
 
 ---
 
@@ -410,7 +408,7 @@ Este middleware realiza un _"parseo"_ de las peticiones entrantes antes de que l
 
 Al inicio de la aplicación o de iniciar el servidor cuando se solicita la información de los estudiantes se obteiene la siguiente información, que es información que se encuentra estática en un documento `json`.
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/students_init_get_postman.PNG" alt="students_init_get_postmand"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/students_init_get_postman.PNG" alt="students_init_get_postmand"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/students_init_get_postman.PNG" alt="students_init_get_postmand"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/students_init_get_postman.PNG" alt="students_init_get_postmand"></a>
 
 Para conseguir agregar otro objeto en el documento es necesario primero definir la ruta específica que se utilizará para realizar dicho procedimiento.
 
@@ -438,17 +436,17 @@ Con la ayuda de la librería `lodash` hace una búsqueda dentro del array `stude
 
 Entonces ahora cuando se realiza una petición a la dirección: `/students/new` para agregar un nuevo estudiante mostrará lo siguiente:
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/students_first_new_postman.PNG" alt="students_first_new_postmand"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/students_first_new_postman.PNG" alt="students_first_new_postmand"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/students_first_new_postman.PNG" alt="students_first_new_postmand"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/students_first_new_postman.PNG" alt="students_first_new_postmand"></a>
 
 En la imagen anterior se puede ver como se retorna el mensaje de OK que hemos establecido.
 
 Si se realiza entonces de nuevo una petición `GET` para ver los datos de todos los estudiantes se podrá ver lo siguiente:
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/students_after_get_postman.PNG" alt="students_after_get_postmand"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/students_after_get_postman.PNG" alt="students_after_get_postmand"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/students_after_get_postman.PNG" alt="students_after_get_postmand"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/students_after_get_postman.PNG" alt="students_after_get_postmand"></a>
 
 Se puede ver que el objeto que se le ha pasado se ha agregado correctamente y si se intenta realizar de nuevo la petición `POST` se obtiene un mensaje como el siguiente:
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/student_second_post.PNG" alt="student_second_postd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/student_second_post.PNG" alt="student_second_postd"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/student_second_post.PNG" alt="student_second_postd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/student_second_post.PNG" alt="student_second_postd"></a>
 
 Esto es porque se realizó una mínima validación sobre el `id` de un objeto que ya se encontraba en la fuente de datos.
 
@@ -461,11 +459,11 @@ Ahora que se puede mandar y obtenrer información, es necesario que esta informa
 
 Para ello registré una cuenta en `mLab` que trabaja con MongoDB.
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/registro_mlab.PNG" alt="registro_mlabd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/registro_mlab.PNG" alt="registro_mlabd"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/registro_mlab.PNG" alt="registro_mlabd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/registro_mlab.PNG" alt="registro_mlabd"></a>
 
 Después del registro y de crear una base de datos con un provedor se obtiene la siguiente información que es la información para la conexión a la base de datos con MongoDB.
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/datos_db_mongo.PNG" alt="datos_db_mongod"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/datos_db_mongo.PNG" alt="datos_db_mongod"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/datos_db_mongo.PNG" alt="datos_db_mongod"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/datos_db_mongo.PNG" alt="datos_db_mongod"></a>
 
 ## Instalando paquetería necesaria para conexión con BD
 Para la conexión a la base de datos se utilizará el siguiente paquete de nombre: `mongoose`.
@@ -606,13 +604,13 @@ El código anterior se modificó para que concuerde con el modelo y el esquema q
 #### Pruebas guardando datos
 Si se lanza una petición a la ruta para craer un nuevo objeto en la base de datos, la respuesta sería la siguiente:
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/nuevo_objeto_mlab.PNG" alt="nuevo_objeto_mlabd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/nuevo_objeto_mlab.PNG" alt="nuevo_objeto_mlabd"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/nuevo_objeto_mlab.PNG" alt="nuevo_objeto_mlabd"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/nuevo_objeto_mlab.PNG" alt="nuevo_objeto_mlabd"></a>
 
 En la imagen puede apreciarse que no es necesario establecer un id, ya que se le ha dicho que se defina un id de acuerdo al esquema y al modelo que se definió con mongoose.
 
 Se puede ver también que hay una persistencia de datos revisando la base de datos.
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/mlab_primer_objeto.PNG" alt="mlab_primer_objetod"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/mlab_primer_objeto.PNG" alt="mlab_primer_objetod"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/mlab_primer_objeto.PNG" alt="mlab_primer_objetod"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/mlab_primer_objeto.PNG" alt="mlab_primer_objetod"></a>
 
 
 ---
@@ -675,11 +673,11 @@ router.put('/edit/:id', (req, res) => {
 ```
 
 En la siguiente imagen puede verse los datos que se encuentran actualmente.
-<a href="{{ site.baseurl }}{{ page.image_dir }}/datos_antes_editar.PNG"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/datos_antes_editar.PNG" alt="datos_antes_editar"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/datos_antes_editar.PNG"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/datos_antes_editar.PNG" alt="datos_antes_editar"></a>
 
 Si se envía una petición de tipo PUT para editar ese objeto, se obtiene el objeto modificado.
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/respuesta_editar.PNG"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/respuesta_editar.PNG" alt="respuesta_editar"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/respuesta_editar.PNG"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/respuesta_editar.PNG" alt="respuesta_editar"></a>
 ---
 
 ### DELETE
@@ -706,7 +704,7 @@ router.delete('/delete/:id', (req, res) => {
 ```
 Para eliminar el objeto simplemente es necesario pasar el id por la URL haciendo una petición del tipo DELETE.
 
-<a href="{{ site.baseurl }}{{ page.image_dir }}/respuesta_borrar.PNG"><img class="img__responsive" src="{{ site.baseurl }}{{ page.image_dir }}/respuesta_borrar.PNG" alt="respuesta_borrar"></a>
+<a href="{{ site.baseurl }}{{ page.images_directory }}/respuesta_borrar.PNG"><img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/respuesta_borrar.PNG" alt="respuesta_borrar"></a>
 
 Nótese que se están utilizando los verbos POST, PUT y DELETE que generalmente se usan en aplicaciones con arquitectura REST.
 

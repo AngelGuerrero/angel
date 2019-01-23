@@ -32,7 +32,7 @@ fields:
     - posts
     - exercises
   label: category
-  default: Proyectos
+  default: pages
 - type: datetime
   name: publish_date
   label: Publish date
@@ -52,5 +52,8 @@ fields:
   label: Tags
   description: Etiquetas relacionadas
 - type: text
+- type: text
+  name: image_dir
+  label: Image Directory
 pages:
 - _posts/2018-11-05-iniciando-con-vagrant.md

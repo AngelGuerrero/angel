@@ -34,7 +34,7 @@ fields:
   label: category
   default: pages
 - type: datetime
-  name: publish_date
+  name: date
   label: Publish date
   description: Fecha en que se publicó
   config:
@@ -52,9 +52,9 @@ fields:
   label: Tags
   description: Etiquetas relacionadas
 - type: text
-- type: text
-  name: image_dir
-  label: Image Directory
+  name: images_directory
+  label: Images directory
+  description: Images directory for this post
 pages:
 - _posts/2018-11-05-iniciando-con-vagrant.md
 - _posts/2018-08-15-aprendiendo-mevn.md

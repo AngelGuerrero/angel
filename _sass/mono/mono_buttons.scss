@@ -1,0 +1,36 @@
+//------------------------------------------------
+// Mono Buttons
+//------------------------------------------------
+@mixin setButtonColor($border, $background) {
+  border-color: $border;
+  background-color: $background;
+
+  &:hover {
+    border-color: $background;
+    background-color: $border;
+    color: $background;
+  }
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  border-width: 2px;
+  border-style: solid;
+  transition: all 1s;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-default {
+  @extend .btn;
+  @include setButtonColor(black, white);
+}
+
+.btn-primary {
+  @extend .btn;
+  @include setButtonColor(#5116af, white);
+}

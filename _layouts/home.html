@@ -3,13 +3,13 @@ layout: default
 ---
 
 {%- comment -%}
-  Esta página es usada como página principal,
-  landing page 'home'.
+Esta página es usada como página principal,
+landing page 'home'.
 
-  Es usada por el archivo 'index.md', que es el punto de entrada
-  pero el archivo 'index.md' no tiene contenido, únicamente variables.
+Es usada por el archivo 'index.md', que es el punto de entrada
+pero el archivo 'index.md' no tiene contenido, únicamente variables.
 {%- endcomment -%}
 
-<h1>Home</h1>
-
-{%- include nav.html -%}
+<div class="main-content container">
+  <h1>{{ page.title }}</h1>
+</div>

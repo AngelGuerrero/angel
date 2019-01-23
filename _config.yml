@@ -3,7 +3,7 @@
 #
 
 # User data
-title: Ángel Blog
+title: Ángel Guerrero Blog
 description: > 
 
 # Serving
@@ -36,39 +36,30 @@ collections:
 defaults:
   -
     scope:
-      path: ""
+      path: "_pages/"
       types: pages
     values:
       layout: "minimalistic/layout_page"
   -
     scope:
-      path: ""
+      path: "_posts/"
       type: posts
     values:
-      layout: "minimalistic/layout_post"
-      category: Publicaciones
       image: "assets/img/defaults/abstract-code.jpg"
-      published: false
       author: "Ángel Guerrero"
   -
     scope:
-      path: ""
+      path: "_projects/"
       type: projects
     values:
-      layout: "minimalistic/layout_post"
-      category: Proyectos
       image: "assets/img/defaults/abstract-code.jpg"
-      published: false
       author: "Ángel Guerrero"
   -
     scope:
-      path: ""
+      path: "_exercises/"
       type: exercises
     values:
-      layout: "minimalistic/layout_post"
-      category: Ejercicios
       image: "assets/img/defaults/abstract-code.jpg"
-      published: false
       author: "Ángel Guerrero"
 
 # Iterable collections where you want
@@ -87,12 +78,12 @@ sass:
   style: compressed
 
 # Conversion
-markdown:    kramdown
+markdown: kramdown
 highlighter: rouge
 
 # Markdown Processors
 kramdown:
-  input:          GFM
+  input: GFM
   syntax_highlighter: rouge
 
 # Exclude from processing.

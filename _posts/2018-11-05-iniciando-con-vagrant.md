@@ -4,7 +4,7 @@ curr_img_path: "/vagrant"
 image: assets/img/vagrant/vagrant.png
 img_dir: "/assets/img/vagrant"
 layout: layout_post
-category: Artículos
+category: posts
 publish_date: 2018-11-05 06:00:00 +0000
 tags:
 - vagrant
@@ -61,7 +61,9 @@ Comando: `vagrant box list`
 
 Para instalar Laravel Homestead es necesario clonar su repositorio desde GitHub, indicando la versión deseada, en la página oficial de Laravel se indica que es recomendale clonar el repositorio en la carpeta principal, es decir, en la carpeta principal del usuario Windows, en mi carpeta en este caso.
 
-Comando para clonar el repositorio: `git clone https://github.com/laravel/homestead.git ~/Homestead`
+Comando para clonar el repositorio: 
+
+`git clone https://github.com/laravel/homestead.git ~/Homestead`
 
 <a href="{{ site.baseurl }}{{ page.img_dir }}/clonacion_homestead.JPG">
   <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir}}/clonacion_homestead.JPG" alt="Clonando  homestead en el directorio principal de windows" >

@@ -9,10 +9,8 @@ tags:
 progress: 10
 date: 2019-01-20 18:44:48 +0000
 layout: layout_post
-category: Proyectos
+category: projects
 undefined: ''
 
 ---
-## Para comenzar a redactar este post
-
 Tengo que decir que es cómodo escribir desde un CMS.

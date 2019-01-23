@@ -1,6 +1,8 @@
 ---
+layout: iterable
 title: Últimas publicaciones
-description: ''
+description: 'Lista de posts publicados'
+type: posts
 menu:
   navigation:
     identifier: _posts

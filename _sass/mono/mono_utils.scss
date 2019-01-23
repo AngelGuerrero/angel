@@ -1,0 +1,72 @@
+//------------------------------------------------
+// Utils and tools
+//------------------------------------------------
+
+//------------------------------------------------
+// "Virtual" elements
+//------------------------------------------------
+.dev {
+  border: 1px solid #ff0000;
+}
+
+//------------------------------------------------
+// Flexbox classes
+//------------------------------------------------
+%flex-container {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-v-center {
+  @extend .row;
+  align-items: center;
+}
+
+.row-h-center {
+  @extend .row;
+  justify-content: center;
+}
+
+.column {
+  @extend %flex-container;
+  flex-direction: column;
+}
+
+.column-v-center {
+  justify-content: center;
+}
+
+.column-h-center {
+  align-items: center;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+// Flex grow from 1 to 12, children
+@for $v from 1 to 12 {
+  .grow-#{$v} {
+    flex-grow: #{$v}
+  }
+}

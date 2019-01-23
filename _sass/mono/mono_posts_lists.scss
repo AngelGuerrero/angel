@@ -1,0 +1,80 @@
+//------------------------------------------------
+// Listing post file
+//
+// Styles are used for post, exercises
+// or projects listed.
+//------------------------------------------------
+.listing-header {
+  min-height: 150px;
+}
+
+.listing__description {
+  color: #8f8f8f;
+}
+
+.box-post {
+  margin-bottom: 100px;
+  padding: 10px;
+  transition: all 1s;
+  background-color: $box-back-color;
+}
+
+.box-header {
+  .box__title {
+    color: $link-color;
+  }
+  .box__author {
+    color: #b9b8b8;
+  }
+  .box__publish-date {
+    color: #64b3af;
+  }
+}
+
+.box-body {
+  color: #5e5e5e;
+  display: flex;
+  flex-direction: column;
+}
+
+.box__left {
+  margin-right: 10px;
+}
+
+.box__buttons {
+  margin: 10px 0px;
+}
+
+.tag {
+  font-size: 14px;
+  padding: 5px;
+  color: $tag-front-color;
+  background-color: $tag-back-color;
+  border: 1px solid;
+  border-radius: 3px;
+  margin: 10px 0px;
+  margin-right: 5px;
+}
+
+//------------------------------------------------
+// Media listing posts
+//------------------------------------------------
+@media screen and (min-width: 648px) {
+  .box-post {
+    border-radius: 4px;
+    color: black;
+    &:hover {
+      background-color: $box-back-color;
+    }
+  }
+  .box-body {
+    flex-direction: row;
+  }
+}
+
+// Interval from: 648px to 850px
+@media screen and (min-width: 648px) and (max-width: 850px) {
+  .box__image {
+    display: none;
+  }
+}

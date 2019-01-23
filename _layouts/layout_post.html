@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{%- comment -%}
+Esta plantilla es usada para mostrar
+el contenido de los posts o artículos.
+{%- endcomment -%}
+
+
+<div class="main-yield__post container">
+  <img src="{{ site.url }}{{ site.baseurl }}/{{ page.image }}">
+  {%- include breadcrumb.html -%}
+
+  <div class="box-header column">
+    <h2 class="box__title">{{ page.title }}</h2>
+    <small class="box__publish-date">{{ page.date | date: "%a, %b %d, %y" }}</small>
+    {%- if page.tags -%}
+    <div class="box__tags column">
+      <div class="row-v-center">
+        {%- for tag in page.tags -%}
+        <span class="tag">{{ tag }}</span>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endif -%}
+  </div>
+
+  {{ content }}
+</div>

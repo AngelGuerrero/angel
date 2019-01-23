@@ -6,13 +6,13 @@
  }
 
 .highlight {
-  // overflow: auto;
+  overflow: auto;
   background-color: #f2f6ffa2;
   padding: 10px;
   max-height: 500px;
 
   .highlighter-rouge & {
-    // background: #eef;
+    background: #eef;
   }
 
   .c {

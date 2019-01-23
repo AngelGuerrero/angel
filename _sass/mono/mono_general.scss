@@ -66,19 +66,7 @@ $element-name: h;
 @for $i from 1 to 7 {
   #{$element-name}#{$i} {
     font-family: $mono-font;
-    // color: #167faf;
-    // color: #004e6d;
     color: $titles-color;
-    font-size: ((2.5 - ($i / 2))) + em;
-
-    @if($i < 3) {
-      font-weight: 300;
-    }
-
-    @else {
-      margin: 0;
-      padding: 0;
-    }
   }
 }
 

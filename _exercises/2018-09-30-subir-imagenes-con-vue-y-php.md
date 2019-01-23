@@ -1,7 +1,6 @@
 ---
 title: Subir imágenes con Vue y Php
 image: assets/img/defaults/keyboard.jpg
-repo: https://github.com/AngelGuerrero/upload-images-php
 date: 2018-09-30 22:42:58 -0500
 layout: layout_post
 category: exercises

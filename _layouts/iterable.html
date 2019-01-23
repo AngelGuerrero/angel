@@ -54,8 +54,8 @@ Las variables para "page", vienen del archivo 'post.md'
           </div>
           <div class="box__buttons row between">
             <a href="{{ site.baseurl }}{{ post.url }}" class="btn-default">Leer más...</a>
-            {%- if post.repo -%}
-            <a href="{{ site.baseurl }}{{ post.repo }}" class="btn-primary">Ver repositorio</a>
+            {%- if post.repository != '' -%}
+            <a href="{{ post.repository }}" class="btn-primary">Ver repositorio</a>
             {%- endif -%}
           </div>
         </div>

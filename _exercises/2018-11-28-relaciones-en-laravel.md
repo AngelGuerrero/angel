@@ -1,11 +1,21 @@
 ---
-title: "Relaciones de uno a uno y de uno a muchos usando Eloquent"
-published: true
+title: Relaciones de uno a uno y de uno a muchos usando Eloquent
 image: assets/img/defaults/abstract-code.jpg
-images: /assets/img/excercises/laravel-orm-relationships
+images: "/assets/img/excercises/laravel-orm-relationships"
 repo: https://www.github.com/AngelGuerrero/laravel-eloquent-examples
----
+layout: layout_post
+category: exercises
+date: 2018-11-28 06:00:00 +0000
+repository: https://www.github.com/AngelGuerrero/laravel-eloquent-examples
+tags:
+- Laravel
+- PHP
+- ORM
+- Eloquent
+- ERD
+images_directory: "/assets/img/excercises/laravel-orm-relationships"
 
+---
 Recientemente he comenzado a realizar prácticas con Laravel, pues tengo varios proyectos en mente que quiero implementar especialmente con Php, al contrario de lo que muchos desarrolladores comentan sobre "lo malo de Php", las nuevas versiones en especial la versión 7 de Php y junto con la popularidad de Laravel, ha hecho que Php "vuelva a ser popular".
 
 Anteriormente había estado trabajando con Ruby en Rails, y bueno, tuve buenas y malas experiencias, pero creo que me quedé más con las malas experiencias que con las buenas, en parte por ignorar herramientas como vagrant o similares, tuve problemas principalmente con la ambientación para trabajar con las herramientas que se requerían "gemas".

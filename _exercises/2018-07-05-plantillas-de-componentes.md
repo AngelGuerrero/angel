@@ -2,7 +2,6 @@
 title: Plantillas de componentes en Vue
 image: assets/img/vue/vue.jpeg
 date: 2018-07-05 21:50:58 -0500
-repo: https://github.com/AngelGuerrero/learn-vue/tree/master/2_component-template
 layout: layout_post
 category: exercises
 repository: https://github.com/AngelGuerrero/learn-vue/tree/master/2_component-template

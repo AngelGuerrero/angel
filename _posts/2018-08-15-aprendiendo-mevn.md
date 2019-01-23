@@ -12,6 +12,6 @@ tags:
 - Vue.js
 - JavaScript
 - Backend
-images_directory: ''
+images_directory: "/assets/img/mevn"
 
 ---

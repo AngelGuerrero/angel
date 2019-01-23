@@ -17,6 +17,12 @@
   .breadcrumb__wrapper {
     .breadcrumb {
       flex-direction: row;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &__item {
+        margin-left: 7px;
+      }
     }
   }
 }

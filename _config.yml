@@ -5,6 +5,9 @@
 # User data
 title: Ángel Guerrero Blog
 description: > 
+author:
+  twitter: _AngelGuerrero_
+  github: angelguerrero
 
 # Serving
 detach:  false

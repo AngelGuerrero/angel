@@ -1,11 +1,20 @@
 ---
 title: Conversion de expresion infija a postfija
 date: 2018-02-07 18:40:49 +0000
-curr_img_path: /postfijo
+curr_img_path: "/postfijo"
 image: assets/img/java/postfijo/portada.PNG
-img_dir: /assets/img/java
+img_dir: "/assets/img/java"
 repo: https://github.com/AngelGuerrero/infijo-postfijo-java
-published: true
+layout: layout_post
+category: projects
+repository: https://github.com/AngelGuerrero/infijo-postfijo-java
+tags:
+- Java
+- JavaFX
+- Math
+- Frontend
+images_directory: "/assets/img/java/postfijo"
+
 ---
 Como ejercicio escolar me han dejado que desarrolle la evaluación de una expresión infija y convertirla a postfija
 específicamente en Java.

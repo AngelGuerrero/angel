@@ -1,11 +1,21 @@
 ---
 title: Ejemplo usando Vue-Router
-published: true
 image: assets/img/vue/home-vue-router-example.png
-curr_img_path: /vue
+curr_img_path: "/vue"
 repo: https://github.com/AngelGuerrero/vue-router-example
----
+layout: layout_post
+category: pages
+date: 2018-07-09 05:00:00 +0000
+repository: https://github.com/AngelGuerrero/vue-router-example
+tags:
+- Vue.js
+- JavaScript
+- Frontend
+- Vue-Router
+- SPA
+images_directory: "/assets/img/vue"
 
+---
 Recientemente comencé a utilizar Vue.js, y quería saber cómo integrar Vue con cualquier sistema backend, pero para ello he tenido qué realizar varios ejercicios para comprender el funcionamiento de los componentes que lo integran.
 
 En este ejercicio comparto cómo comenzar a utilizar la librería de [Vue-Router](https://router.vuejs.org/).
@@ -52,6 +62,3 @@ Con este código ya se tendría una pequeña aplicación funcional.
 
 ### Demo
 Se puede ver una **demostración** en el siguiente enlace: [Vue Router Ejemplo](https://vue-spa-example.firebaseapp.com/).
-
-
-

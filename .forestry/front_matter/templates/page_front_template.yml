@@ -1,6 +1,6 @@
 ---
 label: page_front_template
-hide_body: true
+hide_body: false
 is_partial: false
 fields:
 - type: text

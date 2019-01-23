@@ -6,7 +6,7 @@ image: assets/img/java/postfijo/portada.PNG
 img_dir: "/assets/img/java"
 repo: https://github.com/AngelGuerrero/infijo-postfijo-java
 layout: layout_post
-category: projects
+category: exercises
 repository: https://github.com/AngelGuerrero/infijo-postfijo-java
 tags:
 - Java

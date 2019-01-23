@@ -1,11 +1,19 @@
 ---
 title: Plantillas de componentes en Vue
 image: assets/img/vue/vue.jpeg
-published: true
-date: "2018-07-05 21:50:58 -0500"
+date: 2018-07-05 21:50:58 -0500
 repo: https://github.com/AngelGuerrero/learn-vue/tree/master/2_component-template
----
+layout: layout_post
+category: exercises
+repository: https://github.com/AngelGuerrero/learn-vue/tree/master/2_component-template
+tags:
+- Vue.js
+- Templates
+- Components
+- Frontend
+- JavaScript
 
+---
 Vue es tan variante que permite realizar una tarea de distintas maneras, te da la oportunidad de realizarlas en base a tus necesidades y en este caso con las `template components`.
 
 ## Qué son las plantillas de componentes

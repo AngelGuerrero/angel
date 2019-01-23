@@ -13,7 +13,7 @@ fields:
     - minimalistic/post_layout
     - layout_post
   label: layout
-  default: posts_lists
+  default: minimalistic/post_layout
 - type: text
   label: Title
   name: title
@@ -27,10 +27,10 @@ fields:
       type: simple
     required: true
     options:
-    - Proyectos
-    - Páginas
-    - Ejercicios
-    - Artículos
+    - pages
+    - projects
+    - posts
+    - exercises
   label: category
   default: Proyectos
 - type: datetime

@@ -56,6 +56,7 @@ fields:
   description: Images directory for this post
 pages:
 - _exercises/2018-11-28-relaciones-en-laravel.md
+- _exercises/2018-07-01-iniciando-con-componentes-vue.md
 - _posts/2018-07-09-vue-router-example.md
 - _posts/2018-08-15-aprendiendo-mevn.md
 - _posts/2018-11-05-iniciando-con-vagrant.md

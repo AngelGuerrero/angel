@@ -1,13 +1,21 @@
 ---
 title: Lista de tareas con JavaFX
 date: 2018-02-01 18:40:49 +0000
-current: /lista-tareas-javafx
+current: "/lista-tareas-javafx"
 image: assets/img/java/lista-tareas-javafx/portada.PNG
-dir: /assets/img/java
+dir: "/assets/img/java"
 repo: https://github.com/AngelGuerrero/lista-tareas-javafx
-published: true
----
+layout: layout_post
+category: exercises
+repository: https://github.com/AngelGuerrero/lista-tareas-javafx
+tags:
+- Java
+- JavaFX
+- LinkedList
+- Frontend
+images_directory: "/assets/img/java/lista-tareas-javafx"
 
+---
 Recientemente me han dejado un ejercicio de la materia de _"estructura de datos"_, donde debo de utilizar las listas enlazadas simples en Java y como un plus usar una librería para interfaz gráfica, investigué y decidí utilizar JavaFX por lo simple que es.
 
 No sólo es simple el uso de JavaFx también me pareció muy bonito y personalizable, lo que más me llamó la atención de la librería es que se pueden utilizar hojas de estilo `CSS` para personalizar la aplicación. Además de que cuenta con algunos componentes para ordenar los elementos en forma de grilla verticalmente u horizontalmente.

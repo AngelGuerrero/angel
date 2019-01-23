@@ -23,3 +23,5 @@ fields:
   label: Type
   config:
     required: true
+pages:
+- ejercicios.md

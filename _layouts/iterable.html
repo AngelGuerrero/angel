@@ -18,48 +18,49 @@ Las variables para "page", vienen del archivo 'post.md'
 
   {% for collection in site.collections %}
 
-    {%- if collection.label == page.type -%}
-      {% assign name = collection.label %}
-    {%- endif -%}
+  {%- if collection.label == page.type -%}
+    {% assign name = collection.label %}
 
     {% if site.iterable_collections contains name %}
       {% for post in site[name] %}
-        <div class="box-post">
-          <div class="box-header column">
-            <h2>
-              <a class="box__title" href="{{ site.baseurl }}{{ post.url }}">
-                {{ post.title }}
-              </a>
-            </h2>
-            <small class="box__publish-date">{{ post.date | date: "%a, %b %d, %y" }}</small>
-          </div>
+      <div class="box-post">
+        <div class="box-header column">
+          <h2>
+            <a class="box__title" href="{{ site.baseurl }}{{ post.url }}">
+              {{ post.title }}
+            </a>
+          </h2>
+          <small class="box__publish-date">{{ post.date | date: "%a, %b %d, %y" }}</small>
+        </div>
 
-          <div class="box-body">
-            <p class="box__text"> {{ post.excerpt }} </p>
-            <div class="box__image row-v-center row-h-center">
-              <img class="box__thumbnail" src="{{ post.image }}">
-            </div>
-          </div>
-
-          <div class="box-footer">
-            <div class="box__tags column">
-              <h3>Tags</h3>
-              <div class="row-v-center">
-                {%- for tag in post.tags -%}
-                <span class="tag">{{ tag }}</span>
-                {%- endfor -%}
-              </div>
-            </div>
-          </div>
-          <div class="box__buttons row between">
-            <a href="{{ site.baseurl }}{{ post.url }}" class="btn-default">Leer más...</a>
-            {%- if post.repo -%}
-            <a href="{{ site.baseurl }}{{ post.repo }}" class="btn-primary">Ver repositorio</a>
-            {%- endif -%}
+        <div class="box-body">
+          <p class="box__text"> {{ post.excerpt }} </p>
+          <div class="box__image row-v-center row-h-center">
+            <img class="box__thumbnail" src="{{ post.image }}">
           </div>
         </div>
+
+        <div class="box-footer">
+          <div class="box__tags column">
+            <h3>Tags</h3>
+            <div class="row-v-center">
+              {%- for tag in post.tags -%}
+              <span class="tag">{{ tag }}</span>
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+        <div class="box__buttons row between">
+          <a href="{{ site.baseurl }}{{ post.url }}" class="btn-default">Leer más...</a>
+          {%- if post.repo -%}
+          <a href="{{ site.baseurl }}{{ post.repo }}" class="btn-primary">Ver repositorio</a>
+          {%- endif -%}
+        </div>
+      </div>
       {% endfor %}
     {% endif %}
+  {%- endif -%}
+
   {% endfor %}
 
 </div>

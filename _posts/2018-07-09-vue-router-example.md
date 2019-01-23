@@ -3,7 +3,7 @@ title: Ejemplo usando Vue-Router
 image: assets/img/vue/home-vue-router-example.png
 repo: https://github.com/AngelGuerrero/vue-router-example
 layout: layout_post
-category: pages
+category: posts
 date: 2018-07-09 05:00:00 +0000
 repository: https://github.com/AngelGuerrero/vue-router-example
 tags:

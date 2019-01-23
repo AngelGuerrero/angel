@@ -27,7 +27,6 @@ fields:
       type: simple
     required: true
     options:
-    - pages
     - projects
     - posts
     - exercises

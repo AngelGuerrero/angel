@@ -1,9 +1,15 @@
 ---
-title: "Reto de programación: 'Cuadrado de números'"
-published: true
+title: 'Reto de programación: ''Cuadrado de números'''
 image: assets/img/defaults/codes-computer.jpg
----
+layout: minimalistic/post_layout
+category: exercises
+date: 2017-07-23 05:00:00 +0000
+tags:
+- C++
+- Challenge
+- Math
 
+---
 Otro reto de programación que me pareció interesante fue el siguiente.
 
 ```text

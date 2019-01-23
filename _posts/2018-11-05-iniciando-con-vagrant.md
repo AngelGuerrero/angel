@@ -1,13 +1,15 @@
 ---
 title: Iniciando con vagrant
 curr_img_path: "/vagrant"
-image: assets/img/vagrant/vagrant.png
+image: "/uploads/vagrant.png"
 img_dir: "/assets/img/vagrant"
 layout: layout_post
 category: posts
 publish_date: 2018-11-05 06:00:00 +0000
 tags:
 - vagrant
+repository: ''
+undefined: ''
 
 ---
 Al tomar proyectos donde se necesitan herramientas y versiones específicas para esos desarrollos a veces se vuelve pesado, hace poco trabajé con Ruby 2.0.1 y la versión Rails 4, y tuve muchos dolores de cabeza por las versiones y las dependencias para las gemas que utilizaba el proyecto, ya que era un proyecto que no se le había dado mantenimiento durante unos dos años aproximadamente, pero ahora está vagrant.

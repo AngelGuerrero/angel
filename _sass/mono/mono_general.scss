@@ -1,10 +1,10 @@
 //------------------------------------------------
 // Fonts
 //------------------------------------------------
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans");
 
-$mono-font: 'Major Mono Display', monospace;
-$open-sans: 'Open Sans', sans-serif;
+$mono-font: "Major Mono Display", monospace;
+$open-sans: "Open Sans", sans-serif;
 
 //------------------------------------------------
 // General classes
@@ -12,51 +12,50 @@ $open-sans: 'Open Sans', sans-serif;
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: $open-sans;
-  font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-family: $open-sans;
+    font-size: 1rem;
 }
 
 #app {
-  height: 100vh;
-  overflow: hidden;
+    height: 100vh;
+    overflow: hidden;
 }
 
 pre {
-  overflow: auto;
+    overflow: auto;
 }
 
 // Small code, no block
 code.highlighter-rouge {
-  background-color: #e0dddd;
-  padding: 5px;
-  border-radius: 3px;
-  overflow: auto;
+    background-color: #e0dddd;
+    padding: 5px;
+    border-radius: 3px;
+    overflow: auto;
 }
 
 blockquote {
-  margin-left: 3px;
-  border-left: 5px solid lightblue;
-  background-color: #e3f8ff;
-  width: 100%;
-  padding: 5px;
+    margin-left: 3px;
+    border-left: 5px solid lightblue;
+    background-color: #e3f8ff;
+    width: 100%;
+    padding: 5px;
 }
 
 .container {
-  padding: 15px;
-  margin: 5px 0px;
-  width: auto;
+    padding: 15px;
+    margin: 5px 0px;
+    width: auto;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
-
 
 //------------------------------------------------
 // Custom headers
@@ -64,19 +63,19 @@ img {
 $element-name: h;
 
 @for $i from 1 to 7 {
-  #{$element-name}#{$i} {
-    font-family: $mono-font;
-    color: $titles-color;
-  }
+    #{$element-name}#{$i} {
+        font-family: $mono-font;
+        color: $titles-color;
+    }
 }
 
 //------------------------------------------------
 // Medias
 //------------------------------------------------
 @media screen and (min-width: 648px) {
-  .container {
-    width: 80%;
-    max-width: 900px;
-    margin: auto;
-  }
+    .container {
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
+    }
 }

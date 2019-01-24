@@ -24,6 +24,19 @@
 }
 
 //------------------------------------------------
+// Presentation
+//------------------------------------------------
+.type__presentation {
+  // font-family: $consolas-font;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+strong {
+  color: tomato;
+}
+
+//------------------------------------------------
 // Main yield, this is where
 // post content is loaded
 //------------------------------------------------

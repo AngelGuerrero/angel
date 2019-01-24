@@ -152,11 +152,11 @@ A continuación se muestra un ejemplo de los conceptos descritos sobre los compo
 
 Archivo `index.html`
 
-<code data-gist-id="714d0e099f7b040b7c564ccdd95c3860" data-gist-file="index.html">
+{% gist 714d0e099f7b040b7c564ccdd95c3860 index.html %}
 
 Archivo `script.js`
 
-<code data-gist-id="714d0e099f7b040b7c564ccdd95c3860" data-gist-file="script.js">
+{% gist 714d0e099f7b040b7c564ccdd95c3860 script.js %}
 
 ## En vivo
 

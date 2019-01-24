@@ -1,14 +1,24 @@
-{%- comment -%}
-  Archivo usado para mostrar la navegación
-  usando el plugin jekyll-menus
-{%- endcomment -%}
+<!-- Menú orientado a la izquierda -->
+<nav class="navbar column column-h-center">
+  <div class="navbar__profile">
+    <img src="{{ site.baseurl }}/uploads/me.jpg" class="profile__image" alt="">
+  </div>
 
-{% assign url = page.url | remove:'index.html' %}
-
-<a href="{{ "/" | absolute_url }}"> Home </a>
-<br>
-
-{%- for link in site.menus.navigation -%}
-  <a href="{{ link.url | absolute_url }}">{{ link.title }}</a>
-  <br>
-{%- endfor -%}
+  <div class="navbar__menu around grow-1 column">
+    <a href="{{ '/' | absolute_url }}" class="menu__item row-v-center row-h-center">
+      <i class="fas fa-home fa-1x menu__icon"></i>
+    </a>
+    <a href="{{ site.baseurl }}/posts" class="menu__item  row-v-center row-h-center">
+      <i class="fas fa-newspaper fa-1x menu__icon"></i>
+    </a>
+    <a href="{{ site.baseurl }}/exercises" class="menu__item  row-v-center row-h-center">
+      <i class="fas fa-dumbbell fa-1x menu__icon"></i>
+    </a>
+    <a href="{{ site.baseurl }}/projects" class="menu__item  row-v-center row-h-center">
+      <i class="fas fa-project-diagram fa-1x menu__icon"></i>
+    </a>
+    <a href="{{ site.baseurl }}/contact" class="menu__item  row-v-center row-h-center">
+      <i class="fas fa-id-card fa-1x menu__icon"></i>
+    </a>
+  </div>
+</nav>

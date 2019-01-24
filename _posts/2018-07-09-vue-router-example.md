@@ -37,14 +37,14 @@ Una vez que se verifica que todo funciona correctamente se quita el código que 
 > Es recomendable que primero se cree el componente `NotFound.vue` para saber cuando una página no se encuentra y poder obtener información acerca de ello.
 
 ### Componente NotFound.vue
-<code data-gist-id="3980a8df32503ce471d5bf08fa5b0287" data-gist-file="NotFound.vue"></code>
 
+{% gist 3980a8df32503ce471d5bf08fa5b0287 NotFound.vue %}
 
 ### Componente Welcome.vue
-<code data-gist-id="3980a8df32503ce471d5bf08fa5b0287" data-gist-file="Welcome.vue"></code>
+{% gist 3980a8df32503ce471d5bf08fa5b0287 Welcome.vue %}
 
 ### Componente Post.vue
-<code data-gist-id="3980a8df32503ce471d5bf08fa5b0287" data-gist-file="Post.vue"></code>
+{% gist 3980a8df32503ce471d5bf08fa5b0287 Post.vue %}
 
 
 > Es importante notar el comodín que corresponde al componente `NotFound`, éste debe de ir al último de las rutas, ya que se lee de una forma secuencial funcionando como si fuese un `switch-case`. Además notar también que la ruta para los post tiene un slash al inicio, si se llegara a omitir lanzaría un error 404 ya que no estaría bien formada esa ruta.
@@ -57,7 +57,7 @@ Por último, es necesario implementar dónde irán los enlaces que llamaran y ca
 Con este código ya se tendría una pequeña aplicación funcional.
 
 ### App.vue
-<code data-gist-id="3980a8df32503ce471d5bf08fa5b0287" data-gist-file="App.vue"></code>
+{% gist 3980a8df32503ce471d5bf08fa5b0287 App.vue %}
 
 ### Demo
 Se puede ver una **demostración** en el siguiente enlace: [Vue Router Ejemplo](https://vue-spa-example.firebaseapp.com/).

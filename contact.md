@@ -11,7 +11,7 @@ Soy totalmente autodidacta y me gusta mucho la modalidad en línea, me permite a
 
 Anteriormente realizaba mis prácticas profesionales en una consultoría de software, durante ese tiempo aprendí herramientas y tecnologías sobre la marcha, pero lo más importante es que aprendí de mis errores, aprendí de los consejos de mis líderes, y conocí personas de gran corazón para admirar.
 
-**Me encuentro en búsqueda de oportunidad laboral, si deseas contactarme, puedes comunicarme por cualquiera de los siguientes medios.**
+**Me encuentro en búsqueda de oportunidad laboral, si deseas contactarme, puedes comunicarte por cualquiera de los siguientes medios.**
 
 Correo electrónico: lasantiagoguerrero@gmail.com
 

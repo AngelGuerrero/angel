@@ -42,4 +42,4 @@ El ejercicio lo realicé en `Python` y obtuve el siguiente resultado:
 
 El código es el siguiente:
 
-<code data-gist-id="75e6efd821d29f3fe4c6"></code>
+{% gist 75e6efd821d29f3fe4c6 %}

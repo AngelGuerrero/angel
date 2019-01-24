@@ -5,9 +5,7 @@ layout: home
 ---
 # {{ page.title }}
 
-<img src="/uploads/yo_azul.jpg" height="200"/>
-
-![](/uploads/yo_azul.jp =100x20)
+<img class="img__container" src="/uploads/yo_azul.jpg"/>
 
 Actualmente soy estudiante de la carrera en Ingeniería en Desarrollo de Software en la [Universidad Abierta y a Distancia de México](https://unadmexico.mx/), la cual terminaré a finales del siguiente año.
 
@@ -19,6 +17,6 @@ Anteriormente realizaba mis prácticas profesionales en una consultoría de soft
 
 Correo electrónico: lasantiagoguerrero@gmail.com
 
-Twitter: [@](https://twitter.com/{{ site.author.twitter }})`[_AngelGuerrero_](https://twitter.com/{{ site.author.twitter }})`
+Twitter: [@AngelGuerrero](https://twitter.com/{{ site.author.twitter }})`
 
 GitHub: [AngelGuerrero](https://github.com/{{ site.author.github }})

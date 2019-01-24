@@ -17,6 +17,22 @@
 }
 
 //------------------------------------------------
+// Langind page styles
+//------------------------------------------------
+.app-back-black {
+  color: #12c012;
+  background-color: black;
+
+  &>* {
+    background-color: black;
+  }
+}
+
+.type__branding {
+  color: #47cbff;
+}
+
+//------------------------------------------------
 // Main-yield NO POST
 //------------------------------------------------
 .main-yield {

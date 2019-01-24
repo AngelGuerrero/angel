@@ -8,7 +8,8 @@ new TypeIt('.type__branding', {
 }).go();
 
 new TypeIt('.type__presentation', {
-  strings: ["Desarrollador jr.",
+  strings: ["Desarrollador jr.\n",
+            "\n",
             "\Con un año de experiencia en prácticas profesionales \n",
             "enfocado al desarrollo web, \n",
             "con conocimientos en Frontend y Backend... \n\n"],

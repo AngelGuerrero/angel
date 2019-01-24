@@ -17,7 +17,7 @@ el contenido de los posts o artículos.
     <small class="box__publish-date">{{ page.date | date: "%a, %b %d, %y" }}</small>
     {%- if page.tags -%}
     <div class="box__tags column">
-      <div class="row-v-center">
+      <div class="row-v-center wrap">
         {%- for tag in page.tags -%}
         <span class="tag">{{ tag }}</span>
         {%- endfor -%}

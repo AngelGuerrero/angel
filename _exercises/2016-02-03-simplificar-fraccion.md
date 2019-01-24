@@ -13,7 +13,7 @@ Hace tiempo mientras me encontraba buscando ejercicios de programación, un comp
 
 El reto es el siguiente: 
 
-```text
+```
 Con el proposito de evitarse el tedioso trabajo de corregir
 los ejercicios sobre simplificación de quebrados a su expresión
 mas sencilla, la profesora Elena Gonzáles transformó su calculadora

@@ -44,7 +44,7 @@ Las variables para "page", vienen del archivo 'post.md'
             {%- if page.tags != '' -%}
               <div class="box__tags column">
                 <h3>Tags</h3>
-                <div class="row-v-center">
+                <div class="row-v-center wrap">
                   {%- for tag in post.tags -%}
                   <span class="tag">{{ tag }}</span>
                   {%- endfor -%}

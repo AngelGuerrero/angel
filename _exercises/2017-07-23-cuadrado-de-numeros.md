@@ -31,4 +31,4 @@ El programa lo realicé en `C++` y el resultado fue el siguiente, cabe mencionar
 
 El código es el siguiente:
 
-<code data-gist-id="192dd8fcc187f4e21386"></code>
+{% gist 192dd8fcc187f4e21386 %}

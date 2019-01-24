@@ -1,17 +1,23 @@
 ---
 title: Conversion de expresion infija a postfija
 date: 2018-02-07 18:40:49 +0000
-curr_img_path: /postfijo
 image: assets/img/java/postfijo/portada.PNG
-img_dir: /assets/img/java
-repo: https://github.com/AngelGuerrero/infijo-postfijo-java
-published: true
+layout: layout_post
+category: exercises
+repository: https://github.com/AngelGuerrero/infijo-postfijo-java
+tags:
+- Java
+- JavaFX
+- Math
+- Frontend
+images_directory: "/assets/img/java/postfijo"
+
 ---
 Como ejercicio escolar me han dejado que desarrolle la evaluación de una expresión infija y convertirla a postfija
 específicamente en Java.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}{{ page.curr_img_path }}/aplicacion.PNG">
-  <img src="{{ site.baseurl }}{{ page.img_dir }}{{ page.curr_img_path }}/aplicacion.PNG" alt="">
+<a href="{{ site.baseurl }}{{ page.images_directory }}/aplicacion.PNG">
+  <img src="{{ site.baseurl }}{{ page.images_directory }}/aplicacion.PNG" alt="">
 </a>
 
 
@@ -23,8 +29,8 @@ aritméticas mediante pilas.
 De acuerdo a las operaciones que se necesitan implementar no se utilizan del todo "pilas", mi solución fue utilizar dos
 pilas para mostrar el resultado, y dos listas enlazadas simples.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}{{ page.curr_img_path }}/variables.PNG">
-  <img src="{{ site.baseurl }}{{ page.img_dir }}{{ page.curr_img_path }}/variables.PNG" alt="Variables" class="img__responsive">
+<a href="{{ site.baseurl }}{{ page.images_directory }}/variables.PNG">
+  <img src="{{ site.baseurl }}{{ page.images_directory }}/variables.PNG" alt="Variables" class="img__responsive">
 </a>
 
 En la imagen de arriba se puede observar que he declarado una pila para obtner el resultado final, y una lista
@@ -33,15 +39,15 @@ doblemente enlazada para listar los operadores que pudiera tener la expresión.
 Además de definir las letras con las que se puede trabajar, sus operadores y la definición de separadores de apertura y
 cierre, así se tiene un mejor control de qué se está evaluando.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}{{ page.curr_img_path }}/variables_2.PNG">
-  <img src="{{ site.baseurl }}{{ page.img_dir }}{{ page.curr_img_path }}/variables_2.PNG" alt="" srcset="">
+<a href="{{ site.baseurl }}{{ page.images_directory }}/variables_2.PNG">
+  <img src="{{ site.baseurl }}{{ page.images_directory }}/variables_2.PNG" alt="" srcset="">
 </a>
 
 Antes de comenzar a realizar el procedimiento es necesario definir la prioridad de los operadores existentes, en mi
 caso lo he dejado de la siguiente manera:
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}{{ page.curr_img_path }}/prioridad_de_operadores.PNG">
-  <img src="{{ site.baseurl }}{{ page.img_dir }}{{ page.curr_img_path }}/prioridad_de_operadores.PNG" alt="" srcset="">
+<a href="{{ site.baseurl }}{{ page.images_directory }}/prioridad_de_operadores.PNG">
+  <img src="{{ site.baseurl }}{{ page.images_directory }}/prioridad_de_operadores.PNG" alt="" srcset="">
 </a>
 
 A la función anterior que le he llamado `compare` se le pasa como parámetro un carácter y ésta decide cuál es su valor
@@ -69,7 +75,7 @@ torre de Hanoi.
 almacena el resultado final y simplemente se muestra de la forma correcta, yo utilicé una pila más como pila auxiliar
 para mostar los datos correctamente.
 
-<a href="{{ site.baseurl }}{{ page.img_dir }}{{ page.curr_img_path }}/portada.PNG">
-  <img class="img__responsive" src="{{ site.baseurl }}{{ page.img_dir }}{{ page.curr_img_path }}/portada.PNG" alt=""
+<a href="{{ site.baseurl }}{{ page.images_directory }}/portada.PNG">
+  <img class="img__responsive" src="{{ site.baseurl }}{{ page.images_directory }}/portada.PNG" alt=""
     srcset="">
 </a>

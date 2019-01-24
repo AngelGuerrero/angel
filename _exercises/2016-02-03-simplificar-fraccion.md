@@ -1,14 +1,19 @@
 ---
-title: "Reto de programación: Simplificar fracción"
-published: true
+title: 'Reto de programación: Simplificar fracción'
 image: assets/img/defaults/python_wall.jpg
----
+layout: layout_post
+category: exercises
+date: 2016-02-03 06:00:00 +0000
+tags:
+- Python
+- Challenge
 
+---
 Hace tiempo mientras me encontraba buscando ejercicios de programación, un compañero me mandó un ejercicio y el reto consistía en utilizar cualquier lenguaje de programación pero tenía que usar recursión.
 
 El reto es el siguiente: 
 
-```text
+```
 Con el proposito de evitarse el tedioso trabajo de corregir
 los ejercicios sobre simplificación de quebrados a su expresión
 mas sencilla, la profesora Elena Gonzáles transformó su calculadora

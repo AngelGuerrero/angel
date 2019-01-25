@@ -50,3 +50,7 @@ Si se trata de buscar un contacto que no exista, mostrará el siguiente mensaje:
 ![](/uploads/busqueda_extrano.png)
 
 ![](/uploads/noexiste_extrano.png)
+
+## Ordenación
+
+Para ordenar los contactos se me ocurrió crear una tabla, un arreglo bidimensional para almacenar el índice de la categoría y el segundo índice contiene únicamente el nombre del contacto.

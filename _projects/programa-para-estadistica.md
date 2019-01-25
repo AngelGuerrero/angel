@@ -26,11 +26,11 @@ En realidad fue algo muy simple, en base a la entrada de datos por parte del usu
 
 Aunque el programa cuenta con una función para realizar una demostración, muestro algunas capturas de pantalla del programa.
 
-![](/uploads/app_menu.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_menu.JPG)
 
-![](/uploads/app_ayuda.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_ayuda.JPG)
 
   
-![](/uploads/app_demo_abajo.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_demo_abajo.JPG)
 
 Se puede descargar el repositorio y en este contiene un ejecutable para plataforma Windows.

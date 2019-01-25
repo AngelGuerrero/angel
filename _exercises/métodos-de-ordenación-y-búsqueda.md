@@ -54,3 +54,27 @@ Si se trata de buscar un contacto que no exista, mostrará el siguiente mensaje:
 ## Ordenación
 
 Para ordenar los contactos se me ocurrió crear una tabla, un arreglo bidimensional para almacenar el índice de la categoría y el segundo índice contiene únicamente el nombre del contacto.
+
+![](/uploads/arreglo_tabla.png)
+
+De esta manera cuando se necesite un contacto, busca el nombre en la variable `table`, también como buscar todos los contactos que sean de un grupo en específico.
+
+Para ordenar los contactos se tiene qué indicar qué grupo de contactos se pretende ordenar, no ordena a todos los contactos por defecto, por ejemplo, se tiene la lista de contactos del grupo de amigos actualmente desordenados, llamando al método `book.showTable()`.
+
+![](/uploads/contactos_en_tabla.png)
+
+Cuando se pide que se ordenen los contactos de este grupo:
+
+![](/uploads/peticion_ordenacion.png)
+
+Entonces muestra el siguiente resultado:
+
+![](/uploads/contactos_ordenados.png)
+
+Al igual para otro grupo, por ejemplo el grupo _familia_:
+
+![](/uploads/familia_ordenada.png)
+
+## Ventajas y desventajas
+
+En la implementación de este programa realicé algoritmos muy rudimentarios, es decir con poca eficiencia, me parece que realicé demasiados bucles y algunos quizás innecesarios, con un gran volumen de datos definitivamente éste no es el enfoque, pero para ejercicio escolar creo que sirve como un inicio.

@@ -33,7 +33,7 @@ En la siguiente imagen se muestra que primero creo un grupo llamado `Amigos`, y 
 
 Y al último se muestran los contactos que he agregado.
 
-![](/uploads/contactos_guardados.png =200x100)
+![](/uploads/contactos_guardados.png)
 
 ## Búsqueda
 

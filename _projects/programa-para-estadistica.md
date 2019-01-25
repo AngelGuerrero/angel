@@ -11,7 +11,6 @@ tags:
 - Proyecto-escolar
 - Universidad
 images_directory: assets/img/programa_estadistica
-published: false
 
 ---
 Hace poco por parte de la escuela, me solicitaron realizar un proyecto, programa en el tema de la estadística.
@@ -22,3 +21,15 @@ En realidad fue algo muy simple, en base a la entrada de datos por parte del usu
 * Frecuencia acomulada
 * Frecuencia relativa
 * Frecuencia relativa acomulada
+
+## Capturas de pantalla
+
+Aunque el programa cuenta con una función para realizar una demostración, muestro algunas capturas de pantalla del programa.
+
+![](/uploads/app_menu.JPG)
+
+![](/uploads/app_ayuda.JPG)
+
+}![](/uploads/app_demo_abajo.JPG)
+
+Se puede descargar el repositorio y en él contiene un ejecutable.

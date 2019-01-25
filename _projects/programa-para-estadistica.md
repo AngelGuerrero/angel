@@ -10,7 +10,7 @@ tags:
 - rutil.h
 - Proyecto-escolar
 - Universidad
-images_directory: assets/img/programa_estadistica
+images_directory: /assets/img/programa_estadistica
 
 ---
 Hace poco por parte de la escuela, me solicitaron realizar un proyecto, programa en el tema de la estadística.

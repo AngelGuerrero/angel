@@ -18,9 +18,9 @@ Hace poco por parte de la escuela, me solicitaron realizar un proyecto, programa
 En realidad fue algo muy simple, en base a la entrada de datos por parte del usuario se tenia que devolver el cálculo de:
 
 * La frecuencia
-* Frecuencia acomulada
+* Frecuencia acumulada
 * Frecuencia relativa
-* Frecuencia relativa acomulada
+* Frecuencia relativa acumulada
 
 ## Capturas de pantalla
 
@@ -30,6 +30,7 @@ Aunque el programa cuenta con una función para realizar una demostración, mues
 
 ![](/uploads/app_ayuda.JPG)
 
-}![](/uploads/app_demo_abajo.JPG)
+  
+![](/uploads/app_demo_abajo.JPG)
 
-Se puede descargar el repositorio y en él contiene un ejecutable.
+Se puede descargar el repositorio y en este contiene un ejecutable para plataforma Windows.

@@ -3,7 +3,7 @@ layout: layout_post
 category: exercises
 title: Métodos de ordenación y búsqueda
 date: 2018-02-18 06:00:00 +0000
-image: ''
+image: "/uploads/contactos_ordenados.png"
 repository: https://github.com/AngelGuerrero/uni-ordenacion-busqueda
 tags:
 - Java

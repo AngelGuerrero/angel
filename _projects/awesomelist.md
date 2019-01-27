@@ -49,10 +49,10 @@ Se pretende que inicialmente tenga una estructura simple pero con la oportunidad
 
 #### Para la parte del backend
 
-Se pretende crear los servicios con \[Express.js\]([http://expressjs.com/es/](http://expressjs.com/es/ "http://expressjs.com/es/")) por la facilidad que proporciona \[Node.js\]([https://nodejs.org/es/](https://nodejs.org/es/ "https://nodejs.org/es/")).
+Se pretende crear los servicios con [Express.js](http://expressjs.com/es/) por la facilidad que proporciona [Node.js](https://nodejs.org/es/).
 
 #### Para la parte del frontend
 
-Para consumir los servicios una aplicación web utilizando \[Vue.js\]([https://vuejs.org/](https://vuejs.org/ "https://vuejs.org/")) y que con estas mismas tecnologías web del cliente, se puedan reutilizar en una aplicación de escritorio usando \[Electron.js\]([https://electronjs.org/](https://electronjs.org/ "https://electronjs.org/")) o una aplicación móvil usando \[Flutter\]([https://flutter.io/](https://flutter.io/ "https://flutter.io/")).
+Para consumir los servicios una aplicación web utilizando [Vue.js](https://vuejs.org/) y que con estas mismas tecnologías web del cliente, se puedan reutilizar en una aplicación de escritorio usando [Electron.js](https://electronjs.org/) o alguna otra aplicación quizás hecha en Java o C#, y una aplicación móvil usando [Flutter](https://flutter.io/).
 
-Por el stack que quiero integrar, se pretende usar como manejador de base de datos \[MongoDB\]([https://www.mongodb.com/](https://www.mongodb.com/ "https://www.mongodb.com/")).
+Por el stack que quiero integrar, se pretende usar como manejador de base de datos [MongoDB](https://www.mongodb.com/).

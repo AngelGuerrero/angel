@@ -15,6 +15,7 @@ tags:
 - Frontend
 - Backend
 images_directory: "/assets/img/vue"
+published: false
 
 ---
 Personalmente me gusta aprender cosas de modo en que pueda ver o realizar un ejemplo en el _mundo real_. Quise hacer una _lista de tareas_, pero no quería hacer una lista de tareas así de simple, quería algo más completo, que conllevara desde la autenticación del usuario y la configuración de la aplicación, y quizás hasta funciones en tiempo real e integración con otros servicios.
@@ -56,3 +57,35 @@ Se pretende crear los servicios con [Express.js](http://expressjs.com/es/) por l
 Para consumir los servicios una aplicación web utilizando [Vue.js](https://vuejs.org/) y que con estas mismas tecnologías web del cliente, se puedan reutilizar en una aplicación de escritorio usando [Electron.js](https://electronjs.org/) o alguna otra aplicación quizás hecha en Java o C#, y una aplicación móvil usando [Flutter](https://flutter.io/).
 
 Por el stack que quiero integrar, se pretende usar como manejador de base de datos [MongoDB](https://www.mongodb.com/).
+
+## Desarrollo
+
+Antes de comenzar a escribir una aplicación quiero estar seguro de qué es lo que tengo qué hacer, saber qué es lo que tengo que lograr para trazar un plan de cómo hacerlo, así es que primero comencé por crear un prototipo de la aplicación utilizando AdobeXD.
+
+Lo primero que quería lograr es que la aplicación fuera _multiplataforma_, es decir que se pudiera ejecutar tanto como en un navegador como en una aplicación de escritorio, y para ello tenía que enfocar mi diseño, así es que comencé por escribir algunos prototipos.
+
+![](/uploads/prototipo_mobil.JPG)
+
+Como se ve en la imagen anterior, quería partir desde un enfoque _responsive_ comenzando con "_mobile first_".
+
+Así se vería ésta aplicación, nada del otro mundo, una aplicación con un cuadro de texto para ingresar la nueva tarea, mostrar las tareas que están por hacer.
+
+Para el menú de opciones:
+
+![](/uploads/prototipo_mobil_menu.JPG)
+
+Desde los tres puntitos del `navbar`, hasta ahora no tiene todas las opciones que me gustaría (voy despacio), pero si se ingresa a _settings_, entonces se mostraría la siguiente pantalla.
+
+![](/uploads/prototipo_mobil_perfil.JPG)
+
+¡Lo sé! Esa imagen de fondo parece conocida, sólo la tomé prestada.
+
+Esas serían algunas de las opciones que me imaginé que tendría la aplicación, nada complejo por el momento.
+
+Cuando se regresa a la página principal, y desde el menú se entra a la opción de `projects`, lanzaría la siguiente pantalla, lo que pretendo hacer es que algunas tareas estén ligadas a un proyecto en específico, para así tener organización.
+
+![](/uploads/prototipo_mobil_projects.JPG)
+
+Partiendo desde la pantalla principal, si se le diera `click` a los tres puntos de alguna de las tareas mostraría la siguiente pantalla, es que es una pantalla que muestra el detalle de la tarea en cuestión.
+
+![](/uploads/prototipo_mobil_tarea_detalle.JPG)

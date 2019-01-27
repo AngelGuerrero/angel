@@ -26,13 +26,13 @@ Las variables para "page", vienen del archivo 'post.md'
             {{ post.title }}
           </a>
         </h2>
-        <small class="box__publish-date">{{ post.date | date: "%a, %b %d, %y" }}</small>
+        <small class="box__publish-date">{{ post.date | date_to_long_string }}</small>
       </div>
 
       <div class="box-body">
         <div class="box__text"> {{ post.excerpt }} </div>
         <div class="box__image">
-          <img class="box__thumbnail" src="{{ site.url }}{{ site.baseurl }}/{{ post.image }}">
+          <img class="box__thumbnail" src="{{ site.baseurl }}/{{ post.image }}">
         </div>
       </div>
 

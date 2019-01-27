@@ -9,7 +9,7 @@ el contenido de los posts o artículos.
 
 
 <div class="main-yield__post container">
-  <img src="{{ site.url }}{{ site.baseurl }}/{{ page.image }}">
+  <img src="{{ site.baseurl }}/{{ page.image }}">
   {%- include breadcrumb.html -%}
 
   <div class="box-header column">
@@ -26,5 +26,7 @@ el contenido de los posts o artículos.
     {%- endif -%}
   </div>
 
-  {{ content }}
+  <div class="content">
+    {{ content }}
+  </div>
 </div>

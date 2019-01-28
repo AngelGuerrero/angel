@@ -103,3 +103,17 @@ Con las siguientes dos pantallas, para cambiar la fecha, y la hora.
 Y para el manejo de las notificaciones tendría ésta otra pantalla.
 
 ![](/uploads/prototipo_mobil_tarea--notificaciones.JPG)
+
+## Implementación frontend
+
+He comenzado por implementar primero la parte del frontend, simplemente porque me ha gustado más, y tuve un acercamiento de acuerdo al comportamiento que quiero lograr.
+
+![](/uploads/app_mobile_home_list.JPG)
+
+Como se puede observar en la imagen anterior, existe el navegador que deseaba, dentro un cuadro de texto y abajo de ello las listas por realizar, hasta éste punto no tiene funcionalidad, simplemente es el esqueleto para saber cómo podría quedar.
+
+Del lado izquierdo se muestra un `aside`el cual contiene los nombres de los proyectos, la descripción de proyecto actual y algunas de las opciones que podría tener.
+
+![](/uploads/app_mobile_home_asideleft.JPG)
+
+La idea es que cuando se seleccione un proyecto en esta sección, se carguen las tareas que están relacionadas a éste proyecto, se puede notar un color blanco al fondo, y es que este fondo es cuando el usuario necesite cerrar el  `aside`, lo haga de una forma más _natural_.

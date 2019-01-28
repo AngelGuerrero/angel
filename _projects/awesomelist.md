@@ -121,3 +121,7 @@ La idea es que cuando se seleccione un proyecto en esta sección, se carguen las
 También se puede ver que he implementado (aún sin funcionalidad) el menú desplegable que había diseñado, como se muestra en la siguiente imagen.
 
 ![](/uploads/app_mobile_home_menu-desplegable.JPG)
+
+Cuando la pantalla sea más grande, pretendo mostrar el nombre de usuario que ha iniciado sesión.
+
+![](/uploads/app_computer_home.JPG)

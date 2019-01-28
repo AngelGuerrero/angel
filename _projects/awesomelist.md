@@ -15,7 +15,6 @@ tags:
 - Frontend
 - Backend
 images_directory: "/assets/img/vue"
-published: false
 
 ---
 Personalmente me gusta aprender cosas de modo en que pueda ver o realizar un ejemplo en el _mundo real_. Quise hacer una _lista de tareas_, pero no quería hacer una lista de tareas así de simple, quería algo más completo, que conllevara desde la autenticación del usuario y la configuración de la aplicación, y quizás hasta funciones en tiempo real e integración con otros servicios.

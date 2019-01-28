@@ -125,3 +125,25 @@ También se puede ver que he implementado (aún sin funcionalidad) el menú desp
 Cuando la pantalla sea más grande, pretendo mostrar el nombre de usuario que ha iniciado sesión.
 
 ![](/uploads/app_computer_home.JPG)
+
+## Realizando más modificaciones al frontend
+
+Una de las cosas que más me interesa es el UI, el cual trato de dedicarle mucho tiempo y esfuerzo en que quede lo mejor posible, aunque hasta el momento tengo las hojas de estilo separadas, aún me falta incluir muchas variables de los componentes en una hola hoja para tener todo ahí para modificar el día de mañana, de momento la aplicación de ve de la siguiente manera:
+
+![](/uploads/app_home_actual.JPG)
+
+En su versión para móvil se ve de la siguiente forma:
+
+![](/uploads/app_home_mobil_actual.JPG)
+
+Si la aplicación está con más espacio entonces al hacer clic para mostrar el menú lateral se vería de la siguiente forma, ahora sí que se tiene interacción con algunos botones.
+
+![](/uploads/app_asideleft_actual_computer.JPG)
+
+En una versión para móvil se vería de la siguiente manera, primero mostrando una pantalla para mostrar al usuario que se está enfocado al menú lateral izquierdo.
+
+![](/uploads/app_asideleft_actual_medium.JPG)
+
+Y cuando se llega a otra versión con menos espacio entonces se muestra de forma completa el menú.
+
+![](/uploads/app_asideleft_actual_min.JPG)

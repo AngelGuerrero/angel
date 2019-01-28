@@ -89,3 +89,17 @@ Cuando se regresa a la página principal, y desde el menú se entra a la opción
 Partiendo desde la pantalla principal, si se le diera `click` a los tres puntos de alguna de las tareas mostraría la siguiente pantalla, es que es una pantalla que muestra el detalle de la tarea en cuestión.
 
 ![](/uploads/prototipo_mobil_tarea_detalle.JPG)
+
+Para cambiar la fecha de vencimiento de la tarea, agregaría otro menú que se vería de la siguiente forma:
+
+![](/uploads/prototipo_mobil_tarea--cambiar-fecha.JPG)
+
+Con las siguientes dos pantallas, para cambiar la fecha, y la hora.
+
+![](/uploads/prototipo_mobil_tarea--reloj.JPG)
+
+![](/uploads/prototipo_mobil_tarea--reloj-hora.JPG)
+
+Y para el manejo de las notificaciones tendría ésta otra pantalla.
+
+![](/uploads/prototipo_mobil_tarea--notificaciones.JPG)

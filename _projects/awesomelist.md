@@ -147,3 +147,27 @@ En una versión para móvil se vería de la siguiente manera, primero mostrando 
 Y cuando se llega a otra versión con menos espacio entonces se muestra de forma completa el menú.
 
 ![](/uploads/app_asideleft_actual_min.JPG)
+
+De igual forma para el menú lateral derecho, primero abarca un buen espacio de la siguiente forma.
+
+![](/uploads/app_asideright_actual_big.JPG)
+
+Cuando se comienza a reducir de espacio se muestra de una manera, en que se enfoca a éste sugiriendo al usuario que primero tiene que ocultar este componente para seguir con otra actividad.
+
+![](/uploads/app_asideright_actual_medium.JPG)
+
+Y finalmente cuando se está en una versión completamente móvil, se abarca el total de espacio.
+
+![](/uploads/app_asideright_actual_min.JPG)
+
+Para crear un nuevo proyecto se haría desde la parte del lateral izquierdo de la siguiente forma, ingresando un nombre para el proyecto y una breve descripción del mismo.
+
+![](/uploads/app_proyecto_de_prueba.JPG)
+
+A lo cual cuando se cree el proyecto lanzará un mensaje de notificación.
+
+![](/uploads/app_proyecto_creado.JPG)
+
+Aunque aún faltan muchas cosas por implementar, creo que es un buen acercamiento para la realización de una SPA (Single Page Application).
+
+_Trabajando en el contenido que falta_.

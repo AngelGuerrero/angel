@@ -117,3 +117,7 @@ Del lado izquierdo se muestra un `aside`el cual contiene los nombres de los proy
 ![](/uploads/app_mobile_home_asideleft.JPG)
 
 La idea es que cuando se seleccione un proyecto en esta sección, se carguen las tareas que están relacionadas a éste proyecto, se puede notar un color blanco al fondo, y es que este fondo es cuando el usuario necesite cerrar el  `aside`, lo haga de una forma más _natural_.
+
+También se puede ver que he implementado (aún sin funcionalidad) el menú desplegable que había diseñado, como se muestra en la siguiente imagen.
+
+![](/uploads/app_mobile_home_menu-desplegable.JPG)

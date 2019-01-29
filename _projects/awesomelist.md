@@ -63,7 +63,7 @@ Antes de comenzar a escribir una aplicación quiero estar seguro de qué es lo q
 
 Lo primero que quería lograr es que la aplicación fuera _multiplataforma_, es decir que se pudiera ejecutar tanto como en un navegador como en una aplicación de escritorio, y para ello tenía que enfocar mi diseño, así es que comencé por escribir algunos prototipos.
 
-![](/uploads/prototipo_mobil.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/prototipo_mobil.JPG)
 
 Como se ve en la imagen anterior, quería partir desde un enfoque _responsive_ comenzando con "_mobile first_".
 
@@ -71,11 +71,11 @@ Así se vería ésta aplicación, nada del otro mundo, una aplicación con un cu
 
 Para el menú de opciones:
 
-![](/uploads/prototipo_mobil_menu.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/prototipo_mobil_menu.JPG)
 
 Desde los tres puntitos del `navbar`, hasta ahora no tiene todas las opciones que me gustaría (voy despacio), pero si se ingresa a _settings_, entonces se mostraría la siguiente pantalla.
 
-![](/uploads/prototipo_mobil_perfil.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/prototipo_mobil_perfil.JPG)
 
 ¡Lo sé! Esa imagen de fondo parece conocida, sólo la tomé prestada.
 
@@ -83,89 +83,89 @@ Esas serían algunas de las opciones que me imaginé que tendría la aplicación
 
 Cuando se regresa a la página principal, y desde el menú se entra a la opción de `projects`, lanzaría la siguiente pantalla, lo que pretendo hacer es que algunas tareas estén ligadas a un proyecto en específico, para así tener organización.
 
-![](/uploads/prototipo_mobil_projects.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/prototipo_mobil_projects.JPG)
 
 Partiendo desde la pantalla principal, si se le diera `click` a los tres puntos de alguna de las tareas mostraría la siguiente pantalla, es que es una pantalla que muestra el detalle de la tarea en cuestión.
 
-![](/uploads/prototipo_mobil_tarea_detalle.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/prototipo_mobil_tarea_detalle.JPG)
 
 Para cambiar la fecha de vencimiento de la tarea, agregaría otro menú que se vería de la siguiente forma:
 
-![](/uploads/prototipo_mobil_tarea--cambiar-fecha.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/prototipo_mobil_tarea--cambiar-fecha.JPG)
 
 Con las siguientes dos pantallas, para cambiar la fecha, y la hora.
 
-![](/uploads/prototipo_mobil_tarea--reloj.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/prototipo_mobil_tarea--reloj.JPG)
 
-![](/uploads/prototipo_mobil_tarea--reloj-hora.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/prototipo_mobil_tarea--reloj-hora.JPG)
 
 Y para el manejo de las notificaciones tendría ésta otra pantalla.
 
-![](/uploads/prototipo_mobil_tarea--notificaciones.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/prototipo_mobil_tarea--notificaciones.JPG)
 
 ## Implementación frontend
 
 He comenzado por implementar primero la parte del frontend, simplemente porque me ha gustado más, y tuve un acercamiento de acuerdo al comportamiento que quiero lograr.
 
-![](/uploads/app_mobile_home_list.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_mobile_home_list.JPG)
 
 Como se puede observar en la imagen anterior, existe el navegador que deseaba, dentro un cuadro de texto y abajo de ello las listas por realizar, hasta éste punto no tiene funcionalidad, simplemente es el esqueleto para saber cómo podría quedar.
 
 Del lado izquierdo se muestra un `aside`el cual contiene los nombres de los proyectos, la descripción de proyecto actual y algunas de las opciones que podría tener.
 
-![](/uploads/app_mobile_home_asideleft.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_mobile_home_asideleft.JPG)
 
 La idea es que cuando se seleccione un proyecto en esta sección, se carguen las tareas que están relacionadas a éste proyecto, se puede notar un color blanco al fondo, y es que este fondo es cuando el usuario necesite cerrar el  `aside`, lo haga de una forma más _natural_.
 
 También se puede ver que he implementado (aún sin funcionalidad) el menú desplegable que había diseñado, como se muestra en la siguiente imagen.
 
-![](/uploads/app_mobile_home_menu-desplegable.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_mobile_home_menu-desplegable.JPG)
 
 Cuando la pantalla sea más grande, pretendo mostrar el nombre de usuario que ha iniciado sesión.
 
-![](/uploads/app_computer_home.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_computer_home.JPG)
 
 ## Realizando más modificaciones al frontend
 
 Una de las cosas que más me interesa es el UI, el cual trato de dedicarle mucho tiempo y esfuerzo en que quede lo mejor posible, aunque hasta el momento tengo las hojas de estilo separadas, aún me falta incluir muchas variables de los componentes en una hola hoja para tener todo ahí para modificar el día de mañana, de momento la aplicación de ve de la siguiente manera:
 
-![](/uploads/app_home_actual.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_home_actual.JPG)
 
 En su versión para móvil se ve de la siguiente forma:
 
-![](/uploads/app_home_mobil_actual.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_home_mobil_actual.JPG)
 
 Si la aplicación está con más espacio entonces al hacer clic para mostrar el menú lateral se vería de la siguiente forma, ahora sí que se tiene interacción con algunos botones.
 
-![](/uploads/app_asideleft_actual_computer.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_asideleft_actual_computer.JPG)
 
 En una versión para móvil se vería de la siguiente manera, primero mostrando una pantalla para mostrar al usuario que se está enfocado al menú lateral izquierdo.
 
-![](/uploads/app_asideleft_actual_medium.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_asideleft_actual_medium.JPG)
 
 Y cuando se llega a otra versión con menos espacio entonces se muestra de forma completa el menú.
 
-![](/uploads/app_asideleft_actual_min.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_asideleft_actual_min.JPG)
 
 De igual forma para el menú lateral derecho, primero abarca un buen espacio de la siguiente forma.
 
-![](/uploads/app_asideright_actual_big.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_asideright_actual_big.JPG)
 
 Cuando se comienza a reducir de espacio se muestra de una manera, en que se enfoca a éste sugiriendo al usuario que primero tiene que ocultar este componente para seguir con otra actividad.
 
-![](/uploads/app_asideright_actual_medium.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_asideright_actual_medium.JPG)
 
 Y finalmente cuando se está en una versión completamente móvil, se abarca el total de espacio.
 
-![](/uploads/app_asideright_actual_min.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_asideright_actual_min.JPG)
 
 Para crear un nuevo proyecto se haría desde la parte del lateral izquierdo de la siguiente forma, ingresando un nombre para el proyecto y una breve descripción del mismo.
 
-![](/uploads/app_proyecto_de_prueba.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_proyecto_de_prueba.JPG)
 
 A lo cual cuando se cree el proyecto lanzará un mensaje de notificación.
 
-![](/uploads/app_proyecto_creado.JPG)
+![]({{ site.baseurl }}{{ page.images_directory }}/app_proyecto_creado.JPG)
 
 Aunque aún faltan muchas cosas por implementar, creo que es un buen acercamiento para la realización de una SPA (Single Page Application).
 

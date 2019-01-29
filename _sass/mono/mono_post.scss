@@ -1,0 +1,21 @@
+//------------------------------------------------
+// Mono post layout
+//------------------------------------------------
+.post__content {
+  @for $h from 1 to 7 {
+    h#{$h} {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 748px) {
+  .post__content {
+    img {
+      padding: 0 15%;
+    }
+  }
+}

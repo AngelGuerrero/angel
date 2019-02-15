@@ -19,6 +19,6 @@ Anteriormente realizaba mis prácticas profesionales [H3DB&APPS](http://www.h3c.
 
 Correo electrónico: lasantiagoguerrero@gmail.com
 
-Twitter: [@AngelGuerrero](https://twitter.com/{{ site.author.twitter }})\`
+Twitter: [@AngelGuerrero](https://twitter.com/{{ site.author.twitter }})
 
 GitHub: [AngelGuerrero](https://github.com/{{ site.author.github }})

@@ -25,3 +25,4 @@ fields:
     required: true
 pages:
 - exercises.md
+- contact.md

@@ -1,7 +1,6 @@
 ---
 label: page_front_template
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: layout
@@ -24,5 +23,5 @@ fields:
   config:
     required: true
 pages:
-- exercises.md
 - contact.md
+- exercises.md

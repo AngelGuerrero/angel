@@ -1,7 +1,6 @@
 ---
 label: index_collections_template
 hide_body: true
-is_partial: false
 fields:
 - type: include
 - type: text

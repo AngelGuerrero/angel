@@ -7,8 +7,6 @@ type: Pages
 ---
 # {{ page.title }}
 
-<img class="img__container" src="{{ site.url }}{{ site.baseurl }}/uploads/yo_azul.jpg"/>
-
 Actualmente soy estudiante de la carrera en Ingeniería en Desarrollo de Software en la [Universidad Abierta y a Distancia de México](https://unadmexico.mx/), la cual terminaré a finales del siguiente año.
 
 Soy totalmente autodidacta y me gusta mucho la modalidad en línea, me permite aprender hasta donde yo deseo, los únicos límites son los que yo mismo me impongo.

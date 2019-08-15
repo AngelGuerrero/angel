@@ -8,11 +8,10 @@ new TypeIt('.type__branding', {
 }).go();
 
 new TypeIt('.type__presentation', {
-  strings: ["Desarrollador jr.\n",
+  strings: ["Desarrollador de software jr.\n",
             "\n",
-            "\Con un año de experiencia en prácticas profesionales \n",
-            "enfocado al desarrollo web, \n",
-            "con conocimientos en Frontend y Backend... \n\n"],
+            "\Realizo aplicaciones de escritorio y aplicaciones web, tengo experiencia \n",
+            "en el uso de herramientas para el desarrollo Front-End y Back-End... \n\n\n"],
   speed: 50
 })
 .pause(2000)

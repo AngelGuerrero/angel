@@ -11,9 +11,9 @@ Actualmente soy estudiante de la carrera en Ingeniería en Desarrollo de Softwar
 
 Soy totalmente autodidacta y me gusta mucho la modalidad en línea, me permite aprender hasta donde yo deseo, los únicos límites son los que yo mismo me impongo.
 
-Actualmente me encuentro realizando residencias profesionales en una reconocida empresa del área de producción avícola.
+Realicé residencias profesionales en una reconocida empresa del área de producción avícola, [Pilgrim's](http://www.pilgrims.com.mx/pilgrimsweb/ "Pilgrim's").
 
-Anteriormente realizaba mis prácticas profesionales [H3DB&APPS](http://www.h3c.com.mx/ "http://www.h3c.com.mx/"), durante ese tiempo aprendí herramientas y tecnologías sobre la marcha, pero lo más importante, es que aprendí de mis errores, aprendí de los consejos de mis líderes, y conocí personas de gran corazón para admirar.
+Anteriormente realicé mis prácticas profesionales [H3DB&APPS](http://www.h3c.com.mx/ "http://www.h3c.com.mx/"), durante ese tiempo aprendí herramientas y tecnologías sobre la marcha, pero lo más importante, es que aprendí de mis errores, aprendí de los consejos de mis líderes, y conocí personas de gran corazón para admirar.
 
 Correo electrónico: lasantiagoguerrero@gmail.com
 

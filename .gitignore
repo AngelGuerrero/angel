@@ -2,6 +2,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+yarn.lock
 
 # Windows thumbnail cache files
 Thumbs.db

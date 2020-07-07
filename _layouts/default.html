@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    {%- include head.html -%}
+  </head>
 
-<head>
-  {%- include head.html -%}
-</head>
+  <body>
+    <div id="app" class="column">
+      {%- include nav.html -%}
 
-<body>
-  <div id="app" class="row">
+      <!-- Main content -->
+      <div
+        class="grow-1 {% if page.url == '/' %} app-back-black {%- else -%} main-content {% endif %}"
+      >
+        <header class="main-header container row-v-center">
+          <h1 class="header__branding"></h1>
+          {%- if page.url == '/' -%}
+          <h1 class="header__branding type__branding"></h1>
+          {%- else -%}
+          <h1 class="header__branding">{{ site.title }}</h1>
+          {%- endif -%}
+        </header>
 
-    {%- include nav.html -%}
+        <!-- Yield content -->
+        <section class="main-yield">{{ content }}</section>
 
-    <!-- Main content -->
-    <div class="grow-1  {% if page.url == '/' %}
-                          app-back-black
-                        {%- else -%}
-                          main-content
-                        {% endif %}">
-      <header class="main-header container row-v-center">
-        <h1 class="header__branding"> </h1>
-        {%- if page.url == '/' -%}
-        <h1 class="header__branding type__branding"></h1>
-        {%- else -%}
-        <h1 class="header__branding">{{ site.title }}</h1>
-        {%- endif -%}
-      </header>
-
-      <!-- Yield content -->
-      <section class="main-yield">{{ content }}</section>
-
-      <!-- Main footer -->
-      <footer class="main-footer">Made with <i class="fas fa-heart"></i> </footer>
+        <!-- Main footer -->
+        <footer class="main-footer">
+          Made with <i class="fas fa-heart"></i>
+        </footer>
+      </div>
     </div>
 
-  </div>
-
-  {%- include scripts.html -%}
-</body>
-
+    {%- include scripts.html -%}
+  </body>
 </html>

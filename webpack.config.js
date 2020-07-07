@@ -1,15 +1,12 @@
 const path = require('path');
-const webpack = require('webpack');
-const uglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  entry: './index.js',
+  mode: process.env.ENVIROMENT || "development",
+
+  entry: './src/main.js',
   output: {
-    library: 'UserList',
-    libraryTarget: 'umd',
-    libraryExport: 'default',
-    path: path.resolve(__dirname, 'assets/js/'),
-    filename: 'bundle.js'
+    // path: path.resolve(__dirname, 'assets/js/'),
+    filename: 'bundle.min.js'
   },
   module: {
     rules: [{
@@ -18,9 +15,5 @@ module.exports = {
         use: ['babel-loader']
       }
     ]
-  },
-  plugins: [
-    new uglifyJsPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-  ]
+  }
 };

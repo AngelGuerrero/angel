@@ -10,16 +10,15 @@
     "dev": "webpack --watch --info-verbosity verbose --mode development"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "7",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "uglifyjs-webpack-plugin": "^2.1.1",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "webpack": "^4.43.0",
+    "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "typeit": "^6.0.2"
+    "typeit": "^7.0.4"
   }
 }

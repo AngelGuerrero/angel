@@ -1,24 +1,28 @@
 <!-- Menú orientado a la izquierda -->
-<nav class="navbar column column-h-center">
-  <div class="navbar__profile">
-    <img src="{{ site.baseurl }}/uploads/me.jpg" class="profile__image" alt="">
-  </div>
+<nav class="navbar">
+  <!-- <div class="navbar__profile">
+    <img
+      src="{{ site.baseurl }}/uploads/me.jpg"
+      class="profile__image"
+      alt=""
+    />
+  </div> -->
 
-  <div class="navbar__menu around grow-1 column">
-    <a href="{{ '/' | absolute_url }}" class="menu__item row-v-center row-h-center">
-      <i class="fas fa-home fa-1x menu__icon"></i>
+  <div class="navbar__menu">
+    <a href="{{ '/' | absolute_url }}" class="menu__item enfasis-1">
+      &lt; Start /&gt;
     </a>
-    <a href="{{ site.baseurl }}/posts" class="menu__item  row-v-center row-h-center">
-      <i class="fas fa-newspaper fa-1x menu__icon"></i>
+    <a href="{{ site.baseurl }}/posts" class="menu__item enfasis-2">
+      &lt; Posts /&gt;
     </a>
-    <a href="{{ site.baseurl }}/exercises" class="menu__item  row-v-center row-h-center">
-      <i class="fas fa-dumbbell fa-1x menu__icon"></i>
+    <a href="{{ site.baseurl }}/exercises" class="menu__item enfasis-3">
+      &lt; Lab /&gt;
     </a>
-    <a href="{{ site.baseurl }}/projects" class="menu__item  row-v-center row-h-center">
-      <i class="fas fa-project-diagram fa-1x menu__icon"></i>
+    <a href="{{ site.baseurl }}/projects" class="menu__item enfasis-4">
+      &lt; Work /&gt;
     </a>
-    <a href="{{ site.baseurl }}/contact" class="menu__item  row-v-center row-h-center">
-      <i class="fas fa-id-card fa-1x menu__icon"></i>
+    <a href="{{ site.baseurl }}/contact" class="menu__item enfasis-5">
+      &lt; Contact /&gt;
     </a>
   </div>
 </nav>

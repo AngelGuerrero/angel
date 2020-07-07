@@ -2,19 +2,32 @@
 // Mono colors theme
 //------------------------------------------------
 
-$primary-color: #6320EE;
-$secondary-color: #1B9AAA;
-$main-content-back-color: #FCFBF7;
+$primary-color: #6320ee;
+$secondary-color: #1b9aaa;
+$main-content-back-color: #fcfbf7;
 
 $super-title-color: $primary-color;
-$titles-color: #8075FF;
+$titles-color: #8075ff;
+
+$list-enfasis: #1dff15, #00e4d1, #e0e400, #ff298d, #d100e4;
+
+@each $color in $list-enfasis {
+  $index: index($list-enfasis, $color);
+
+  .enfasis-#{$index} {
+    color: $color;
+  }
+}
 
 //------------------------------------------------
 // Navbar colors
 //------------------------------------------------
-$navbar-back-color: #211A1D;
+// $navbar-back-color: rgb(255, 0, 111);
+// $navbar-back-color: rgb(255, 0, 234);
+$navbar-back-color: rgb(50, 30, 107);
 $navbar-front-color: #ffffff;
-$menu-item-color: #ffffff;
+
+$menu-item-color: $navbar-front-color;
 $menu-item-back-hover: $super-title-color;
 
 //------------------------------------------------
